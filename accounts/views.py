@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
 
 
-def accounts_test(request):
-    return HttpResponse("Accounts Working!")
+def profile_view(request):
+    return render(request, 'accounts/profile.html')

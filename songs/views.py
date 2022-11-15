@@ -1,6 +1,5 @@
 from django.shortcuts import render, HttpResponse
 
 
-def songs_test(request):
-    # return HttpResponse("Songs Working!")
+def song_list(request):
     return render(request, 'songs/song_list.html')
