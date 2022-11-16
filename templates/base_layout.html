@@ -44,16 +44,16 @@
                     </li>
                     <!-- link to log out -->
                     <li class="nav-list">
-                        <a href="{% url 'accounts:logout' %}">Logout</a>
+                        <a href="{% url 'accounts:logout_view' %}">Logout</a>
                     </li>
                 {% else %}
                     <!-- link to sign up -->
                     <li class="nav-list">
-                        <a href="{% url 'accounts:signup' %}">Signup</a>
+                        <a href="{% url 'accounts:signup_view' %}">Signup</a>
                     </li>
                     <!-- link to log in -->
                     <li class="nav-list">
-                        <a href="{% url 'accounts:login' %}">Login</a>
+                        <a href="{% url 'accounts:login_view' %}">Login</a>
                     </li>
                 {% endif %}
             </ul>
