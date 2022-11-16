@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from . import views
 from songs import views as song_views
 
 urlpatterns = [
@@ -22,4 +23,5 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path('songs/', include('songs.urls')),
     path('', song_views.song_list, name="home"),
+    path('about/', views.about, name="about"),
 ]

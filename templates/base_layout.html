@@ -12,22 +12,22 @@
 <body>
     <header class="wrapper">
         <h1>Anthemology
-            <a href="">
+            <a href="{% url 'home' %}">
                 <img src="" alt="anthemology logo">
             </a>
         </h1>
         <nav>
             <ul>
                 <li>
-                    <a href="#">Songs</a>
+                    <a href="{% url 'songs:song_list' %}">Songs</a>
                 </li>
                 <li>
-                    <a href="#">Account</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
+                    <a href="{% url 'about' %}">About</a>
                 </li>
             </ul>
+                <li>
+                    <a href="{% url 'accounts:profile_view' %}">Account</a>
+                </li>
         </nav>
     </header>
     <main class="wrapper">
