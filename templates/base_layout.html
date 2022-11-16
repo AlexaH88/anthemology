@@ -37,10 +37,25 @@
                 <li class="nav-list">
                     <a href="{% url 'about' %}">About</a>
                 </li>
-                <!-- link to account -->
-                <li class="nav-list">
-                    <a href="{% url 'accounts:profile_view' %}">Account</a>
-                </li>
+                {% if user.is_authenticated %}
+                    <!-- link to account -->
+                    <li class="nav-list">
+                        <a href="{% url 'accounts:profile_view' %}">Account</a>
+                    </li>
+                    <!-- link to log out -->
+                    <li class="nav-list">
+                        <a href="{% url 'accounts:logout' %}">Logout</a>
+                    </li>
+                {% else %}
+                    <!-- link to sign up -->
+                    <li class="nav-list">
+                        <a href="{% url 'accounts:signup' %}">Signup</a>
+                    </li>
+                    <!-- link to log in -->
+                    <li class="nav-list">
+                        <a href="{% url 'accounts:login' %}">Login</a>
+                    </li>
+                {% endif %}
             </ul>
         </nav>
     </header>
