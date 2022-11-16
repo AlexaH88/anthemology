@@ -2,40 +2,75 @@
 
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
+    <!-- meta elements -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- site title and favicon -->
     <title>Anthemology</title>
+
+    <!-- css -->
     <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/5366bdfdf4.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <!-- header -->
     <header class="wrapper">
-        <h1>Anthemology
-            <a href="{% url 'home' %}">
-                <img src="" alt="anthemology logo">
-            </a>
-        </h1>
-        <nav>
+        <!-- site logo -->
+        <a href="{% url 'home' %}" aria-label="Link to the site's homepage">
+            <h1><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i> Anthemology</h1>
+        </a>
+        <!-- navigation links -->
+        <nav id="site-nav">
             <ul>
-                <li>
+                <!-- link to homepage (song list) -->
+                <li class="nav-list">
                     <a href="{% url 'songs:song_list' %}">Songs</a>
                 </li>
-                <li>
+                <!-- link to about page -->
+                <li class="nav-list">
                     <a href="{% url 'about' %}">About</a>
                 </li>
-            </ul>
-                <li>
+                <!-- link to account -->
+                <li class="nav-list">
                     <a href="{% url 'accounts:profile_view' %}">Account</a>
                 </li>
+            </ul>
         </nav>
     </header>
-    <main class="wrapper">
-        {% block content %}
-        {% endblock %}
+
+    <main>
+        <div id="main-page-container">
+            {% block content %}
+            {% endblock %}
+        </div>
     </main>
-    <footer class="wrapper">
-        Footer boiler text
+
+    <!-- footer -->
+    <footer>
+        <ul>
+            <!-- site name -->
+            <li>Anthemology &copy;</li>
+            <!-- about site -->
+            <li>This website was created by Alexa Hendry as a portfolio project and has no commercial purpose.</li>
+            <!-- site creator social media links -->
+            <li>
+                <a href="https://github.com/AlexaH88" target="_blank"
+                    aria-label="Link to Alexa Hendry's GitHub profile (opens in a new tab)"><i
+                        class="fa-brands fa-github-alt"></i></a>
+                <a href="https://www.linkedin.com/in/alexa-hendry/" target="_blank"
+                    aria-label="Link to Alexa Hendry's LinkedIn profile (opens in a new tab)"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </li>
+        </ul>
     </footer>
+
 </body>
+
 </html>
