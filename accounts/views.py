@@ -10,7 +10,7 @@ def signup_view(request):
             user = form.save()
             # log the user in
             login(request, user)
-            return redirect('accounts:profile_view')
+            return redirect('accounts:profile')
     else:
         form = UserCreationForm()
     return render(request, 'accounts/signup.html', {'form': form})
@@ -26,7 +26,7 @@ def login_view(request):
             if 'next' in request.POST:
                 return redirect(request.POST.get('next'))
             else:
-                return redirect('accounts:profile_view')
+                return redirect('accounts:profile')
     else:
         form = AuthenticationForm()
     return render(request, 'accounts/login.html', {'form': form})
@@ -39,4 +39,6 @@ def profile_view(request):
 def logout_view(request):
     if request.method == 'POST':
         logout(request)
-        return render(request, 'accounts/logout.html')
+        # return render(request, 'accounts/logout.html')
+        # return redirect('accounts/logout.html')
+        return redirect('songs:song_list')
