@@ -1,0 +1,15 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+    <div class="song-detail">
+        <div class="song">
+            <img src="{{ song.artwork.url }}" alt="default artwork image of vinyl graphic">
+            <h3>{{ song.title }}</h3>
+            <p>{{ song.artist }}</p>
+            <p>{{ song.album }}</p>
+            <p>{{ song.date }}</p>
+            <p>{{ song.author }}</p>
+            <p>{{ song.lyrics }}</p>
+        </div>
+    </div>
+{% endblock %}

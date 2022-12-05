@@ -6,7 +6,7 @@
         {% for song in songs %}
         <div class="song">
             <h3>
-                <a href="">{{ song.title }}</a>
+                <a href="{% url 'songs:detail' slug=song.slug %}">{{ song.title }}</a>
             </h3>
             <p>{{ song.artist }}</p>
             <p>{{ song.album }}</p>
