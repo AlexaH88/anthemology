@@ -5,10 +5,10 @@
         <div class="song">
             <img src="{{ song.artwork.url }}" alt="default artwork image of vinyl graphic">
             <h3>{{ song.title }}</h3>
-            <p>{{ song.artist }}</p>
-            <p>{{ song.album }}</p>
-            <p>{{ song.date }}</p>
-            <p>{{ song.author }}</p>
+            <p>Artist: {{ song.artist }}</p>
+            <p>Album: {{ song.album }}</p>
+            <p>Added On: {{ song.date }}</p>
+            <p>Added By: {{ song.author }}</p>
             <p>{{ song.lyrics }}</p>
         </div>
     </div>

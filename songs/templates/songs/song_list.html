@@ -8,8 +8,8 @@
             <h3>
                 <a href="{% url 'songs:detail' slug=song.slug %}">{{ song.title }}</a>
             </h3>
-            <p>{{ song.artist }}</p>
-            <p>{{ song.album }}</p>
+            <p>Artist: {{ song.artist }}</p>
+            <p>Album: {{ song.album }}</p>
             <p class="author">Added By: {{ song.author.username }}</p>
         </div>
         {% endfor %}

@@ -3,136 +3,64 @@
 
 /* full site styles */
 * {
-    font-size: 10px;
     margin: 0;
     padding: 0;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-body {
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-header,
-section,
-footer {
-    padding: 1rem 4rem;
-}
-
-/* fonts and colours */
-h1,
-h2 {
-    font-family: 'Righteous', sans-serif;
-}
-
-h1 {
-    font-size: 6rem;
-}
-
-header h2 {
-    font-size: 4rem;
-}
-
-section h2 {
-    font-size: 3rem;
-}
-
-body {
+body * {
     font-family: 'Kalam', sans-serif;
-}
-
-p,
-li {
-    font-size: 2rem;
-    list-style: none;
-}
-
-ol li {
-    font-size: 1.5rem;
-    text-align: left;
-    padding-left: 0.8rem !important;
-}
-
-i {
-    font-size: 5rem;
     color: black;
 }
 
-section a:hover {
-    color: #34afa5;
-}
-
-/* header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #34afa5;
-    width: 100vw;
-    position: fixed;
-    z-index: +2;
-}
-
-header ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-list {
-    padding-left: 4rem;
+h1,
+h2, 
+h3, 
+h4 {
+    font-family: 'Righteous', sans-serif;
 }
 
 a {
     text-decoration: none;
-    color: black;
 }
 
 a:hover {
     color: white;
+    text-decoration: none;
 }
 
-/* main page sections */
-#main-page-container {
-    margin-top: 100px;
-    justify-content: center;
-    align-items: center;
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-section h2 {
-    margin: 2rem 0rem;
-}
-
-section li {
-    margin: 1rem 0rem;
-}
-
-/* footer */
-footer {
-    margin-top: auto;
+/* header */
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px 0;
     background-color: #34afa5;
 }
 
-footer i {
-    color: black;
-    font-size: 2.3rem;
-    padding: 0rem 0.2rem;
+header h1 {
+    font-size: 2.4em;
 }
 
-footer i:hover {
-    color: white;
+nav {
+    justify-self: end;
 }
 
-footer ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 20px;
+    font-size: 1.4em;
+}
+
+nav button {
+    background: none;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 25px;
+    font-size: 1em;
 }
