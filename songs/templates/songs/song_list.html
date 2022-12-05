@@ -3,13 +3,15 @@
 {% block content %}
     <h2>Song List</h2>
     <div class="songs">
+        {% for song in songs %}
         <div class="song">
             <h3>
-                <a href="">Song Title</a>
+                <a href="">{{ song.title }}</a>
             </h3>
-            <p>Artist</p>
-            <p>Album</p>
-            <p class="author">Added By:</p>
+            <p>{{ song.artist }}</p>
+            <p>{{ song.album }}</p>
+            <p class="author">Added By: {{ song.author.username }}</p>
         </div>
+        {% endfor %}
     </div>
 {% endblock %}
