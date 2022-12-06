@@ -14,7 +14,7 @@ def song_detail(request, slug):
     return render(request, 'songs/song_detail.html', {'song': song})
 
 
-def user_songs(request):
+def user_songs(request, slug):
     song = Song.objects.get(slug=slug)
     user_songs = Song.objects.all().filter(author=request.user)
     return render(
