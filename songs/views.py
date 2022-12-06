@@ -15,8 +15,14 @@ def song_detail(request, slug):
 
 
 def user_songs(request):
+    song = Song.objects.get(slug=slug)
     user_songs = Song.objects.all().filter(author=request.user)
-    return render(request, 'songs/user_songs.html', {'user_songs': user_songs})
+    return render(
+        request, 'songs/user_songs.html', {
+            'user_songs': user_songs,
+            'song': song
+            }
+    )
 
 
 @login_required(login_url="/accounts/login/")
