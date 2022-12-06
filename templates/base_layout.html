@@ -38,6 +38,10 @@
                     <a href="{% url 'about' %}">About</a>
                 </li>
                 {% if user.is_authenticated %}
+                    <!-- link to user's songs -->
+                    <li class="nav-list">
+                        <a href="{% url 'songs:user_songs' %}">My Songs</a>
+                    </li>
                     <!-- link to account -->
                     <li class="nav-list">
                         <a href="{% url 'accounts:profile' %}">Account</a>
