@@ -15,12 +15,13 @@ def song_detail(request, slug):
 
 
 def user_songs(request, slug):
-    song = Song.objects.get(slug=slug)
+    # song = Song.objects.get(slug=slug)
     user_songs = Song.objects.all().filter(author=request.user)
+    slug = user_songs.get(slug=slug)
     return render(
         request, 'songs/user_songs.html', {
             'user_songs': user_songs,
-            'song': song
+            'slug': slug
             }
     )
 
