@@ -7,7 +7,7 @@
             {% for user_song in user_songs %}
             <div class="song">
                 <h3>
-                    <a href="{% url 'songs:detail' slug=song.slug %}">{{ user_song.title }}</a>
+                    <a href="{% url 'songs:detail' slug=user_song.slug %}">{{ user_song.title }}</a>
                 </h3>
                 <p>Artist: {{ user_song.artist }}</p>
                 <p>Album: {{ user_song.album }}</p>
