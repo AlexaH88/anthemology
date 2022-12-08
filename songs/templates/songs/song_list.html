@@ -2,11 +2,6 @@
 
 {% block content %}
     <h2>Song List</h2>
-    <div class="button">
-        <button>
-            <a href="{% url 'songs:add' %}">Add Song</a>
-        </button>
-    </div>
     <div class="songs">
         {% for song in songs %}
         <div class="song">

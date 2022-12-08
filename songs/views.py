@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Song
 from django.contrib.auth.decorators import login_required
 from . import forms
@@ -24,12 +24,18 @@ def user_songs(request):
 @login_required(login_url="/accounts/login/")
 def add_song(request):
     if request.method == 'POST':
-        form = forms.AddSong(request.POST, request.FILES)
+        form = forms.SongForm(request.POST, request.FILES)
         if form.is_valid():
             instance = form.save(commit=False)
             instance.author = request.user
             instance.save()
             return redirect('songs:song_list')
     else:
-        form = forms.AddSong()
+        form = forms.SongForm()
     return render(request, 'songs/add_song.html', {'form': form})
+
+
+@login_required(login_url="/accounts/login/")
+def edit_song(request, slug):
+    song = Song.objects.get(slug=slug)
+    return render(request, 'songs/edit_song.html', {'song': song})
