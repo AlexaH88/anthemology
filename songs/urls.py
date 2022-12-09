@@ -9,4 +9,5 @@ urlpatterns = [
     path('my-songs', views.user_songs, name="user_songs"),
     path('add-song', views.add_song, name="add"),
     path('edit-song/<slug:slug>', views.edit_song, name="edit"),
+    path('delete-song/<slug:slug>', views.delete_song, name="delete"),
 ]

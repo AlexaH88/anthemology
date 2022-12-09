@@ -18,6 +18,9 @@
                 <button>
                     <a href="{% url 'songs:edit' slug=user_song.slug %}">Edit Song</a>
                 </button>
+                <button>
+                    <a href="{% url 'songs:delete' slug=user_song.slug %}">Delete Song</a>
+                </button>
             </div>
             {% endfor %}
         </div>

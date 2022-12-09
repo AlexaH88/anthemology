@@ -47,3 +47,9 @@ def edit_song(request, slug):
         return render(request, 'songs/edit_song.html', {
             'song': song,
             'form': form})
+
+
+@login_required(login_url="/accounts/login/")
+def delete_song(request, slug):
+    song = Song.objects.get(slug=slug)
+    return redirect('songs:song_list')
