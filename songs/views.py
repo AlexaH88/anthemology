@@ -52,4 +52,5 @@ def edit_song(request, slug):
 @login_required(login_url="/accounts/login/")
 def delete_song(request, slug):
     song = Song.objects.get(slug=slug)
-    return redirect('songs:song_list')
+    song.delete()
+    return redirect('songs:user_songs')
