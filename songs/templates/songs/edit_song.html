@@ -1,8 +1,11 @@
 {% extends 'base_layout.html' %}
+
 {% block content %}
     <h2>Edit Song</h2>
-    <form action="">
-        Form Test
+    <form class="site-form" action="{% url 'songs:edit' slug=song.slug %}" method="post" enctype="multipart/form-data">
+        Form Text
+        {% csrf_token %}
+        {{ form }}
         <input type="submit" value="Update">
     </form>
 {% endblock %}

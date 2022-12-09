@@ -38,4 +38,7 @@ def add_song(request):
 @login_required(login_url="/accounts/login/")
 def edit_song(request, slug):
     song = Song.objects.get(slug=slug)
-    return render(request, 'songs/edit_song.html', {'song': song})
+    form = forms.SongForm(instance=song)
+    return render(request, 'songs/edit_song.html', {
+        'song': song,
+        'form': form})
