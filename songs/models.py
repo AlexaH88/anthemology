@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 
 class Song(models.Model):
-    slug = models.SlugField()
+    slug = models.SlugField(unique=True)
     title = models.CharField(max_length=100)
     artist = models.CharField(max_length=100)
     album = models.CharField(max_length=100)
