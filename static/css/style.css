@@ -86,11 +86,24 @@ nav button {
 /* main pages */
 .songs {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .song {
     padding: 20px;
+    margin: 10px;
+    border: solid 4px #34afa5;
+    height: 300px;
+    width: 300px;
+}
+
+.song img {
+    height: 100px;
+    width: 100px;
+}
+
+.song:hover {
+    border: solid 4px black;
 }
 
 /* footer */

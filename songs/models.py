@@ -8,7 +8,7 @@ class Song(models.Model):
     artist = models.CharField(max_length=100)
     album = models.CharField(max_length=100)
     lyrics = models.TextField()
-    artwork = models.ImageField(default='default.png', blank=True)
+    artwork = models.ImageField(upload_to='', default='default.jpg', blank=True)
     date = models.DateTimeField(auto_now_add=True)
     author = models.ForeignKey(User, default=None, on_delete=models.CASCADE)
 
