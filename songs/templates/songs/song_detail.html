@@ -2,13 +2,14 @@
 
 {% block content %}
     <div class="song-detail">
-        <div class="song">
+        <div class="song-overview">
             <img src="{{ song.artwork.url }}" alt="default artwork image of vinyl graphic">
             <h3>{{ song.title }}</h3>
             <p>Artist: {{ song.artist }}</p>
             <p>Album: {{ song.album }}</p>
-            <p>Added On: {{ song.date }}</p>
-            <p>Added By: {{ song.author }}</p>
+            <p>Added By: {{ song.author }} on {{ song.date }}</p>
+        </div>
+        <div class="song-lyrics">
             <p>{{ song.lyrics }}</p>
         </div>
     </div>

@@ -1,10 +1,12 @@
 {% extends 'base_layout.html' %}
 
 {% block content %}
-    <h2>Song List</h2>
-    <button>
-        <a href="{% url 'songs:add' %}">Add Song</a>
-    </button>
+    <div class="page-header">
+        <h2 class="page-header-title">Song Selection</h2>
+        <button class="page-header-item">
+            <a href="{% url 'songs:add' %}">Add Song</a>
+        </button>
+    </div>
     <div class="songs">
         {% for song in songs %}
         <div class="song">
