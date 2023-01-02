@@ -21,33 +21,33 @@
 
 <body>
     <!-- header -->
-    <header class="wrapper">
+    <header>
         <!-- site logo -->
-        <a href="{% url 'home' %}" aria-label="Link to the site's homepage">
+        <a class="header-item" href="{% url 'home' %}" aria-label="Link to the site's homepage">
             <h1><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i> Anthemology</h1>
         </a>
         <!-- navigation links -->
-        <nav id="site-nav">
+        <nav class="header-item">
             <ul>
                 <!-- link to homepage (song list) -->
-                <li class="nav-list">
+                <li>
                     <a href="{% url 'songs:song_list' %}">Songs</a>
                 </li>
                 <!-- link to about page -->
-                <li class="nav-list">
+                <li>
                     <a href="{% url 'about' %}">About</a>
                 </li>
                 {% if user.is_authenticated %}
                     <!-- link to user's songs -->
-                    <li class="nav-list">
+                    <li>
                         <a href="{% url 'songs:user_songs' %}">My Songs</a>
                     </li>
                     <!-- link to account -->
-                    <li class="nav-list">
+                    <li>
                         <a href="{% url 'accounts:profile' %}">Account</a>
                     </li>
                     <!-- link to log out -->
-                    <li class="nav-list">
+                    <li>
                         <form action="{% url 'accounts:logout' %}" method="post">
                             {% csrf_token %}
                             <button type="submit">Logout</button>
@@ -55,11 +55,11 @@
                     </li>
                 {% else %}
                     <!-- link to sign up -->
-                    <li class="nav-list">
+                    <li>
                         <a href="{% url 'accounts:signup' %}">Signup</a>
                     </li>
                     <!-- link to log in -->
-                    <li class="nav-list">
+                    <li>
                         <a href="{% url 'accounts:login' %}">Login</a>
                     </li>
                 {% endif %}
@@ -75,7 +75,7 @@
     </main>
 
     <!-- footer -->
-    <footer class="wrapper">
+    <footer>
         <ul>
             <!-- site name -->
             <li>Anthemology &copy;</li>
