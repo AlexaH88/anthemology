@@ -177,11 +177,12 @@ textarea {
 }
 
 .jukebox {
-    padding: 20px;
-    border: solid 4px #34afa5;
-    border-radius: 5px;
-    display: grid;
-    grid-template-rows: auto 1fr;
+    padding: 50px;
+    border: solid 10px black;
+    border-radius: 100px 100px 10px 10px;
+    width: fit-content;
+    margin: auto;
+    background: #34afa5;
 }
 
 .jukebox-item {
@@ -189,6 +190,14 @@ textarea {
     grid-template-rows: auto;
     gap: 10px;
     justify-items: center;
+}
+
+.jukebox-song {
+    border: 4px solid;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    background: white;
 }
 
 /* jukebox animation code taken from css tricks --> more info in README */
@@ -203,7 +212,7 @@ textarea {
     border-radius: 50%;
     position: relative;
     clip-path: circle(49.5%);
-    /* to avoid a few glitch cause by overflow: hidden */
+    background: black;
 }
 
 .jukebox-image::after {
@@ -212,7 +221,7 @@ textarea {
     inset: 0;
     padding: inherit;
     border-radius: inherit;
-    background: repeating-conic-gradient(#34afa5 0 30deg, #34afa5 0 60deg);
+    background: repeating-conic-gradient(black 0 30deg, black 0 60deg);
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
