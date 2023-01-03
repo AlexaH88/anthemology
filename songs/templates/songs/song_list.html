@@ -10,9 +10,9 @@
     <div class="songs">
         {% for song in songs %}
         <div class="song">
-            <a href="{% url 'songs:detail' slug=song.slug %}">
+            <a class="song-card" href="{% url 'songs:detail' slug=song.slug %}">
                 <img src="{{ song.artwork.url }}" alt="default artwork image of vinyl graphic">
-                <h3>{{ song.title }}</h3>
+                <h3 class="song-card-header">{{ song.title }}</h3>
                 <p>Artist: {{ song.artist }}</p> 
             </a>
         </div>

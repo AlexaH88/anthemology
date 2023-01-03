@@ -1,5 +1,5 @@
 /* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300&display=swap');
 
 /* full site styles */
 * {
@@ -8,7 +8,7 @@
 }
 
 body * {
-    font-family: 'Kalam', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: black;
 }
@@ -26,6 +26,7 @@ h2,
 h3, 
 h4 {
     font-family: 'Righteous', sans-serif;
+    font-size: 25px;
 }
 
 a {
@@ -59,11 +60,11 @@ header {
 }
 
 header h1 {
-    font-size: 2.4em;
+    font-size: 260%;
 }
 
 header h1 i {
-    font-size: 0.9em;
+    font-size: 82%;
 }
 
 nav {
@@ -76,7 +77,10 @@ nav li {
     display: inline-block;
     list-style-type: none;
     margin-left: 20px;
-    font-size: 1.4em;
+}
+
+nav li a {
+    font-size: 120%;
 }
 
 nav button {
@@ -84,7 +88,9 @@ nav button {
     cursor: pointer;
     border: 3px solid;
     border-radius: 25px;
-    font-size: 1em;
+    font-size: 120%;
+    padding: 8px;
+    font-weight: bold;
 }
 
 nav button:hover {
@@ -95,16 +101,22 @@ nav button:hover {
 button {
     border: solid #34afa5;;
     border-radius: 25px;
-    padding: 5px;
+    padding: 10px;
     background-color: #34afa5;
+}
+
+button a {
+    font-size: 90%;
+    font-weight: bold;
 }
 
 .button {
     border: solid #34afa5;;
     border-radius: 25px;
-    padding: 5px;
+    padding: 10px;
     background-color: #34afa5;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .button:hover {
@@ -167,8 +179,6 @@ input {
     padding: 20px;
     border: solid 4px #34afa5;
     border-radius: 5px;
-    min-height: 300px;
-    min-width: 300px;
 }
 
 .song img {
@@ -199,6 +209,17 @@ input {
 .song-lyrics {
     background: #34afa5;
     border-radius: 0px 5px 5px 0px;
+}
+
+.song-card {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.song-card-header {
+    font-family: 'Righteous', sans-serif;
+    font-size: 25px;
 }
 
 /* footer */
