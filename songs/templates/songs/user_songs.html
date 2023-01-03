@@ -1,10 +1,12 @@
 {% extends 'base_layout.html' %}
 
 {% block content %}
-    <h2>{{ request.user }}'s Songs</h2>
-    <button>
-        <a href="{% url 'songs:add' %}">Add Song</a>
-    </button>
+    <div class="page-header">
+        <h2 class="page-header-title">{{ request.user }}'s Songs</h2>
+        <button class="page-header-item">
+            <a href="{% url 'songs:add' %}">Add Song</a>
+        </button>
+    </div>
     {% if user_songs %}
         <div class="songs">
             {% for user_song in user_songs %}
