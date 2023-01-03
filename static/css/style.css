@@ -41,6 +41,8 @@ a:hover {
     margin: 0 auto;
     padding: 20px 0px;
     width: 98vw;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 /* header */
@@ -127,6 +129,7 @@ nav button {
 .song-detail {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    height: 100vh;
 }
 
 .song-overview,
@@ -150,6 +153,8 @@ footer {
     min-height: 50px;
     width: 100%;
     background-color: #34afa5;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 footer ul {
