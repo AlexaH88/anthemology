@@ -176,6 +176,12 @@ textarea {
     display: grid;
 }
 
+.page-content {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 60px;
+}
+
 .jukebox {
     padding: 50px;
     border: solid 10px black;
@@ -187,8 +193,8 @@ textarea {
 
 .jukebox-item {
     display: grid;
-    grid-template-rows: auto;
-    gap: 10px;
+    grid-template-rows: auto 1fr;
+    gap: 40px;
     justify-items: center;
 }
 
