@@ -22,8 +22,8 @@ body {
 }
 
 h1,
-h2, 
-h3, 
+h2,
+h3,
 h4 {
     font-family: 'Righteous', sans-serif;
     font-size: 25px;
@@ -99,7 +99,8 @@ nav button:hover {
 
 /* main pages */
 button {
-    border: solid #34afa5;;
+    border: solid #34afa5;
+    ;
     border-radius: 25px;
     padding: 10px;
     background-color: #34afa5;
@@ -111,7 +112,8 @@ button a {
 }
 
 .button {
-    border: solid #34afa5;;
+    border: solid #34afa5;
+    ;
     border-radius: 25px;
     padding: 10px;
     background-color: #34afa5;
@@ -174,6 +176,104 @@ textarea {
     display: grid;
 }
 
+.jukebox {
+    padding: 20px;
+    border: solid 4px #34afa5;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.jukebox-item {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
+    justify-items: center;
+}
+
+/* jukebox animation code taken from css tricks --> more info in README */
+.jukebox-image {
+    --s: 280px;
+
+    display: grid;
+    width: var(--s);
+    aspect-ratio: 1;
+    overflow: hidden;
+    padding: calc(var(--s)/20);
+    border-radius: 50%;
+    position: relative;
+    clip-path: circle(49.5%);
+    /* to avoid a few glitch cause by overflow: hidden */
+}
+
+.jukebox-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: inherit;
+    border-radius: inherit;
+    background: repeating-conic-gradient(#34afa5 0 30deg, #34afa5 0 60deg);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.jukebox-image>img {
+    grid-area: 1/1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    transform-origin: 50% 120.7%;
+}
+
+.jukebox-image::after,
+.jukebox-image>img {
+    animation: m 8s infinite cubic-bezier(.5, -0.2, .5, 1.2);
+}
+
+.jukebox-image>img:nth-child(2) {
+    animation-delay: -2s
+}
+
+.jukebox-image>img:nth-child(3) {
+    animation-delay: -4s
+}
+
+.jukebox-image>img:nth-child(4) {
+    animation-delay: -6s
+}
+
+@keyframes m {
+
+    0%,
+    3% {
+        transform: rotate(0)
+    }
+
+    22%,
+    27% {
+        transform: rotate(-90deg)
+    }
+
+    47%,
+    52% {
+        transform: rotate(-180deg)
+    }
+
+    72%,
+    77% {
+        transform: rotate(-270deg)
+    }
+
+    98%,
+    100% {
+        transform: rotate(-360deg)
+    }
+}
+
 .songs {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -187,8 +287,7 @@ textarea {
 }
 
 .song img {
-    min-height: 100px;
-    min-width: 100px;
+    width: 50%;
 }
 
 .song:hover {
@@ -220,6 +319,7 @@ textarea {
     display: grid;
     grid-template-rows: auto;
     gap: 10px;
+    justify-items: center;
 }
 
 .song-card-header {
