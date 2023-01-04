@@ -180,7 +180,7 @@ textarea {
 .page-content {
     display: grid;
     grid-template-rows: auto auto;
-    gap: 60px;
+    gap: 20px;
 }
 
 .songs {
@@ -205,19 +205,22 @@ textarea {
     height: 100vh;
 }
 
-.song-overview,
+.song-overview-jukebox,
 .song-lyrics {
     padding: 20px;
 }
 
-.song-overview {
-    border: solid 4px #34afa5;
-    border-radius: 5px 0px 0px 5px;
+.song-overview-jukebox {
+    padding: 50px;
+    border: solid 10px black;
+    border-radius: 100px 100px 10px 10px;
+    background: #34afa5;
 }
 
 .song-lyrics {
-    background: #34afa5;
-    border-radius: 0px 5px 5px 0px;
+    display: grid;
+    justify-items: center;
+    font-weight: bold;
 }
 
 .song-card,

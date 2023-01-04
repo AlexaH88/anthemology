@@ -1,16 +1,33 @@
 {% extends 'base_layout.html' %}
 
+{% load static %}
+
 {% block content %}
-    <div class="song-detail">
-        <div class="song-overview">
-            <img src="{{ song.artwork.url }}" alt="default artwork image of vinyl graphic">
-            <h3>{{ song.title }}</h3>
-            <p>Artist: {{ song.artist }}</p>
-            <p>Album: {{ song.album }}</p>
-            <p>Added By: {{ song.author }} on {{ song.date }}</p>
-        </div>
-        <div class="song-lyrics">
-            <p>{{ song.lyrics }}</p>
+    <div class="page-header">
+        <h2 class="page-header-title">Song Detail</h2>
+    </div>
+    <div class="page-content">
+        <div class="song-detail">
+            <div class="song-overview-jukebox">
+                <div class="jukebox-item">
+                    <div class="jukebox-image">
+                        <img src="{% static 'images/default.png' %}" alt="default artwork image of vinyl graphic">
+                        <img src="{% static 'images/default.png' %}" alt="default artwork image of vinyl graphic">
+                        <img src="{% static 'images/default.png' %}" alt="default artwork image of vinyl graphic">
+                        <img src="{% static 'images/default.png' %}" alt="default artwork image of vinyl graphic">
+                    </div>
+                </div>
+                <div class="jukebox-item jukebox-song">
+                    <h3>{{ song.title }}</h3>
+                    <p>Artist: {{ song.artist }}</p>
+                    <p>Album: {{ song.album }}</p>
+                    <p>Added By: {{ song.author }}</p>
+                    <p>Added On: {{ song.date }}</p>
+                </div>
+            </div>
+            <div class="song-lyrics">
+                <p>{{ song.lyrics }}</p>
+            </div>
         </div>
     </div>
 {% endblock %}
