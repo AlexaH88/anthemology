@@ -202,7 +202,7 @@ textarea {
 .song-detail {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    height: 100vh;
+    gap: 20px;
 }
 
 .song-overview-jukebox,
@@ -221,6 +221,14 @@ textarea {
     display: grid;
     justify-items: center;
     font-weight: bold;
+    line-height: 260%;
+    white-space: pre-line;
+    overflow-y: auto;
+    height: 1000px;
+}
+
+.song-lyrics p {
+    font-size: 110%;
 }
 
 .song-card,
