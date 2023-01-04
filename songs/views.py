@@ -4,6 +4,11 @@ from django.contrib.auth.decorators import login_required
 from . import forms
 
 
+def song_jukebox(request):
+    songs = Song.objects.all().order_by('artist')
+    return render(request, 'songs/song_jukebox.html', {'songs': songs})
+
+
 def song_list(request):
     songs = Song.objects.all().order_by('artist')
     return render(request, 'songs/song_list.html', {'songs': songs})

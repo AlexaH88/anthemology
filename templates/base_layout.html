@@ -29,9 +29,13 @@
         <!-- navigation links -->
         <nav class="header-item">
             <ul>
-                <!-- link to homepage (song list) -->
+                <!-- link to homepage -->
                 <li>
-                    <a href="{% url 'songs:song_list' %}">Songs</a>
+                    <a href="{% url 'songs:song_jukebox' %}">Home</a>
+                </li>
+                <!-- link to song list -->
+                <li>
+                    <a href="{% url 'songs:song_list' %}">Song List</a>
                 </li>
                 <!-- link to about page -->
                 <li>

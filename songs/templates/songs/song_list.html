@@ -4,35 +4,16 @@
 
 {% block content %}
     <div class="page-header">
-        <h2 class="page-header-title">Song Selection</h2>
+        <h2 class="page-header-title">Song List</h2>
         <button class="page-header-item">
             <a href="{% url 'songs:add' %}">Add Song</a>
         </button>
     </div>
     <div class="page-content">
-        <div class="jukebox">
-            <div class="jukebox-item">
-                <div class="jukebox-image">
-                    <img src="{% static 'images/default.png' %}" alt="default artwork image of vinyl graphic">
-                    <img src="{% static 'images/default.png' %}" alt="default artwork image of vinyl graphic">
-                    <img src="{% static 'images/default.png' %}" alt="default artwork image of vinyl graphic">
-                    <img src="{% static 'images/default.png' %}" alt="default artwork image of vinyl graphic">
-                </div>
-            </div>
-            {% for song in songs %}
-                <div class="jukebox-item">
-                    <a class="jukebox-song" href="{% url 'songs:detail' slug=song.slug %}">
-                        <h3>{{ song.title }}</h3>
-                        <p>Artist: {{ song.artist }}</p> 
-                    </a>
-                </div>
-            {% endfor %}
-        </div>
         <div class="songs">
             {% for song in songs %}
             <div class="song">
                 <a class="song-card" href="{% url 'songs:detail' slug=song.slug %}">
-                    <img src="{% static 'images/default.png' %}" alt="default artwork image of vinyl graphic">
                     <h3 class="song-card-header">{{ song.title }}</h3>
                     <p>Artist: {{ song.artist }}</p> 
                 </a>
