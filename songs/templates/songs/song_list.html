@@ -14,7 +14,7 @@
             {% for song in songs %}
             <div class="song">
                 <a class="song-card" href="{% url 'songs:detail' slug=song.slug %}">
-                    <h3 class="song-card-header">{{ song.title }}</h3>
+                    <h3>{{ song.title }}</h3>
                     <p>Artist: {{ song.artist }}</p> 
                 </a>
             </div>

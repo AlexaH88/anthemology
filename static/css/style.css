@@ -199,22 +199,6 @@ textarea {
     border: solid 4px black;
 }
 
-.jukebox-songs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.jukebox-song {
-    padding: 20px;
-    border: solid 4px black;
-    border-radius: 5px;
-}
-
-.jukebox-song:hover {
-    border: solid 4px white;
-}
-
 .song-detail {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -236,16 +220,12 @@ textarea {
     border-radius: 0px 5px 5px 0px;
 }
 
-.song-card {
+.song-card,
+.song-card a {
     display: grid;
     grid-template-rows: auto;
     gap: 10px;
     justify-items: center;
-}
-
-.song-card-header {
-    font-family: 'Righteous', sans-serif;
-    font-size: 25px;
 }
 
 .jukebox {
@@ -262,6 +242,23 @@ textarea {
     grid-template-rows: auto 1fr;
     gap: 40px;
     justify-items: center;
+}
+
+.jukebox-songs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.jukebox-song {
+    padding: 20px;
+    border: solid 4px black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.jukebox-song:hover {
+    border: solid 4px white;
 }
 
 /* jukebox animation code taken from css tricks --> more info in README */
