@@ -1,0 +1,17 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+    <div class="page-header">
+        <h2 class="page-header-title">Your Search Results</h2>
+    </div>
+    <div class="page-content">
+        {% if searched %}
+            {% for song in songs %}
+                {{ song }}
+                {{ song.title }}
+            {% endfor %}
+        {% else %}
+            <p>The song you searched doesn't exist.</p>
+        {% endif %}
+    </div>
+{% endblock %}

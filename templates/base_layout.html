@@ -42,6 +42,13 @@
                 <li>
                     <a href="{% url 'about' %}">About</a>
                 </li>
+                <li>
+                    <form method="post" action="{% url 'song_search' %}">
+                        {% csrf_token %}
+                        <input type="search" placeholder="Search Songs" name="searched" aria-label="Song Search Bar">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
                 {% if user.is_authenticated %}
                     <!-- link to user's songs -->
                     <li>
