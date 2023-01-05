@@ -99,9 +99,15 @@ nav button:hover {
 }
 
 /* main pages */
+.alert {
+    border: solid #34afa5;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(52,175,165, 0.4)
+}
+
 button {
     border: solid #34afa5;
-    ;
     border-radius: 25px;
     padding: 10px;
     background-color: #34afa5;
