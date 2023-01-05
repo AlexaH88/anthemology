@@ -203,11 +203,7 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 20px;
-}
-
-.song-overview-jukebox,
-.song-lyrics {
-    padding: 20px;
+    cursor: default;
 }
 
 .song-overview-jukebox {
@@ -215,6 +211,13 @@ textarea {
     border: solid 10px black;
     border-radius: 100px 100px 10px 10px;
     background: #34afa5;
+}
+
+.song-info {
+    padding: 20px;
+    border: solid 4px black;
+    border-radius: 5px;
+    background-color: white;
 }
 
 .song-lyrics {

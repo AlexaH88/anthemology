@@ -20,7 +20,7 @@
                 <div class="jukebox-songs">
                     {% for song in songs %}
                     <div class="jukebox-song">
-                        <a class="jukebox-song-card" href="{% url 'songs:detail' slug=song.slug %}">
+                        <a href="{% url 'songs:detail' slug=song.slug %}">
                             <h3>{{ song.title }}</h3>
                             <p>Artist: {{ song.artist }}</p> 
                         </a>
