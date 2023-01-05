@@ -10,7 +10,10 @@ def about(request):
 def song_search(request):
     if request.method == 'POST':
         searched = request.POST['searched']
-        songs = Song.objects.filter(title__contains=searched)
+        songs = Song.objects.filter(
+            Q(title__icontains=searched) |
+            Q(artist__icontains=searched) |
+            Q(album__icontains=searched))
         return render(
             request, 'song_search.html', {
                 'searched': searched,
