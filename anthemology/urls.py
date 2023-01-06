@@ -7,7 +7,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
     path('songs/', include('songs.urls')),
-    path('', song_views.song_jukebox, name="home"),
+    path('', views.home, name="home"),
     path('about/', views.about, name="about"),
     path('song-search/', views.song_search, name="song_search"),
 ]

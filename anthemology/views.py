@@ -3,6 +3,10 @@ from django.db.models import Q
 from songs.models import Song
 
 
+def home(request):
+    return render(request, 'home.html')
+
+
 def about(request):
     return render(request, 'about.html')
 
