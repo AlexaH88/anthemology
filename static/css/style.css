@@ -82,6 +82,7 @@ nav li {
 
 nav li a {
     font-size: 120%;
+    font-family: 'Righteous', sans-serif;
 }
 
 nav button {
@@ -383,4 +384,18 @@ footer ul {
 footer li {
     list-style-type: none;
     font-weight: bold;
+}
+
+#footer-logo {
+    font-family: 'Righteous', sans-serif;
+    font-size: 110%;
+}
+
+#footer-copyright {
+    font-weight: bold;
+    font-size: small;
+}
+
+#footer-text {
+    font-size: 90%;
 }
