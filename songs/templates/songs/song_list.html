@@ -3,14 +3,9 @@
 {% load static %}
 
 {% block content %}
-    <section>
-        <div class="main-page-item">
-            <img class="hero-image" src="{% static 'images/home.png' %}" alt="Blue and orange vinyl on record player">
-        </div>
-    </section>
-    <section class="hero-page-wrapper">
+    <section class="wrapper">
         <div class="page-header">
-            <h2 class="page-header-title">Song List</h2>
+            <h2 class="page-header-title">Songs</h2>
             <button class="page-header-item">
                 <a href="{% url 'songs:add' %}">Add Song</a>
             </button>
