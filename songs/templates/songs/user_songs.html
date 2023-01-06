@@ -11,10 +11,10 @@
             </button>
         </div>
         {% if user_songs %}
-            <div class="songs">
+            <div class="user-songs">
                 {% for user_song in user_songs %}
-                <div class="song">
-                    <div class="song-card">
+                <div class="user-song">
+                    <div class="user-song-card">
                         <a href="{% url 'songs:detail' slug=user_song.slug %}">
                             <h3>{{ user_song.title }}</h3>
                             <p>Artist: {{ user_song.artist }}</p>

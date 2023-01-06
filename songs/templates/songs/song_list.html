@@ -10,17 +10,27 @@
                 <a href="{% url 'songs:add' %}">Add Song</a>
             </button>
         </div>
-        <div class="page-content">
-            <div class="songs">
-                {% for song in songs %}
+        <div class="songs">
+            <h2 class="song-title">By Title</h2>
+            <h2 class="song-title">By Artist</h2>
+            <h2 class="song-title">By Album</h2>
+            {% for song in songs %}
                 <div class="song">
-                    <a class="song-card" href="{% url 'songs:detail' slug=song.slug %}">
-                        <h3>{{ song.title }}</h3>
-                        <p>Artist: {{ song.artist }}</p> 
+                    <a href="{% url 'songs:detail' slug=song.slug %}">
+                        {{ song.title }}
                     </a>
                 </div>
-                {% endfor %}
-            </div>
+                <div class="song">
+                    <a href="{% url 'songs:detail' slug=song.slug %}">
+                        {{ song.artist }}
+                    </a>
+                </div>
+                <div class="song">
+                    <a href="{% url 'songs:detail' slug=song.slug %}">
+                        {{ song.album }}
+                    </a>
+                </div>
+            {% endfor %}
         </div>
     </section>
 {% endblock %}

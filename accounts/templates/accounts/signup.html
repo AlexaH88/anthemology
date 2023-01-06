@@ -5,7 +5,7 @@
         <div class="page-header">
             <h2 class="page-header-title">Signup</h2>
         </div>
-        <div class="page-content">
+        <div>
             <form class="site-form" action="{% url 'accounts:signup' %}" method="post">
                 {% csrf_token %}
                 {{ form }}

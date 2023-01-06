@@ -141,7 +141,7 @@ main {
     width: 98vw;
     grid-row-start: 1;
     grid-row-end: 2;
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0px;
 }
 
 .hero-page-wrapper {
@@ -281,24 +281,58 @@ textarea {
 
 .page-content {
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
     gap: 20px;
 }
 
 .songs {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    border: solid 4px #34afa5;
+    border-radius: 5px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.song-title {
+    border-bottom: solid 4px #34afa5;
+}
+
+.song {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    justify-self: center;
+}
+
+.song a:hover {
+    color: #34afa5;
+    font-weight: bold;
+}
+
+.user-songs {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
 
-.song {
+.user-song {
     padding: 20px;
     border: solid 4px #34afa5;
     border-radius: 5px;
 }
 
-.song:hover {
+.user-song:hover {
     border: solid 4px black;
+}
+
+.user-song-card,
+.user-song-card a {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
+    justify-items: center;
 }
 
 .song-detail {
@@ -334,14 +368,6 @@ textarea {
 
 .song-lyrics p {
     font-size: 110%;
-}
-
-.song-card,
-.song-card a {
-    display: grid;
-    grid-template-rows: auto;
-    gap: 10px;
-    justify-items: center;
 }
 
 .jukebox {
