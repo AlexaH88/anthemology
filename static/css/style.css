@@ -43,12 +43,20 @@ header {
     min-height: 50px;
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     background-color: #34afa5;
 }
 
 .header-item {
     padding: 20px;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    align-content: center;
+}
+
+#header-logo {
+    margin: 0px 0px -10px 0px;
 }
 
 header h1 {
@@ -63,6 +71,10 @@ nav {
     justify-self: end;
     align-self: center;
     display: grid;
+}
+
+nav ul {
+    justify-self: end;
 }
 
 nav li {
@@ -89,6 +101,31 @@ nav button {
 
 nav button:hover {
     color: white;
+}
+
+.nav-search-bar {
+    font-size: 75%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    justify-self: end;
+}
+
+.nav-search-bar input {
+    padding: 6px;
+    border: solid 3px black;
+    border-radius: 5px;
+    height: fit-content;
+    font-size: 100%;
+}
+
+.nav-search-bar button {
+    border: solid black;
+    border-radius: 25px;
+    padding: 0px 10px;
+    background-color: black;
+    color: white;
+    font-size: 100%;
 }
 
 /* main pages */
@@ -136,21 +173,24 @@ main {
     border-radius: 5px;
 }
 
-.search-bar {
+.homepage-search-bar {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-.search-bar input {
+.homepage-search-bar input {
     padding: 6px;
     border: solid 3px black;
     border-radius: 5px;
     font-size: 110%;
 }
 
-.search-bar button {
+.homepage-search-bar button {
     border: solid black;
     border-radius: 25px;
     padding: 10px;

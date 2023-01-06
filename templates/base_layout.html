@@ -24,7 +24,7 @@
     <!-- header -->
     <header>
         <!-- site logo -->
-        <a class="header-item" href="{% url 'home' %}" aria-label="Link to the site's homepage">
+        <a class="header-item" id="header-logo" href="{% url 'home' %}" aria-label="Link to the site's homepage">
             <h1><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i> Anthemology</h1>
         </a>
         <!-- navigation links -->
@@ -41,14 +41,6 @@
                 <!-- link to about page -->
                 <li>
                     <a href="{% url 'about' %}">About</a>
-                </li>
-                <!-- search bar -->
-                <li>
-                    <form method="post" action="{% url 'song_search' %}">
-                        {% csrf_token %}
-                        <input type="search" placeholder="Search Songs" name="searched" aria-label="Song Search Bar">
-                        <button type="submit">Search</button>
-                    </form>
                 </li>
                 {% if user.is_authenticated %}
                     <!-- link to user's songs -->
@@ -76,6 +68,16 @@
                         <a href="{% url 'accounts:login' %}">Login</a>
                     </li>
                 {% endif %}
+            </ul>
+            <ul>
+                <!-- search bar -->
+                <li>
+                    <form class="nav-search-bar" method="post" action="{% url 'song_search' %}">
+                        {% csrf_token %}
+                        <input type="search" placeholder="Search Songs" name="searched" aria-label="Song Search Bar">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
             </ul>
         </nav>
     </header>
