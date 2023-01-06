@@ -1,17 +1,19 @@
 {% extends 'base_layout.html' %}
 
 {% block content %}
-    <div class="page-header">
-        <h2 class="page-header-title">Login</h2>
-    </div>
-    <div>
-        <form class="site-form" action="{% url 'accounts:login' %}" method="post">
-            {% csrf_token %}
-            {{ form }}
-            {% if request.GET.next %}
-                <input type="hidden" name="next" value="{{ request.GET.next }}">
-            {% endif %}
-            <input class="button" type="submit" value="Login">
-        </form>
-    </div>
+    <section class="wrapper">
+        <div class="page-header">
+            <h2 class="page-header-title">Login</h2>
+        </div>
+        <div>
+            <form class="site-form" action="{% url 'accounts:login' %}" method="post">
+                {% csrf_token %}
+                {{ form }}
+                {% if request.GET.next %}
+                    <input type="hidden" name="next" value="{{ request.GET.next }}">
+                {% endif %}
+                <input class="button" type="submit" value="Login">
+            </form>
+        </div>
+    </section>
 {% endblock %}

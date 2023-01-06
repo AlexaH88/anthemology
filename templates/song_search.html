@@ -1,26 +1,28 @@
 {% extends 'base_layout.html' %}
 
 {% block content %}
-    <div class="page-header">
-        <h2 class="page-header-title">Your Search Results</h2>
-    </div>
-    <div class="page-content">
-        {% if searched %}
-            <div class="songs">
-                {% for song in songs %}
-                    <div class="song">
-                        <a class="song-card" href="{% url 'songs:detail' slug=song.slug %}">
-                            <h3>{{ song.title }}</h3>
-                            <p>Artist: {{ song.artist }}</p>
-                            <p>Album: {{ song.album }}</p>
-                        </a>
-                    </div>
-                {% endfor %}
-            </div>
-        {% else %}
-        <div class="alert">
-            <p>No song could be found. Please try again.</p>
+    <section class="wrapper">
+        <div class="page-header">
+            <h2 class="page-header-title">Your Search Results</h2>
         </div>
-        {% endif %}
-    </div>
+        <div>
+            {% if searched %}
+                <div class="songs">
+                    {% for song in songs %}
+                        <div class="song">
+                            <a class="song-card" href="{% url 'songs:detail' slug=song.slug %}">
+                                <h3>{{ song.title }}</h3>
+                                <p>Artist: {{ song.artist }}</p>
+                                <p>Album: {{ song.album }}</p>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+            <div class="alert">
+                <p>No song could be found. Please try again.</p>
+            </div>
+            {% endif %}
+        </div>
+    </section>
 {% endblock %}

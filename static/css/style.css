@@ -40,7 +40,14 @@ a:hover {
 
 .wrapper {
     margin: 0 auto;
-    padding: 20px 0px;
+    width: 98vw;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 20px 0px 0px 0px;
+}
+
+.hero-page-wrapper {
+    margin: 0 auto;
     width: 98vw;
     grid-row-start: 2;
     grid-row-end: 3;
@@ -100,6 +107,20 @@ nav button:hover {
 }
 
 /* main pages */
+main {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.main-page-item {
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+}
+
 .alert {
     border: solid #34afa5;
     border-radius: 5px;
@@ -116,7 +137,7 @@ button {
 
 button a {
     font-size: 90%;
-    font-weight: bold;
+    font-family: 'Righteous', sans-serif;
 }
 
 .button {
@@ -172,7 +193,7 @@ textarea {
 .page-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0px 0px 20px;
+    padding: 0px 0px 20px 0px;
 }
 
 .page-header-title {

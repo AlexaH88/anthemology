@@ -1,12 +1,14 @@
 {% extends 'base_layout.html' %}
 
 {% block content %}
-    <div class="page-header">
-        <h2 class="page-header-title">Edit Song</h2>
-    </div>
-    <form class="site-form" action="{% url 'songs:edit' slug=song.slug %}" method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form }}
-        <input class="button" type="submit" value="Update">
-    </form>
+    <section class="wrapper">
+        <div class="page-header">
+            <h2 class="page-header-title">Edit Song</h2>
+        </div>
+        <form class="site-form" action="{% url 'songs:edit' slug=song.slug %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form }}
+            <input class="button" type="submit" value="Update">
+        </form>
+    </section>
 {% endblock %}

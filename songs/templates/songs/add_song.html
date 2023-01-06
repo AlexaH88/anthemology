@@ -1,12 +1,14 @@
 {% extends 'base_layout.html' %}
 
 {% block content %}
-    <div class="page-header">
-        <h2 class="page-header-title">Add A Song</h2>
-    </div>
-    <form class="site-form" action="{% url 'songs:add' %}" method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form }}
-        <input class="button" type="submit" value="Add">
-    </form>
+    <section class="wrapper">
+        <div class="page-header">
+            <h2 class="page-header-title">Add A Song</h2>
+        </div>
+        <form class="site-form" action="{% url 'songs:add' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form }}
+            <input class="button" type="submit" value="Add">
+        </form>
+    </section>
 {% endblock %}

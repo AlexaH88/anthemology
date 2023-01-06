@@ -1,10 +1,19 @@
 {% extends 'base_layout.html' %}
 
+{% load static %}
+
 {% block content %}
-    <div class="page-header">
-        <h2 class="page-header-title">About Anthemology</h2>
-    </div>
-    <div>
-        <p>About text</p>
-    </div>
+    <section>
+        <div class="main-page-item">
+            <img class="hero-image" src="{% static 'images/home.png' %}" alt="Blue and orange vinyl on record player">
+        </div>
+    </section>
+    <section class="hero-page-wrapper">
+        <div class="page-header">
+            <h2 class="page-header-title">About Anthemology</h2>
+        </div>
+        <div class="page-content">
+            <p>About text</p>
+        </div>
+    </section>
 {% endblock %}
