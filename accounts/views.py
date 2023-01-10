@@ -11,6 +11,7 @@ def signup_view(request):
             user = form.save()
             # log the user in
             login(request, user)
+            messages.success(request, "You have successfully signed up!")
             return redirect('accounts:profile')
     else:
         form = UserCreationForm()
@@ -31,7 +32,6 @@ def login_view(request):
                 return redirect('accounts:profile')
     else:
         form = AuthenticationForm()
-    messages.error(request, "Couldn't log you in. Please try again.")
     return render(request, 'accounts/login.html', {'form': form})
 
 
@@ -42,6 +42,5 @@ def profile_view(request):
 def logout_view(request):
     if request.method == 'POST':
         logout(request)
-        # return render(request, 'accounts/logout.html')
-        # return redirect('accounts/logout.html')
-        return redirect('songs:song_list')
+        messages.success(request, "You have successfully logged out!")
+        return render(request, 'accounts/logout.html')
