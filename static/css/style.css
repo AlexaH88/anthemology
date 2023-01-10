@@ -314,7 +314,7 @@ textarea {
     gap: 20px;
 }
 
-.songs {
+.song-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -324,47 +324,47 @@ textarea {
     justify-items: center;
 }
 
-.song-title {
+.song-list-title {
     border-bottom: solid 4px #34afa5;
 }
 
-.song {
+.song-list-item {
     display: grid;
     grid-template-columns: auto;
     gap: 20px;
     justify-self: center;
 }
 
-.song a:hover {
+.song-list-item a:hover {
     color: #34afa5;
     font-weight: bold;
 }
 
-.user-songs {
+.songs {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
 
-.user-song {
+.song {
     padding: 20px;
     border: solid 4px #34afa5;
     border-radius: 5px;
 }
 
-.user-song:hover {
+.song:hover {
     border: solid 4px black;
 }
 
-.user-song-card,
-.user-song-card a {
+.song-card,
+.song-card a {
     display: grid;
     grid-template-rows: auto;
     gap: 10px;
     justify-items: center;
 }
 
-.user-song-buttons {
+.song-buttons {
     margin: 0px 2.5px;
 }
 
