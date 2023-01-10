@@ -31,6 +31,7 @@ def login_view(request):
                 return redirect('accounts:profile')
     else:
         form = AuthenticationForm()
+    messages.error(request, "Couldn't log you in. Please try again.")
     return render(request, 'accounts/login.html', {'form': form})
 
 

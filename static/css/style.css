@@ -272,13 +272,25 @@ textarea {
     display: none;
 }
 
-.site-form span,
-.site-form li {
-    font-size: 1rem;
+.helptext, 
+.errorlist,
+.nonfield {
+    border: solid #34afa5;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(52,175,165, 0.4);
+    list-style: none;
+    margin: 20px 0px 0px 0px;
+    font-size: 75%;
 }
 
-.site-form ul {
-    margin: 0px 0px 0px 20px;
+.helptext span,
+.helptext ul,
+.helptext li,
+.errorlist li,
+.nofield li {
+    list-style: none;
+    font-size: 100%;
 }
 
 .page-header {
