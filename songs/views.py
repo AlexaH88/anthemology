@@ -31,6 +31,7 @@ def add_song(request):
             instance = form.save(commit=False)
             instance.author = request.user
             instance.save()
+            messages.success(request, "Your song has been added!")
             return redirect('songs:song_list')
     else:
         form = forms.SongForm()
@@ -43,6 +44,7 @@ def edit_song(request, slug):
     form = forms.SongForm(request.POST, instance=song)
     if form.is_valid():
         form.save()
+        messages.success(request, "Your song has been edited!")
         return redirect('songs:user_songs')
     else:
         form = forms.SongForm(instance=song)
@@ -55,4 +57,5 @@ def edit_song(request, slug):
 def delete_song(request, slug):
     song = Song.objects.get(slug=slug)
     song.delete()
+    messages.success(request, "Your song has been deleted!")
     return redirect('songs:user_songs')
