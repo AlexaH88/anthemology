@@ -5,7 +5,7 @@
 {% block content %}
     <section class="hero-page-wrapper">
         <div class="hero-image-container">
-            <img class="hero-image" src="{% static 'images/home.png' %}" alt="Blue and orange vinyl on record player">
+            <img class="hero-image" src="{% static 'images/home.jpg' %}" alt="Blue and orange vinyl on record player">
             <div class="hero-image-content">
                 <form class="homepage-search-bar" method="post" action="{% url 'song_search' %}">
                     {% csrf_token %}
