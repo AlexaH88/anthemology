@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
+from django.contrib import messages
 
 
 def signup_view(request):
@@ -26,6 +27,7 @@ def login_view(request):
             if 'next' in request.POST:
                 return redirect(request.POST.get('next'))
             else:
+                messages.success(request, "You have successfully logged in!")
                 return redirect('accounts:profile')
     else:
         form = AuthenticationForm()
