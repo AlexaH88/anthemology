@@ -103,6 +103,8 @@ nav button {
 
 nav button:hover {
     border: solid 3px white;
+    color: black;
+    background-color: white;
 }
 
 .nav-search-bar {
