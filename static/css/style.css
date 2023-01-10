@@ -94,7 +94,7 @@ nav button {
     background-color: black;
     cursor: pointer;
     border: solid 3px black;
-    border-radius: 25px;
+    border-radius: 5px;
     color: white;
     font-size: 105%;
     padding: 5px 10px;
@@ -191,7 +191,7 @@ main {
 
 .homepage-search-bar button {
     border: solid black;
-    border-radius: 25px;
+    border-radius: 5px;
     padding: 10px;
     background-color: black;
     color: white;
@@ -206,7 +206,7 @@ main {
 
 button {
     border: solid #34afa5;
-    border-radius: 25px;
+    border-radius: 5px;
     padding: 10px;
     background-color: #34afa5;
 }
@@ -218,8 +218,7 @@ button a {
 
 .button {
     border: solid #34afa5;
-    ;
-    border-radius: 25px;
+    border-radius: 5px;
     padding: 10px;
     background-color: #34afa5;
     cursor: pointer;
@@ -335,6 +334,10 @@ textarea {
     grid-template-rows: auto;
     gap: 10px;
     justify-items: center;
+}
+
+.user-song-buttons {
+    margin: 0px 2.5px;
 }
 
 .song-detail {

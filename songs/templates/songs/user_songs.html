@@ -22,10 +22,10 @@
                             <p>Added By: {{ user_song.author.username }}</p>
                         </a>
                         <p>
-                            <button>
+                            <button class="user-song-buttons">
                                 <a href="{% url 'songs:edit' slug=user_song.slug %}">Edit Song</a>
                             </button>
-                            <button>
+                            <button class="user-song-buttons">
                                 <a href="{% url 'songs:delete' slug=user_song.slug %}">Delete Song</a>
                             </button>
                         </p>
