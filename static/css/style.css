@@ -140,11 +140,6 @@ main {
     margin: 20px 0px 0px 0px;
 }
 
-.hero-image {
-    width: 100%;
-    height: 100%;
-}
-
 .wrapper {
     margin: 0 auto;
     width: 98vw;
@@ -153,7 +148,6 @@ main {
 }
 
 .message-wrapper {
-    margin: 0 auto;
     width: 98vw;
     grid-row-start: 2;
     grid-row-end: 3;
@@ -172,6 +166,11 @@ main {
     width: 100%;
     height: 100%;
     text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
 }
 
 .hero-image-content {
