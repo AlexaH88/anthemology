@@ -44,7 +44,12 @@ header {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #34afa5;
+    background-color: #0290b8;
+}
+
+#header-logo h1:hover,
+#header-logo h1 i:hover {
+    color: white;
 }
 
 .header-item {
@@ -174,7 +179,7 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(52,175,165, 0.6);
+    background-color: rgba(2, 144, 184, 0.7);
     width: 35%;
     height: 15%;
     padding: 20px;
@@ -207,10 +212,10 @@ main {
 }
 
 .alert {
-    border: solid #34afa5;
+    border: solid #0290b8;
     border-radius: 5px;
     padding: 10px;
-    background-color: rgba(52,175,165, 0.4);
+    background-color: rgba(2, 144, 184, 0.4);
     list-style: none;
     margin: 20px 0px;
 }
@@ -221,10 +226,10 @@ main {
 }
 
 button {
-    border: solid #34afa5;
+    border: solid #0290b8;
     border-radius: 5px;
     padding: 10px;
-    background-color: #34afa5;
+    background-color: #0290b8;
 }
 
 button a {
@@ -233,12 +238,12 @@ button a {
 }
 
 .button {
-    border: solid #34afa5;
+    border: solid #0290b8;
     border-radius: 5px;
     padding: 10px;
-    background-color: #34afa5;
+    background-color: #0290b8;
     cursor: pointer;
-    font-weight: bold;
+    font-family: 'Righteous', sans-serif;
 }
 
 .button:hover {
@@ -248,7 +253,7 @@ button a {
 input,
 textarea {
     padding: 2px;
-    border: solid 3px #34afa5;
+    border: solid 3px #0290b8;
     border-radius: 5px;
 }
 
@@ -275,10 +280,10 @@ textarea {
 .helptext, 
 .errorlist,
 .nonfield {
-    border: solid #34afa5;
+    border: solid #0290b8;
     border-radius: 5px;
     padding: 10px;
-    background-color: rgba(52,175,165, 0.4);
+    background-color: rgba(2, 144, 184, 0.4);
     list-style: none;
     margin: 20px 0px 0px 0px;
     font-size: 75%;
@@ -318,14 +323,14 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    border: solid 4px #34afa5;
+    border: solid 4px #0290b8;
     border-radius: 5px;
     padding: 20px;
     justify-items: center;
 }
 
 .song-list-title {
-    border-bottom: solid 4px #34afa5;
+    border-bottom: solid 4px #0290b8;
 }
 
 .song-list-item {
@@ -336,7 +341,7 @@ textarea {
 }
 
 .song-list-item a:hover {
-    color: #34afa5;
+    color: #0290b8;
     font-weight: bold;
 }
 
@@ -348,7 +353,7 @@ textarea {
 
 .song {
     padding: 20px;
-    border: solid 4px #34afa5;
+    border: solid 4px #0290b8;
     border-radius: 5px;
 }
 
@@ -379,7 +384,7 @@ textarea {
     padding: 50px;
     border: solid 10px black;
     border-radius: 100px 100px 10px 10px;
-    background: #34afa5;
+    background: #0290b8;
 }
 
 .song-info {
@@ -409,7 +414,7 @@ textarea {
     border-radius: 100px 100px 10px 10px;
     width: fit-content;
     margin: auto;
-    background: #34afa5;
+    background: #0290b8;
 }
 
 .jukebox-item {
@@ -523,7 +528,7 @@ textarea {
 footer {
     min-height: 50px;
     width: 100%;
-    background-color: #34afa5;
+    background-color: #0290b8;
     grid-row-start: 3;
     grid-row-end: 4;
 }
