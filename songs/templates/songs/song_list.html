@@ -11,9 +11,15 @@
             </button>
         </div>
         <div class="song-list">
-            <h2 class="song-list-title">By Title</h2>
-            <h2 class="song-list-title">By Artist</h2>
-            <h2 class="song-list-title">By Album</h2>
+            <h3 class="song-list-title">
+                <span>By Title</span>
+            </h3>
+            <h3 class="song-list-title">
+                <span>By Artist</span>
+            </h3>
+            <h3 class="song-list-title">
+                <span>By Album</span>
+            </h3>
             {% for song in songs %}
                 <div class="song-list-item">
                     <a href="{% url 'songs:detail' slug=song.slug %}">

@@ -335,7 +335,13 @@ textarea {
 }
 
 .song-list-title {
+    margin-bottom: 10px;
+}
+
+.song-list-title span {
     border-bottom: solid 4px #0290b8;
+    font-size: 120%;
+    font-family: 'Righteous', sans-serif;
 }
 
 .song-list-item {
