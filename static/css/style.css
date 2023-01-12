@@ -148,6 +148,7 @@ main {
 }
 
 .message-wrapper {
+    margin: 0 auto;
     width: 98vw;
     grid-row-start: 2;
     grid-row-end: 3;

@@ -5,16 +5,5 @@
         <div class="page-header">
             <h2 class="page-header-title">Logout</h2>
         </div>
-        <div>
-            {% if messages %}
-                <ul class="alert">
-                {% for message in messages %}
-                    <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>
-                        {{ message }}
-                    </li>
-                {% endfor %}
-                </ul>
-            {% endif %}
-        </div>
     </section>
 {% endblock %}
