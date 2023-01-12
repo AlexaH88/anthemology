@@ -304,34 +304,23 @@ textarea {
 }
 
 .page-content {
-    display: grid;
-    grid-template-rows: auto auto;
-    gap: 10px;
-    margin: 0px 0px 20px 0px;
-}
-
-.page-content-title {
-    margin-bottom: 10px;
-}
-
-.page-content-title span {
-    border-bottom: solid 4px #0290b8;
-    font-size: 120%;
-    font-family: 'Righteous', sans-serif;
-}
-
-.about-text {
     border: solid 4px #0290b8;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 10px 30px;
 }
 
-.about-text ul {
+.page-content ul {
     list-style: none;
 }
 
-.about-text li {
+.page-content li {
     padding: 10px 0px;
+}
+
+.page-content span {
+    border-bottom: solid 4px #0290b8;
+    font-size: 120%;
+    font-family: 'Righteous', sans-serif;
 }
 
 .song-list {
@@ -369,14 +358,15 @@ textarea {
 .songs {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    width: 98vw;
+    gap: 40px;
+    margin: 20px 0px;
 }
 
 .song {
     padding: 20px;
     border: solid 4px #0290b8;
     border-radius: 5px;
+    background-color: #0290b8;
 }
 
 .song:hover {
@@ -392,7 +382,22 @@ textarea {
 }
 
 .song-buttons {
-    margin: 0px 2.5px;
+    margin: 3px;
+    background-color: white;
+    border: solid white;
+}
+
+.song-buttons a {
+    color: black;
+}
+
+.song-buttons:hover{
+    background-color: black;
+    border: solid black;
+}
+
+.song-buttons a:hover{
+    color: white;
 }
 
 .song-detail {
