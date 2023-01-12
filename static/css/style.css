@@ -307,7 +307,7 @@ textarea {
     display: grid;
     grid-template-rows: auto auto;
     gap: 10px;
-    margin: 20px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
 }
 
 .page-content-title {
@@ -318,6 +318,20 @@ textarea {
     border-bottom: solid 4px #0290b8;
     font-size: 120%;
     font-family: 'Righteous', sans-serif;
+}
+
+.about-text {
+    border: solid 4px #0290b8;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.about-text ul {
+    list-style: none;
+}
+
+.about-text li {
+    padding: 10px 0px;
 }
 
 .song-list {
