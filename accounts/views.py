@@ -35,10 +35,6 @@ def login_view(request):
     return render(request, 'accounts/login.html', {'form': form})
 
 
-def profile_view(request):
-    return render(request, 'accounts/profile.html')
-
-
 def logout_view(request):
     if request.method == 'POST':
         logout(request)
