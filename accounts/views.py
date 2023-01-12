@@ -12,7 +12,7 @@ def signup_view(request):
             # log the user in
             login(request, user)
             messages.success(request, "You have successfully signed up!")
-            return redirect('accounts:profile')
+            return redirect('songs:user_songs')
     else:
         form = UserCreationForm()
     return render(request, 'accounts/signup.html', {'form': form})
@@ -43,4 +43,4 @@ def logout_view(request):
     if request.method == 'POST':
         logout(request)
         messages.success(request, "You have successfully logged out!")
-        return render(request, 'accounts/logout.html')
+        return redirect('songs:song_list')
