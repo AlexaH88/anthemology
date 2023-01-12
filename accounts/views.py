@@ -29,7 +29,7 @@ def login_view(request):
                 return redirect(request.POST.get('next'))
             else:
                 messages.success(request, "You have successfully logged in!")
-                return redirect('accounts:profile')
+                return redirect('songs:user_songs')
     else:
         form = AuthenticationForm()
     return render(request, 'accounts/login.html', {'form': form})
