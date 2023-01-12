@@ -6,9 +6,13 @@ from . import forms
 
 
 def song_list(request):
-    songs = Song.objects.all().order_by('artist')
+    titles = Song.objects.all().order_by('title')
+    artists = Song.objects.all().order_by('artist')
+    albums = Song.objects.all().order_by('album')
     return render(request, 'songs/song_list.html', {
-        'songs': songs})
+        'titles': titles,
+        'artists': artists,
+        'albums': albums})
 
 
 def song_detail(request, slug):

@@ -169,7 +169,7 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(2, 144, 184, 0.7);
+    background-color: rgba(2, 144, 184, 0.8);
     width: 35%;
     height: 15%;
     padding: 20px;
@@ -275,7 +275,7 @@ textarea {
     padding: 10px;
     background-color: rgba(2, 144, 184, 0.4);
     list-style: none;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0px;
     font-size: 75%;
 }
 
@@ -347,12 +347,19 @@ textarea {
     display: grid;
     grid-template-columns: auto;
     gap: 20px;
-    justify-self: center;
+    justify-items: center;
 }
 
 .song-list-item a:hover {
     color: #0290b8;
     font-weight: bold;
+}
+
+.song-list-song {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    justify-items: center;
 }
 
 .songs {
