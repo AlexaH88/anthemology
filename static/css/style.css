@@ -94,18 +94,33 @@ nav li a {
 }
 
 nav button {
-    background: none;
     background-color: black;
     cursor: pointer;
     border: solid 3px black;
     border-radius: 5px;
     color: white;
-    font-size: 135%;
-    padding: 5px 10px;
+    font-size: 140%;
+    padding: 4px 6px;
     font-family: 'Righteous', sans-serif;
 }
 
 nav button:hover {
+    border: solid 3px white;
+    color: black;
+    background-color: white;
+}
+
+.login {
+    background-color: black;
+    border: solid 3px black;
+    border-radius: 5px;
+    color: white;
+    padding: 4px 6px;
+    font-weight: lighter;
+    font-size: 145%;
+}
+
+.login:hover {
     border: solid 3px white;
     color: black;
     background-color: white;
