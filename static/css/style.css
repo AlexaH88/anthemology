@@ -43,7 +43,7 @@ header {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #0290b8;
+    background-color: #03c0d0;
 }
 
 #header-logo h1:hover,
@@ -176,7 +176,7 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(2, 144, 184, 0.8);
+    background-color: #03c0d0;
     width: fit-content;
     height: fit-content;
     padding: 30px 40px;
@@ -193,6 +193,12 @@ main {
 
 .hero-image-title {
     margin: 10px 0px;
+}
+
+.homepage-image-content {
+    width: 30%;
+    height: 10%;
+    background-color: rgba(3, 192, 208, 0.8);
 }
 
 .homepage-search-bar {
@@ -221,16 +227,16 @@ main {
 }
 
 .text-highlight {
-    border-bottom: solid 4px #0290b8;
+    border-bottom: solid 4px #03c0d0;
     font-size: 120%;
     font-family: 'Righteous', sans-serif;
 }
 
 .alert {
-    border: solid #0290b8;
+    border: solid #03c0d0;
     border-radius: 5px;
     padding: 10px;
-    background-color: rgba(2, 144, 184, 0.4);
+    background-color: rgba(3, 192, 208, 0.4);
     list-style: none;
     margin: 20px 0px;
 }
@@ -241,10 +247,10 @@ main {
 }
 
 button {
-    border: solid #0290b8;
+    border: solid #03c0d0;
     border-radius: 5px;
     padding: 10px;
-    background-color: #0290b8;
+    background-color: #03c0d0;
 }
 
 button a {
@@ -253,10 +259,10 @@ button a {
 }
 
 .button {
-    border: solid #0290b8;
+    border: solid #03c0d0;
     border-radius: 5px;
     padding: 10px;
-    background-color: #0290b8;
+    background-color: #03c0d0;
     cursor: pointer;
     font-family: 'Righteous', sans-serif;
 }
@@ -268,7 +274,7 @@ button a {
 input,
 textarea {
     padding: 2px;
-    border: solid 3px #0290b8;
+    border: solid 3px #03c0d0;
     border-radius: 5px;
 }
 
@@ -295,10 +301,10 @@ textarea {
 .helptext, 
 .errorlist,
 .nonfield {
-    border: solid #0290b8;
+    border: solid #03c0d0;
     border-radius: 5px;
     padding: 10px;
-    background-color: rgba(2, 144, 184, 0.4);
+    background-color: rgba(3, 192, 208, 0.4);
     list-style: none;
     margin: 20px 0px;
     font-size: 75%;
@@ -329,7 +335,7 @@ textarea {
 }
 
 .page-content {
-    border: solid 4px #0290b8;
+    border: solid 4px #03c0d0;
     border-radius: 5px;
     padding: 10px 30px;
 }
@@ -346,7 +352,7 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    border: solid 4px #0290b8;
+    border: solid 4px #03c0d0;
     border-radius: 5px;
     padding: 20px;
     justify-items: center;
@@ -357,7 +363,7 @@ textarea {
 }
 
 .song-list-title span {
-    border-bottom: solid 4px #0290b8;
+    border-bottom: solid 4px #03c0d0;
     font-size: 120%;
     font-family: 'Righteous', sans-serif;
 }
@@ -370,7 +376,7 @@ textarea {
 }
 
 .song-list-item a:hover {
-    color: #0290b8;
+    color: #03c0d0;
     font-weight: bold;
 }
 
@@ -390,9 +396,9 @@ textarea {
 
 .song {
     padding: 20px;
-    border: solid 4px #0290b8;
+    border: solid 4px #03c0d0;
     border-radius: 5px;
-    background-color: #0290b8;
+    background-color: #03c0d0;
 }
 
 .song:hover {
@@ -466,7 +472,7 @@ textarea {
     border: solid 10px black;
     border-radius: 100px 100px 10px 10px;
     width: fit-content;
-    background: #0290b8;
+    background: #03c0d0;
 }
 
 .jukebox-item {
@@ -580,7 +586,7 @@ textarea {
 footer {
     min-height: 50px;
     width: 100%;
-    background-color: #0290b8;
+    background-color: #03c0d0;
     grid-row-start: 3;
     grid-row-end: 4;
 }
