@@ -3,7 +3,61 @@
 {% load static %}
 
 {% block content %}
-    <section class="wrapper">
+    <!-- large screen version -->
+    <section class="hero-page-wrapper">
+        <div class="hero-image-container">
+            <img class="hero-image" src="{% static 'images/hero-image-main.png' %}" alt="Large black vinyl">
+            <div class="hero-image-content">
+                <div class="page-header">
+                    <h2 class="page-header-title">My Songs</h2>
+                    <button class="page-header-item">
+                        <a href="{% url 'songs:add' %}">Add Song</a>
+                    </button>
+                </div>
+                <div class="page-content">
+                    <p>
+                        <ul>
+                            <li>Welcome <span class="text-highlight">{{ user }}!</span></li>
+                            <li>Here you'll find all the songs you've added, as well as the possibility of editing and deleting them as wished.</li>
+                            <li>If you haven't added any songs yet, feel free to create one via the 'Add Song' button above.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        {% if user_songs %}
+                        <div class="searched-songs">
+                            {% for user_song in user_songs %}
+                                <div class="searched-song">
+                                    <div class="searched-song-card">
+                                        <a href="{% url 'songs:detail' slug=user_song.slug %}">
+                                            <h4>{{ user_song.title }}</h4>
+                                            <p>Artist: {{ user_song.artist }}</p>
+                                            <p>Album: {{ user_song.album }}</p>
+                                            <p>Added By: {{ user_song.author.username }}</p>
+                                        </a>
+                                        <p>
+                                            <button class="song-buttons">
+                                                <a href="{% url 'songs:edit' slug=user_song.slug %}">Edit Song</a>
+                                            </button>
+                                            <button class="song-buttons">
+                                                <a href="{% url 'songs:delete' slug=user_song.slug %}">Delete Song</a>
+                                            </button>
+                                        </p>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <div class="alert">
+                            <p>You haven't added any songs yet.</p>
+                        </div>
+                    {% endif %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- small screen version -->
+    <section class="responsive-wrapper">
         <div class="page-header">
             <h2 class="page-header-title">My Songs</h2>
             <button class="page-header-item">
@@ -43,7 +97,7 @@
                     {% endfor %}
                 </div>
             {% else %}
-                <div class="alert">
+                <div class="responsive-alert">
                     <p>You haven't added any songs yet.</p>
                 </div>
             {% endif %}
