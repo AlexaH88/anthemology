@@ -201,6 +201,12 @@ main {
     color: white;
 }
 
+.text-highlight {
+    border-bottom: solid 4px #0290b8;
+    font-size: 120%;
+    font-family: 'Righteous', sans-serif;
+}
+
 .alert {
     border: solid #0290b8;
     border-radius: 5px;
@@ -317,12 +323,6 @@ textarea {
     padding: 10px 0px;
 }
 
-.page-content span {
-    border-bottom: solid 4px #0290b8;
-    font-size: 120%;
-    font-family: 'Righteous', sans-serif;
-}
-
 .song-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -422,6 +422,10 @@ textarea {
     background-color: white;
 }
 
+.song-info p {
+    font-family: 'Righteous', sans-serif;
+}
+
 .song-lyrics {
     display: grid;
     justify-items: center;
@@ -433,8 +437,9 @@ textarea {
 }
 
 .song-lyrics p {
-    font-size: 140%;
-    font-family: 'Righteous', sans-serif;
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center;
 }
 
 .jukebox {
