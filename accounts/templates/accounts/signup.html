@@ -1,7 +1,26 @@
 {% extends 'base_layout.html' %}
 
+{% load static %}
+
 {% block content %}
-    <section class="wrapper">
+    <!-- large screen version -->
+    <section class="hero-page-wrapper">
+        <div class="hero-image-container">
+            <img class="hero-image" src="{% static 'images/hero-image-main.png' %}" alt="Large black vinyl">
+            <div class="hero-image-content">
+                <h2 class="hero-image-title">Signup</h2>
+                <div>
+                    <form class="site-form" action="{% url 'accounts:signup' %}" method="post">
+                        {% csrf_token %}
+                        {{ form }}
+                        <input class="button" type="submit" value="Signup">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- small screen version -->
+    <section class="responsive-wrapper">
         <div class="page-header">
             <h2 class="page-header-title">Signup</h2>
         </div>
@@ -9,7 +28,7 @@
             <form class="site-form" action="{% url 'accounts:signup' %}" method="post">
                 {% csrf_token %}
                 {{ form }}
-                <input class="button" type="submit" value="Signup">
+                <input class="responsive-button" type="submit" value="Signup">
             </form>
         </div>
     </section>
