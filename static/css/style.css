@@ -341,10 +341,10 @@ textarea {
 .nonfield {
     border: solid black;
     border-radius: 5px;
-    padding: 6px 8px;;
+    padding: 2px 8px;
     background-color: black;
     list-style: none;
-    margin: 30px 0px 10px 0px;
+    margin: 20px 0px;
     font-size: 75%;
     color: white;
 }

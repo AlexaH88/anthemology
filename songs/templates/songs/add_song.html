@@ -1,14 +1,33 @@
 {% extends 'base_layout.html' %}
 
+{% load static %}
+
 {% block content %}
-    <section class="wrapper">
+    <!-- large screen version -->
+    <section class="hero-page-wrapper">
+        <div class="hero-image-container">
+            <img class="hero-image" src="{% static 'images/hero-image-main.png' %}" alt="Large black vinyl">
+            <div class="hero-image-content">
+                <h2 class="hero-image-title">Add A Song</h2>
+                <div>
+                    <form class="site-form" action="{% url 'songs:add' %}" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form }}
+                        <input class="button" type="submit" value="Add">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- small screen version -->
+    <section class="responsive-wrapper">
         <div class="page-header">
             <h2 class="page-header-title">Add A Song</h2>
         </div>
         <form class="site-form" action="{% url 'songs:add' %}" method="post" enctype="multipart/form-data">
             {% csrf_token %}
             {{ form }}
-            <input class="button" type="submit" value="Add">
+            <input class="responsive-button" type="submit" value="Add">
         </form>
     </section>
 {% endblock %}
