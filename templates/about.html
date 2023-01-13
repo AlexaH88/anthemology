@@ -3,22 +3,43 @@
 {% load static %}
 
 {% block content %}
-<section class="wrapper">
-    <div class="page-header">
-        <h2 class="page-header-title">About Anthemology</h2>
-    </div>
-    <div class="page-content">
-        <p>
-            <ul>
-                <li>Anthemology was created for all music lovers out there!</li>
-                <li>Want to sing along to your favourite tune?</li>
-                <li>Take a look at our expansive catalogue of songs, either via the search bar, or the Songs page.</li>
-                <li>Can't find the song you're looking for?</li>
-                <li>Sign up and add it to the collection!</li>
-                <li>You can find your songs on the My Songs page.</li>
-                <li>Here you can edit, or delete your contributions at any time.</li>
-            </ul>
-        </p>
-    </div>
-</section>
+    <!-- large screen version -->
+    <section class="hero-page-wrapper">
+        <div class="hero-image-container">
+            <img class="hero-image" src="{% static 'images/home.jpg' %}" alt="Collection of black and blue vinyls">
+            <div class="hero-image-content">
+                <h2 class="hero-image-title">About Anthemology</h2>
+                <p>
+                    <ul>
+                        <li>Anthemology was created for all music lovers out there!</li>
+                        <li>Want to sing along to your favourite tune?</li>
+                        <li>Take a look at our expansive catalogue of songs, either via the search bar, or the Songs page.</li>
+                        <li>Can't find the song you're looking for?</li>
+                        <li>Sign up and add it to the collection!</li>
+                        <li>You can find your songs on the My Songs page.</li>
+                        <li>Here you can edit, or delete your contributions at any time.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- small screen version-->
+    <section class="responsive-wrapper">
+        <div class="page-header">
+            <h2 class="page-header-title">About Anthemology</h2>
+        </div>
+        <div class="page-content">
+            <p>
+                <ul>
+                    <li>Anthemology was created for all music lovers out there!</li>
+                    <li>Want to sing along to your favourite tune?</li>
+                    <li>Take a look at our expansive catalogue of songs, either via the search bar, or the Songs page.</li>
+                    <li>Can't find the song you're looking for?</li>
+                    <li>Sign up and add it to the collection!</li>
+                    <li>You can find your songs on the My Songs page.</li>
+                    <li>Here you can edit, or delete your contributions at any time.</li>
+                </ul>
+            </p>
+        </div>
+    </section>
 {% endblock %}

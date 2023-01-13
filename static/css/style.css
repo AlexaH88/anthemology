@@ -147,6 +147,13 @@ main {
     grid-row-start: end;
 }
 
+.responsive-wrapper {
+    display: none;
+    grid-row-start: auto;
+    grid-row-end: auto;
+    margin: -20px;
+}
+
 .hero-page-wrapper {
     grid-row-start: auto;
     grid-row-end: auto;
@@ -170,10 +177,22 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(2, 144, 184, 0.8);
-    width: 35%;
-    height: 15%;
-    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 30px 40px;
     border-radius: 5px;
+}
+
+.hero-image-content ul {
+    list-style-type: none;
+}
+
+.hero-image-content li {
+    padding: 10px 0px;
+}
+
+.hero-image-title {
+    margin: 10px 0px;
 }
 
 .homepage-search-bar {
@@ -594,4 +613,15 @@ footer li {
 
 .footer-socials i {
     font-size: 110%;
+}
+
+/* responsive design */
+@media only screen and (max-width: 1000px) {
+    .hero-page-wrapper {
+        display: none;
+    }
+
+    .responsive-wrapper {
+        display: grid;
+    }
 }
