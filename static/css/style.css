@@ -259,22 +259,25 @@ button a {
 }
 
 .button {
-    border: solid #03c0d0;
+    border: solid black;
     border-radius: 5px;
-    padding: 10px;
-    background-color: #03c0d0;
+    padding: 6px;
+    background-color: black;
     cursor: pointer;
     font-family: 'Righteous', sans-serif;
+    color: white;
 }
 
 .button:hover {
-    color: white;
+    border: solid white;
+    color: black;
+    background-color: white;
 }
 
 input,
 textarea {
     padding: 2px;
-    border: solid 3px #03c0d0;
+    border: solid 3px black;
     border-radius: 5px;
 }
 
