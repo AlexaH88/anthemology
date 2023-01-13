@@ -274,10 +274,30 @@ button a {
     background-color: white;
 }
 
+.responsive-button {
+    border: solid #03c0d0;
+    border-radius: 5px;
+    padding: 6px;
+    background-color: #03c0d0;
+    cursor: pointer;
+    font-family: 'Righteous', sans-serif;
+}
+
+.responsive-button:hover {
+    color: white;
+}
+
 input,
 textarea {
     padding: 2px;
     border: solid 3px black;
+    border-radius: 5px;
+}
+
+.responsive-wrapper input,
+.responsive-wrapper textarea {
+    padding: 2px;
+    border: solid 3px #03c0d0;
     border-radius: 5px;
 }
 
@@ -304,6 +324,18 @@ textarea {
 .helptext, 
 .errorlist,
 .nonfield {
+    border: solid black;
+    border-radius: 5px;
+    padding: 6px;
+    background-color: black;
+    list-style: none;
+    margin: 30px 0px 10px 0px;
+    font-size: 75%;
+}
+
+.responsive-wrapper .helptext, 
+.responsive-wrapper .errorlist,
+.responsive-wrapper .nonfield {
     border: solid #03c0d0;
     border-radius: 5px;
     padding: 10px;
@@ -320,6 +352,15 @@ textarea {
 .nofield li {
     list-style: none;
     font-size: 100%;
+    color: white;
+}
+
+.responsive-wrapper .helptext span,
+.responsive-wrapper .helptext ul,
+.responsive-wrapper .helptext li,
+.responsive-wrapper .errorlist li,
+.responsive-wrapper .nofield li {
+    color: black;
 }
 
 .page-header {
