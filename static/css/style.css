@@ -556,6 +556,15 @@ textarea {
     justify-items: center;
 }
 
+.user-songs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 20px 0px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
 .songs {
     display: grid;
     grid-template-columns: 1fr 1fr;
