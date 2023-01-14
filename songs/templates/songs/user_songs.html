@@ -60,7 +60,7 @@
     <section class="responsive-wrapper">
         <div class="page-header">
             <h2 class="page-header-title">My Songs</h2>
-            <a class="page-header-item" href="{% url 'songs:add' %}">
+            <a class="page-header-item respon responsive-page-header-button" href="{% url 'songs:add' %}">
                 <button>Add Song</button>
             </a>
         </div>
@@ -84,7 +84,7 @@
                                     <p>Album: {{ user_song.album }}</p>
                                     <p>Added By: {{ user_song.author.username }}</p>
                                 </a>
-                                <div class="song-buttons">
+                                <div class="responsive-song-buttons">
                                     <a href="{% url 'songs:edit' slug=user_song.slug %}">
                                         <button>Edit Song</button>
                                     </a>

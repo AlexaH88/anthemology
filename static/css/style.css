@@ -285,8 +285,7 @@ main {
     color: black;
 }
 
-button,
-page-header-button {
+button {
     border: solid black;
     border-radius: 5px;
     padding: 10px;
@@ -299,8 +298,7 @@ page-header-button {
     font-weight: normal;
 }
 
-button:hover,
-page-header-button:hover {
+button:hover {
     border: solid white;
     background-color: white;
     color: black;
@@ -329,10 +327,40 @@ page-header-button:hover {
     background-color: #03c0d0;
     cursor: pointer;
     font-family: 'Righteous', sans-serif;
+    font-weight: normal;
 }
 
 .responsive-button:hover {
     color: white;
+}
+
+.responsive-page-header-button button:hover {
+    border: solid #03c0d0;
+    background-color: #03c0d0;
+}
+
+.song-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 10px;
+}
+
+.song-buttons button:hover {
+    border: solid #03c0d0;
+    background-color: #03c0d0;
+}
+
+.responsive-song-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 10px;
+}
+
+.responsive-song-buttons button:hover {
+    border: solid white;
+    background-color: white;
 }
 
 input,
@@ -559,18 +587,6 @@ textarea {
     grid-template-rows: auto;
     gap: 10px;
     justify-items: center;
-}
-
-.song-buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
-    padding: 10px;
-}
-
-.song-buttons button:hover {
-    border: solid #03c0d0;
-    background-color: #03c0d0;
 }
 
 .song-detail {
