@@ -49,7 +49,9 @@ def edit_song(request, slug):
     song = Song.objects.get(slug=slug)
     form = forms.SongForm(request.POST, instance=song)
     if form.is_valid():
-        form.save()
+        instance = form.save(commit=False)
+        instance.slug = slugify(instance.title)
+        instance.save()
         messages.success(request, "Your song has been edited!")
         return redirect('songs:user_songs')
     else:
