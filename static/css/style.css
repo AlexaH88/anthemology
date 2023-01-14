@@ -355,11 +355,12 @@ button:hover {
 .responsive-button {
     border: solid #03c0d0;
     border-radius: 5px;
-    padding: 6px 8px;;
+    padding: 6px 8px !important;
     background-color: #03c0d0;
     cursor: pointer;
     font-family: 'Righteous', sans-serif;
     font-weight: normal;
+    margin-top: 20px;
 }
 
 .responsive-button:hover {
@@ -413,7 +414,7 @@ textarea {
     display: grid;
     grid-template-rows: auto;
     justify-items: start;
-    margin: -10px 0px 10px 0px;
+    margin: -20px 0px 20px 0px;
 }
 
 .site-form .button,
