@@ -109,6 +109,7 @@ nav button:hover {
     border: solid 3px white;
     color: black;
     background-color: white;
+    font-weight: bold;
 }
 
 .login {
@@ -125,6 +126,7 @@ nav button:hover {
     border: solid 3px white;
     color: black;
     background-color: white;
+    font-weight: bold;
 }
 
 .nav-search-bar {
@@ -346,6 +348,7 @@ button:hover {
     border: solid white;
     background-color: white;
     color: black;
+    font-weight: bold;
 }
 
 .button {
@@ -356,12 +359,14 @@ button:hover {
     cursor: pointer;
     font-family: 'Righteous', sans-serif;
     color: white;
+    font-weight: normal;
 }
 
 .button:hover {
     border: solid white;
     color: black;
     background-color: white;
+    font-weight: bold;
 }
 
 .responsive-button {
@@ -523,6 +528,7 @@ textarea {
     border-radius: 5px;
     padding: 20px;
     justify-items: center;
+    width: 1000px;
     max-height: 800px;
     overflow-y: auto;
 }
@@ -554,6 +560,11 @@ textarea {
     grid-template-columns: auto;
     gap: 20px;
     justify-items: center;
+}
+
+.song-list-song a {
+    font-family: 'Righteous', sans-serif;
+    font-weight: normal;
 }
 
 .user-songs {
@@ -798,7 +809,8 @@ footer ul {
 
 footer li {
     list-style-type: none;
-    font-weight: bold;
+    font-family: 'Righteous', sans-serif;
+    font-weight: normal;
 }
 
 #footer-logo {
