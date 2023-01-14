@@ -10,9 +10,9 @@
             <div class="hero-image-content">
                 <div class="page-header">
                     <h2 class="page-header-title">My Songs</h2>
-                    <button class="page-header-item">
-                        <a href="{% url 'songs:add' %}">Add Song</a>
-                    </button>
+                    <a class="page-header-item" href="{% url 'songs:add' %}">
+                        <button>Add Song</button>
+                    </a>
                 </div>
                 <div class="page-content">
                     <p>
@@ -34,14 +34,14 @@
                                             <p>Album: {{ user_song.album }}</p>
                                             <p>Added By: {{ user_song.author.username }}</p>
                                         </a>
-                                        <p>
-                                            <button class="song-buttons">
-                                                <a href="{% url 'songs:edit' slug=user_song.slug %}">Edit Song</a>
-                                            </button>
-                                            <button class="song-buttons">
-                                                <a href="{% url 'songs:delete' slug=user_song.slug %}">Delete Song</a>
-                                            </button>
-                                        </p>
+                                        <div class="song-buttons">
+                                            <a href="{% url 'songs:edit' slug=user_song.slug %}">
+                                                <button>Edit Song</button>
+                                            </a>
+                                            <a href="{% url 'songs:delete' slug=user_song.slug %}">
+                                                <button>Delete Song</button>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             {% endfor %}
@@ -60,14 +60,14 @@
     <section class="responsive-wrapper">
         <div class="page-header">
             <h2 class="page-header-title">My Songs</h2>
-            <button class="page-header-item">
-                <a href="{% url 'songs:add' %}">Add Song</a>
-            </button>
+            <a class="page-header-item" href="{% url 'songs:add' %}">
+                <button>Add Song</button>
+            </a>
         </div>
         <div class="page-content">
             <p>
                 <ul>
-                    <li>Welcome <span class="text-highlight">{{ user }}!</span></li>
+                    <li>Welcome <span class="responsive-text-highlight">{{ user }}!</span></li>
                     <li>Here you'll find all the songs you've added, as well as the possibility of editing and deleting them as wished.</li>
                     <li>If you haven't added any songs yet, feel free to create one via the 'Add Song' button above.</li>
                 </ul>
@@ -84,14 +84,14 @@
                                     <p>Album: {{ user_song.album }}</p>
                                     <p>Added By: {{ user_song.author.username }}</p>
                                 </a>
-                                <p>
-                                    <button class="song-buttons">
-                                        <a href="{% url 'songs:edit' slug=user_song.slug %}">Edit Song</a>
-                                    </button>
-                                    <button class="song-buttons">
-                                        <a href="{% url 'songs:delete' slug=user_song.slug %}">Delete Song</a>
-                                    </button>
-                                </p>
+                                <div class="song-buttons">
+                                    <a href="{% url 'songs:edit' slug=user_song.slug %}">
+                                        <button>Edit Song</button>
+                                    </a>
+                                    <a href="{% url 'songs:delete' slug=user_song.slug %}">
+                                        <button>Delete Song</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     {% endfor %}

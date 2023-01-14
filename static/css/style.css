@@ -244,6 +244,12 @@ main {
 }
 
 .text-highlight {
+    border-bottom: solid 4px white;
+    font-size: 120%;
+    font-family: 'Righteous', sans-serif;
+}
+
+.responsive-text-highlight {
     border-bottom: solid 4px #03c0d0;
     font-size: 120%;
     font-family: 'Righteous', sans-serif;
@@ -279,16 +285,25 @@ main {
     color: black;
 }
 
-button {
-    border: solid #03c0d0;
+button,
+page-header-button {
+    border: solid black;
     border-radius: 5px;
     padding: 10px;
-    background-color: #03c0d0;
-}
-
-button a {
+    background-color: black;
+    cursor: pointer;
+    color: white;
     font-size: 90%;
     font-family: 'Righteous', sans-serif;
+    color: white;
+    font-weight: normal;
+}
+
+button:hover,
+page-header-button:hover {
+    border: solid white;
+    background-color: white;
+    color: black;
 }
 
 .button {
@@ -547,22 +562,15 @@ textarea {
 }
 
 .song-buttons {
-    margin: 3px;
-    background-color: white;
-    border: solid white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 10px;
 }
 
-.song-buttons a {
-    color: black;
-}
-
-.song-buttons:hover{
-    background-color: black;
-    border: solid black;
-}
-
-.song-buttons a:hover{
-    color: white;
+.song-buttons button:hover {
+    border: solid #03c0d0;
+    background-color: #03c0d0;
 }
 
 .song-detail {
