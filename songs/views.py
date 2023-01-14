@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Song
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from django.template.defaultfilters import slugify
 from . import forms
 
 
@@ -34,6 +35,7 @@ def add_song(request):
         if form.is_valid():
             instance = form.save(commit=False)
             instance.author = request.user
+            instance.slug = slugify(instance.title)
             instance.save()
             messages.success(request, "Your song has been added!")
             return redirect('songs:song_list')
