@@ -596,10 +596,20 @@ textarea {
     line-height: 260%;
     white-space: pre-line;
     overflow-y: auto;
-    height: 1000px;
+    height: 600px;
+    width: 600px;
 }
 
 .song-lyrics p {
+    text-align: center;
+}
+
+.responsive-song-lyrics {
+    overflow-y: none;
+    height: none;
+}
+
+.responsive-song-lyrics p {
     font-size: 130%;
     font-weight: bold;
     text-align: center;
