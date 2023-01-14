@@ -288,18 +288,21 @@ main {
 }
 
 .section-alert {
-    border: solid black;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.9);
     list-style: none;
     margin: 20px 0px;
+    border: solid #39217d;
+    padding: 10px;
+    background-color: rgb(57, 33, 125, 0.8);
+    list-style: none;
+    font-size: 120%;
 }
 
 .section-alert p,
 .section-alert li {
     font-size: 75%;
     color: white;
+    font-family: 'Righteous', sans-serif;
+    font-weight: normal;
 }
 
 .responsive-section-alert {
@@ -546,7 +549,7 @@ textarea {
 
 .songs {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
     margin: 20px 0px;
     max-height: 800px;
