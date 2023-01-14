@@ -212,6 +212,12 @@ main {
     font-size: 200%;
 }
 
+.homepage-wrapper {
+    grid-row-start: auto;
+    grid-row-end: auto;
+    margin: -20px;
+}
+
 .homepage-image-content {
     width: 30%;
     height: 10%;
