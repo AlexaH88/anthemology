@@ -478,16 +478,12 @@ textarea {
     border-radius: 5px;
     padding: 20px;
     justify-items: center;
+    max-height: 800px;
+    overflow-y: auto;
 }
 
 .song-list-title {
     margin-bottom: 10px;
-}
-
-.song-list-title span {
-    border-bottom: solid 4px #03c0d0;
-    font-size: 120%;
-    font-family: 'Righteous', sans-serif;
 }
 
 .song-list-item {
@@ -498,6 +494,11 @@ textarea {
 }
 
 .song-list-item a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.responsive-song-list-item a:hover {
     color: #03c0d0;
     font-weight: bold;
 }
@@ -606,6 +607,7 @@ textarea {
 
 .song-info p {
     font-family: 'Righteous', sans-serif;
+    font-weight: normal;
 }
 
 .song-lyrics {
