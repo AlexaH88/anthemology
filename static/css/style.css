@@ -166,10 +166,6 @@ main {
     margin: -20px;
 }
 
-.responsive-text {
-    text-align: center;
-}
-
 .hero-page-wrapper {
     grid-row-start: auto;
     grid-row-end: auto;
@@ -577,7 +573,7 @@ textarea {
 
 .responsive-songs {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
     margin: 20px 0px;
 }
