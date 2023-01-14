@@ -11,10 +11,10 @@
                 <h2 class="hero-image-title">Your Search Results</h2>
                 <div class="page-content">
                     {% if searched %}
-                        <div class="searched-songs">
+                        <div class="songs">
                             {% for song in songs %}
-                                <div class="searched-song">
-                                    <a class="searched-song-card" href="{% url 'songs:detail' slug=song.slug %}">
+                                <div class="song">
+                                    <a class="song-card" href="{% url 'songs:detail' slug=song.slug %}">
                                         <h3>{{ song.title }}</h3>
                                         <p>Artist: {{ song.artist }}</p>
                                         <p>Album: {{ song.album }}</p>
@@ -38,10 +38,10 @@
         </div>
         <div class="page-content">
             {% if searched %}
-                <div class="responsive-searched-songs">
+                <div class="responsive-songs">
                     {% for song in songs %}
-                        <div class="responsive-searched-song">
-                            <a class="responsive-searched-song-card" href="{% url 'songs:detail' slug=song.slug %}">
+                        <div class="responsive-song">
+                            <a class="responsive-song-card" href="{% url 'songs:detail' slug=song.slug %}">
                                 <h3>{{ song.title }}</h3>
                                 <p>Artist: {{ song.artist }}</p>
                                 <p>Album: {{ song.album }}</p>

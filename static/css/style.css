@@ -510,7 +510,7 @@ textarea {
     justify-items: center;
 }
 
-.searched-songs {
+.songs {
     display: grid;
     grid-template-columns: auto auto;
     gap: 40px;
@@ -519,71 +519,45 @@ textarea {
     overflow-y: auto;
 }
 
-.searched-song {
+.song {
     padding: 20px;
     border: solid 4px black;
     border-radius: 5px;
     background-color: white;
 }
 
-.searched-song:hover {
-    border: solid 4px white;
-}
-
-.searched-song-card,
-.searched-song-card a {
-    display: grid;
-    grid-template-rows: auto;
-    gap: 10px;
-    justify-items: center;
-}
-
-.responsive-searched-songs {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 40px;
-    margin: 20px 0px;
-}
-
-.responsive-searched-song {
-    padding: 20px;
-    border: solid 4px #03c0d0;
-    border-radius: 5px;
-    background-color: #03c0d0;
-}
-
-.responsive-searched-song:hover {
-    border: solid 4px black;
-}
-
-.responsive-searched-song-card,
-.responsive-searched-song-card a {
-    display: grid;
-    grid-template-rows: auto;
-    gap: 10px;
-    justify-items: center;
-}
-
-.songs {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 40px;
-    margin: 20px 0px;
-}
-
-.song {
-    padding: 20px;
-    border: solid 4px #03c0d0;
-    border-radius: 5px;
-    background-color: #03c0d0;
-}
-
 .song:hover {
-    border: solid 4px black;
+    border: solid 4px white;
 }
 
 .song-card,
 .song-card a {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
+    justify-items: center;
+}
+
+.responsive-songs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin: 20px 0px;
+}
+
+.responsive-song {
+    padding: 20px;
+    border: solid 4px #03c0d0;
+    border-radius: 5px;
+    background-color: #03c0d0;
+}
+
+.responsive-song:hover {
+    border: solid 4px black;
+}
+
+.responsive-song-card,
+.responsive-song-card a {
     display: grid;
     grid-template-rows: auto;
     gap: 10px;
