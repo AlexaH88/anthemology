@@ -170,6 +170,10 @@ main {
     margin: -20px;
 }
 
+.responsive-text {
+    text-align: center;
+}
+
 .hero-page-wrapper {
     grid-row-start: auto;
     grid-row-end: auto;
@@ -484,6 +488,7 @@ textarea {
 
 .song-list-title {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .song-list-item {
@@ -540,7 +545,7 @@ textarea {
 
 .responsive-songs {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto;
     gap: 40px;
     margin: 20px 0px;
 }
@@ -762,5 +767,7 @@ footer li {
 
     .responsive-wrapper {
         display: grid;
+        grid-template-rows: min-content min-content min-content;
+        margin: 20px;
     }
 }
