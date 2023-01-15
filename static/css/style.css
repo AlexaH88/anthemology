@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body * {
@@ -42,7 +43,7 @@ a:hover {
 header {
     min-height: 50px;
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: #03c0d0;
     padding: 20px;
     gap: 20px;
@@ -735,10 +736,19 @@ footer li {
         width: 50%;
         height: 20%;
     }
+
+    .song-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /* 768px and down */
 @media only screen and (max-width: 768px) {
+    header {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
+    
     .hero-page-wrapper {
         display: none;
     }
@@ -774,7 +784,6 @@ footer li {
     }
 
     .song-list {
-        width: 100%;
         max-height: none;
         overflow-y: none;
     }
@@ -818,7 +827,40 @@ footer li {
 
 /* 425px and down */
 @media only screen and (max-width: 425px) {
+    .header-item {
+        padding: 10px;
+    }
     
+    .header-logo i {
+        font-size: 180%;
+    }
+
+    .header-logo a {
+        font-size: 160%;
+    }
+
+    nav ul {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    nav li {
+        margin-left: 0px;
+    }
+
+    nav li a {
+        font-size: 120%;
+    }
+
+    nav button {
+        font-size: 110%;
+    }
+
+    .login {
+        font-size: 115%;
+    }
 }
 
 /* 320px and down */
