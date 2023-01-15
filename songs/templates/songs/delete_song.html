@@ -8,8 +8,10 @@
         <div class="hero-image-container">
             <img class="hero-image" src="{% static 'images/hero-image-main.png' %}" alt="Large black vinyl">
             <div class="hero-image-content">
-                <h2 class="hero-image-title">Delete Song</h2>
-                <div>
+                <div class="page-header">
+                    <h2 class="page-header-title">Delete Song</h2>
+                </div>
+                <div class="page-content">
                     <form class="site-form" action="{% url 'songs:delete' slug=song.slug %}" method="post" enctype="multipart/form-data">
                         {% csrf_token %}
                         {{ form }}
@@ -24,10 +26,12 @@
         <div class="page-header">
             <h2 class="page-header-title">Delete Song</h2>
         </div>
-        <form class="site-form" action="{% url 'songs:delete' slug=song.slug %}" method="post" enctype="multipart/form-data">
-            {% csrf_token %}
-            {{ form }}
-            <input class="responsive-button" type="submit" value="Delete">
-        </form>
+        <div class="page-content">
+            <form class="site-form" action="{% url 'songs:delete' slug=song.slug %}" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form }}
+                <input class="button" type="submit" value="Delete">
+            </form>
+        </div>
     </section>
 {% endblock %}
