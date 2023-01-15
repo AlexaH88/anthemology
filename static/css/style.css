@@ -386,13 +386,6 @@ textarea {
     border-radius: 5px;
 }
 
-.responsive-wrapper input,
-.responsive-wrapper textarea {
-    padding: 2px;
-    border: solid 3px #03c0d0;
-    border-radius: 5px;
-}
-
 .site-form {
     display: grid;
     grid-template-rows: auto;

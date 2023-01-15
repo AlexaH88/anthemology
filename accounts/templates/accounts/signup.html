@@ -8,8 +8,10 @@
         <div class="hero-image-container">
             <img class="hero-image" src="{% static 'images/hero-image-main.png' %}" alt="Large black vinyl">
             <div class="hero-image-content">
-                <h2 class="hero-image-title">Signup</h2>
-                <div>
+                <div class="page-header">
+                    <h2 class="page-header-title">Signup</h2>
+                </div>
+                <div class="page-content">
                     <form class="site-form" action="{% url 'accounts:signup' %}" method="post">
                         {% csrf_token %}
                         {{ form }}
@@ -24,7 +26,7 @@
         <div class="page-header">
             <h2 class="page-header-title">Signup</h2>
         </div>
-        <div>
+        <div class="page-content">
             <form class="site-form" action="{% url 'accounts:signup' %}" method="post">
                 {% csrf_token %}
                 {{ form }}
