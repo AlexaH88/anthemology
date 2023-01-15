@@ -208,11 +208,6 @@ main {
     padding: 10px 0px;
 }
 
-.hero-image-title {
-    margin-bottom: 10px;
-    font-size: 200%;
-}
-
 .homepage-wrapper {
     grid-row-start: auto;
     grid-row-end: auto;
