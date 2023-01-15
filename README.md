@@ -31,12 +31,12 @@
     -   #### Colour Palette
 
         - The colour palette is made up of four colours: 
-          - Yellow #FFDE59
-          - Purple #5E17EB
+          - Aqua #03c0d0
+          - Dark Purple #39217d
           - Black #000000
           - White #FFFFFF
 
-        - The yellow #FFDE59 and purple #5E17EB were chosen for their playfulness and retro feel, fitting with the theme of the site, all the while taking into account their compatibility with each other and the site as a whole. Black #000000 and white #FFFFFF are used as the third and fourth colours on the site as neutral tones.
+        - The aqua #03c0d0 was chosen as a colourful contrast to the predominantly black and white hero images. Dark purple #39217d is used on all alerts, indicating to the user that these differ from all other elements on the site and require attention. Black #000000 and white #FFFFFF are used as the third and fourth colours on the site as neutral tones and to reiterate the hero images. Compatibility with each other, and accessibility, were taken into account for all four colours.
 
     -   #### Typography
 
@@ -257,10 +257,9 @@
 - #### Further Accessibility Testing
 
   - [EightShapes Contrast Grid](http://eightshapes.com/) was used to test the colour palette of the site for any accessibility issues. Only AAA and AA rating options were used on the site. 
-  ![Colour Palette Contrast Grid](assets/images/color-palette-contrast-grid.png)
+  ![Colour Palette Contrast Grid](static/images/color-palette-contrast-grid.png)
   
   - Any icons on the site that are for decorative purposes only use the aria-hidden="true" attribute to accommodate for accessibility, as recommended by [Font Awesome's Accessiblity Page](https://fontawesome.com/v5/docs/web/other-topics/accessibility)
-  ![Font Awesome Accessiblity Page](assets/images/font-awesome-accessibility.png)
 
 ### ***Responsive Testing***
 
