@@ -409,30 +409,27 @@ textarea {
 .helptext, 
 .errorlist,
 .nonfield {
-    border: solid black;
-    border-radius: 5px;
-    padding: 2px 8px;
-    background-color: black;
     list-style: none;
-    margin: 20px 0px;
+    margin: 10px 0px;
+    border: solid #39217d;
+    border-radius: 5px;
+    padding: 4px 6px;
+    background-color: rgb(57, 33, 125, 0.8);
+    font-weight: normal;
     font-size: 75%;
     color: white;
+    font-family: 'Righteous', sans-serif;
+    font-weight: normal;
 }
 
-.responsive-wrapper .helptext, 
-.responsive-wrapper .errorlist,
-.responsive-wrapper .nonfield {
-    border: solid #03c0d0;
-    border-radius: 5px;
-    padding: 6px 8px;
-    background-color: rgba(3, 192, 208, 0.4);
+.helptext span {
     list-style: none;
-    margin: 20px 0px;
     font-size: 75%;
-    color: black;
+    color: white;
+    font-family: 'Righteous', sans-serif;
+    font-weight: normal;
 }
 
-.helptext span,
 .helptext ul,
 .helptext li,
 .errorlist li,
@@ -440,14 +437,8 @@ textarea {
     list-style: none;
     font-size: 100%;
     color: white;
-}
-
-.responsive-wrapper .helptext span,
-.responsive-wrapper .helptext ul,
-.responsive-wrapper .helptext li,
-.responsive-wrapper .errorlist li,
-.responsive-wrapper .nofield li {
-    color: black;
+    font-family: 'Righteous', sans-serif;
+    font-weight: normal;
 }
 
 .page-header {
@@ -811,16 +802,6 @@ footer li {
 
     .text-highlight {
         border-bottom: solid 6px #03c0d0;
-    }
-
-    .section-alert {
-        border: solid #03c0d0;
-        background-color: rgba(3, 192, 208, 0.4);
-    }
-    
-    .section-alert p,
-    .section-alert li {
-        color: black;
     }
 
     .song-buttons button:hover {
