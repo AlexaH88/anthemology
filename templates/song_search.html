@@ -8,7 +8,9 @@
         <div class="hero-image-container">
             <img class="hero-image" src="{% static 'images/hero-image-main.png' %}" alt="Large black vinyl">
             <div class="hero-image-content">
-                <h2 class="hero-image-title">Your Search Results</h2>
+                <div class="page-header">
+                    <h2 class="page-header-title">Your Search Results</h2>
+                </div>
                 <div class="page-content">
                     {% if searched %}
                         <div class="songs">
