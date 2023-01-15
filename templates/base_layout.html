@@ -24,9 +24,30 @@
     <!-- header -->
     <header>
         <!-- site logo -->
-        <a class="header-item" id="header-logo" href="{% url 'home' %}" aria-label="Link to the site's homepage">
-            <h1><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i> Anthemology</h1>
-        </a>
+        <div class="header-item">
+            <ul>
+                <li class="header-logo">
+                    <i class="fa-solid fa-microphone-lines" aria-hidden="true"></i>
+                </li>
+                <li class="header-logo">
+                    <h1>
+                        <a href="{% url 'home' %}" aria-label="Link to the site's homepage">Anthemology</a>
+                    </h1>
+                </li>
+            </ul>
+        </div>
+        <!-- search bar -->
+        <div class="header-item">
+            <ul>
+                <li>
+                    <form class="nav-search-bar" method="post" action="{% url 'song_search' %}">
+                        {% csrf_token %}
+                        <input type="search" placeholder="Search Songs" name="searched" aria-label="Song Search Bar">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
         <!-- navigation links -->
         <nav class="header-item">
             <ul>
@@ -64,16 +85,6 @@
                         <a class="login" href="{% url 'accounts:login' %}">Login</a>
                     </li>
                 {% endif %}
-            </ul>
-            <ul>
-                <!-- search bar -->
-                <li>
-                    <form class="nav-search-bar" method="post" action="{% url 'song_search' %}">
-                        {% csrf_token %}
-                        <input type="search" placeholder="Search Songs" name="searched" aria-label="Song Search Bar">
-                        <button type="submit">Search</button>
-                    </form>
-                </li>
             </ul>
         </nav>
     </header>

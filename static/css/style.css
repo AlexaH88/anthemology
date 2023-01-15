@@ -41,41 +41,47 @@ a:hover {
 /* header */
 header {
     min-height: 50px;
-    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto 1fr;
     background-color: #03c0d0;
-}
-
-#header-logo h1:hover,
-#header-logo h1 i:hover {
-    color: white;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
 }
 
 .header-item {
     padding: 20px;
-    display: grid;
-    grid-template-rows: auto auto;
-    gap: 20px;
-    align-content: center;
+    align-self: center;
 }
 
-#header-logo {
-    margin: 0px 0px -20px 0px;
+.header-logo a:hover {
+    color: black;
+    border-bottom: solid 6px white;
 }
 
-header h1 {
-    font-size: 280%;
+.header-logo {
+    display: inline-block;
+    margin-right: 20px;
 }
 
-header h1 i {
-    font-size: 90%;
+.header-logo a {
+    font-size: 240%;
+    font-family: 'Righteous', sans-serif;
+}
+
+.header-logo i {
+    font-size: 240%;
 }
 
 nav {
     justify-self: end;
     align-self: center;
     display: grid;
+}
+
+nav a:hover {
+    color: black;
+    border-bottom: solid 6px white;
 }
 
 nav ul {
@@ -129,10 +135,13 @@ nav button:hover {
     font-weight: bold;
 }
 
+.header-item ul {
+    list-style-type: none;
+}
+
 .nav-search-bar {
-    font-size: 75%;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr auto;
     gap: 10px;
     justify-self: end;
 }
@@ -147,6 +156,7 @@ nav button:hover {
 
 .nav-search-bar button {
     font-size: 100%;
+    padding: 6px;
 }
 
 /* main pages */
@@ -219,7 +229,7 @@ main {
 .homepage-image-content {
     width: 30%;
     height: 10%;
-    background-color: rgba(3, 192, 208, 0.8);
+    background-color: rgba(3, 192, 208, 0.9);
 }
 
 .homepage-search-bar {
@@ -229,7 +239,7 @@ main {
     transform: translate(-50%, -50%);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
 }
 
 .homepage-search-bar input {
