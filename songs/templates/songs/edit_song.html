@@ -30,7 +30,7 @@
             <form class="site-form" action="{% url 'songs:edit' slug=song.slug %}" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form }}
-                <input class="responsive-button" type="submit" value="Update">
+                <input class="button" type="submit" value="Update">
             </form>
         </div>
     </section>

@@ -30,7 +30,7 @@
             <form class="site-form" action="{% url 'songs:delete' slug=song.slug %}" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form }}
-                <input class="responsive-button" type="submit" value="Delete">
+                <input class="button" type="submit" value="Delete">
             </form>
         </div>
     </section>

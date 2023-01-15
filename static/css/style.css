@@ -347,7 +347,7 @@ button:hover {
     font-weight: bold;
 }
 
-.responsive-button {
+/* .responsive-button {
     border: solid #03c0d0;
     border-radius: 5px;
     padding: 6px 8px !important;
@@ -356,11 +356,11 @@ button:hover {
     font-family: 'Righteous', sans-serif;
     font-weight: normal;
     margin-top: 20px;
-}
+} */
 
-.responsive-button:hover {
+/* .responsive-button:hover {
     color: white;
-}
+} */
 
 .responsive-page-header-button button:hover {
     border: solid #03c0d0;
@@ -826,6 +826,11 @@ footer li {
     .song-buttons button:hover {
         border: solid white;
         background-color: white;
+    }
+
+    .button:hover {
+        border: solid #03c0d0;
+        background-color: #03c0d0;
     }
 
     .page-content {
