@@ -402,7 +402,7 @@ textarea {
     display: grid;
     grid-template-rows: auto;
     justify-items: start;
-    margin: -20px 0px 20px 0px;
+    margin-top: -10px;
 }
 
 .site-form .button,
@@ -465,7 +465,7 @@ textarea {
 .page-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .page-header-title {
@@ -475,10 +475,6 @@ textarea {
 .page-header-item {
     justify-self: end;
     display: grid;
-}
-
-.page-content {
-    padding: 10px 30px;
 }
 
 .page-content ul {
@@ -847,6 +843,7 @@ footer li {
     .page-content {
         border: solid 4px #03c0d0;
         border-radius: 5px;
+        padding: 20px;
     }
 }
 
