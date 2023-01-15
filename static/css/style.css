@@ -556,22 +556,11 @@ textarea {
     line-height: 260%;
     white-space: pre-line;
     overflow-y: auto;
-    height: 600px;
+    max-height: 600px;
     width: 600px;
 }
 
 .song-lyrics p {
-    text-align: center;
-}
-
-.responsive-song-lyrics {
-    overflow-y: none;
-    height: none;
-}
-
-.responsive-song-lyrics p {
-    font-size: 130%;
-    font-weight: bold;
     text-align: center;
 }
 
@@ -751,6 +740,10 @@ footer li {
         display: none;
     }
 
+    .wrapper {
+        display: none;
+    }
+
     .responsive-wrapper {
         display: grid;
         grid-template-rows: min-content min-content min-content;
@@ -807,6 +800,16 @@ footer li {
     
     .song:hover {
         border: solid 4px black;
+    }
+
+    .song-lyrics {
+        width: 100%;
+        max-height: none;
+        overflow-y: none;
+    }
+
+    .song-lyrics p {
+        font-weight: bold;
     }
 }
 

@@ -62,13 +62,8 @@
                         <p>Added On: {{ song.date }}</p>
                     </div>
                 </div>
-                <div class="hero-image-container">
-                    <img class="hero-image" src="{% static 'images/hero-image-main.png' %}" alt="Large black vinyl">
-                    <div class="hero-image-content">
-                        <div class="responsive-song-lyrics">
-                            <p>{{ song.lyrics }}</p>
-                        </div>
-                    </div>
+                <div class="song-lyrics">
+                    <p>{{ song.lyrics }}</p>
                 </div>
             </div>
         </div>
