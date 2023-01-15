@@ -46,7 +46,13 @@
     
     -   #### Imagery
 
-        - The piano and computer mouse icons on the Instructions Page were added to avoid having a text-heavy page and to create a playful and fun look and feel. The graphics use the same colours and style of the site in order to keep things coherent.  
+        - There are two hero images throughout the site:
+
+          - The homepage image of a collection of vinyls strewn across a surface covers the entire body of the site and is used to get the users attention when landing on the homepage. As the remaining content on this page is not text-heavy, consisting of the search function, the hero image doesn't distract from the content.
+
+          - The remaining pages use the same hero image of half of a single vinyl seemingly dropping from the top of the page. As these pages contain a considerable amount of text and content, this was done in order not to distact from the information on the page. 
+
+          - Both hero images are predominantly black and white and were deliberately chosen as such to give a neutral feel and allow for pops of colour elsewhere on the site. 
 
 -   ### ***Wireframes and Mock-Ups***
 
