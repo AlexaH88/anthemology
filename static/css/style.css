@@ -731,7 +731,10 @@ footer li {
 
 /* 1024px and down */
 @media only screen and (max-width: 1024px) {
-    
+    .homepage-image-content {
+        width: 50%;
+        height: 20%;
+    }
 }
 
 /* 768px and down */
