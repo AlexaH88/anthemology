@@ -299,6 +299,7 @@ main {
     list-style: none;
     margin: 20px 0px;
     border: solid #39217d;
+    border-radius: 5px;
     padding: 10px;
     background-color: rgb(57, 33, 125, 0.8);
     list-style: none;
@@ -381,18 +382,6 @@ button:hover {
 .song-buttons button:hover {
     border: solid #03c0d0;
     background-color: #03c0d0;
-}
-
-.responsive-song-buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
-    padding: 10px;
-}
-
-.responsive-song-buttons button:hover {
-    border: solid white;
-    background-color: white;
 }
 
 input,
@@ -846,17 +835,17 @@ footer li {
 
     .section-alert {
         border: solid #03c0d0;
-        border-radius: 5px;
-        padding: 10px;
         background-color: rgba(3, 192, 208, 0.4);
-        list-style: none;
-        margin: 20px 0px;
     }
     
     .section-alert p,
     .section-alert li {
-        font-size: 75%;
         color: black;
+    }
+
+    .song-buttons button:hover {
+        border: solid white;
+        background-color: white;
     }
 }
 

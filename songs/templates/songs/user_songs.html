@@ -84,7 +84,7 @@
                                     <p>Album: {{ user_song.album }}</p>
                                     <p>Added By: {{ user_song.author.username }}</p>
                                 </a>
-                                <div class="responsive-song-buttons">
+                                <div class="song-buttons">
                                     <a href="{% url 'songs:edit' slug=user_song.slug %}">
                                         <button>Edit Song</button>
                                     </a>
