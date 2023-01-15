@@ -467,16 +467,6 @@ textarea {
     justify-items: center;
 }
 
-.song-list-item a:hover {
-    color: white;
-    font-weight: bold;
-}
-
-.responsive-song-list-item a:hover {
-    color: #03c0d0;
-    font-weight: bold;
-}
-
 .song-list-song {
     display: grid;
     grid-template-columns: auto;
@@ -487,6 +477,18 @@ textarea {
 .song-list-song a {
     font-family: 'Righteous', sans-serif;
     font-weight: normal;
+    border: solid 3px transparent;
+    border-radius: 5px;
+    padding: 2px 4px;
+}
+
+.song-list-song a:hover {
+    background-color: white;
+    color: black;
+    border: solid 3px black;
+    border-radius: 5px;
+    font-weight: normal;
+    padding: 2px 4px;
 }
 
 .user-songs {
@@ -798,6 +800,10 @@ footer li {
         border: solid 4px #03c0d0;
         border-radius: 5px;
         padding: 20px;
+    }
+
+    .song-list-song a:hover {
+        background-color: #03c0d0;
     }
 }
 
