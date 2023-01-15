@@ -197,15 +197,18 @@
 
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
--   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+-   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 ### ***Frameworks, Libraries & Programs Used***
 
-1. [Google Fonts:](https://fonts.google.com/)
-    - Google Fonts was used to import the ''Orelega One' and 'Poppins' fonts into the style.css file which is used on all pages throughout the project. [Orelega One](https://fonts.google.com/specimen/Orelega+One?query=orelega) for the headings and [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins) is used for the remaining text.
+1. [Django:](https://www.djangoproject.com/)
+    - The Django web framework was used to create the full-stack web application.
 
-1. [Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+1. [PostgreSQL:](https://en.wikipedia.org/wiki/PostgreSQL)
+    - PostgreSQL was used as the object-relational database system.
+
+1. [ElephantSQL:](https://www.elephantsql.com/)
+    - ElephantSQL was used to host the database.
 
 1. [Git:](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
@@ -213,14 +216,26 @@
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
 
-1. [Canva:](https://www.canva.com/)
-    - Canva was used to create the wireframes during the design process.
+1. [Heroku:](https://heroku.com/)
+    - Heroku was used for the deployed application.
 
 1. [Chrome DevTools:](https://developer.chrome.com/docs/devtools/)
     - Chrome DevTools was used to consistently check the site in terms of responsivity, performance, accessibility, best practice and SEO.
 
+1. [Google Fonts:](https://fonts.google.com/)
+    - Google Fonts was used to import the ''Orelega One' and 'Poppins' fonts into the style.css file which is used on all pages throughout the project. [Orelega One](https://fonts.google.com/specimen/Orelega+One?query=orelega) for the headings and [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins) is used for the remaining text.
+
+1. [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+
 1. [Font Awesome Favicon Generator:](https://gauger.io/fonticon/)
     - Font Awesome Favicon Generator was used to reproduce a favicon version of the [Font Awesome Music Icon](https://fontawesome.com/icons/music?s=solid) used in the header site name.
+
+1. [Canva:](https://www.canva.com/)
+    - Canva was used to create the wireframes and mock-ups during the design process. As well as the vinyl graphic, and adjustement of hero images. 
+
+1. [Pexels:](https://www.pexels.com/)
+    - Pexels was used to find the hero images.
 
 1. [Responsinator:](https://www.responsinator.com/)
     - Responsinator was used to check responsivity across all devices.
