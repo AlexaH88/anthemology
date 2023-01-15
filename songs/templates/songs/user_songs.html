@@ -74,10 +74,10 @@
             </p>
             <p>
                 {% if user_songs %}
-                <div class="responsive-songs">
+                <div class="user-songs">
                     {% for user_song in user_songs %}
-                        <div class="responsive-song">
-                            <div class="responsive-song-card">
+                        <div class="song">
+                            <div class="song-card">
                                 <a href="{% url 'songs:detail' slug=user_song.slug %}">
                                     <h4>{{ user_song.title }}</h4>
                                     <p>Artist: {{ user_song.artist }}</p>

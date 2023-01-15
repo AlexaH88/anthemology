@@ -40,10 +40,10 @@
         </div>
         <div class="page-content">
             {% if searched %}
-                <div class="responsive-songs">
+                <div class="songs">
                     {% for song in songs %}
-                        <div class="responsive-song">
-                            <a class="responsive-song-card" href="{% url 'songs:detail' slug=song.slug %}">
+                        <div class="song">
+                            <a class="song-card" href="{% url 'songs:detail' slug=song.slug %}">
                                 <h3>{{ song.title }}</h3>
                                 <p>Artist: {{ song.artist }}</p>
                                 <p>Album: {{ song.album }}</p>
