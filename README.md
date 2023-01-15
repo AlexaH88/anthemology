@@ -48,21 +48,21 @@
 
         - The piano and computer mouse icons on the Instructions Page were added to avoid having a text-heavy page and to create a playful and fun look and feel. The graphics use the same colours and style of the site in order to keep things coherent.  
 
--   ### ***Wireframes***
+-   ### ***Wireframes and Mock-Ups***
 
-    - The Play and Challenge pages at the wireframe stage were later combined to create one page (Play), with the ability to switch between Freestlye and Challenge modes. This was done in order to improve UX and repetitive code on two pages. 
+    - Wireframes and mock-ups were created for the homepage and song lyric pages. These were adapted and improved upon throughout the development process. 
 
-    -   Play page:
-        ![Play Wireframe](assets/images/wireframes-play-page.png)
+      -   Homepage Wireframe:
+          ![Homepage Wireframe](static/images/wireframe-homepage.png)
 
-    -   Challenge page:
-        ![Challenge Wireframe](assets/images/wireframes-challenge-page.png)
+      -   Song Lyrics Wireframe:
+          ![Song Lyrics Wireframe](static/images/wireframe-song-page.png)
 
-    -   Sheet Music page:
-        ![Sheet Music Wireframe](assets/images/wireframes-sheet-music-page.png)
-    
-    -   Instructions page:
-        ![Instructions Wireframe](assets/images/wireframes-instructions-page.png)
+      -   Homepage Mock-Up:
+          ![Homepage Mock-Up](static/images/mockup-homepage.png)
+      
+      -   Song Lyrics Mock-Up:
+          ![Song Lyrics Mock-Up](static/images/mockup-song-page.png)
 
 ## __Features__
 
