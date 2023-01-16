@@ -751,6 +751,22 @@ footer li {
 
 /* 1440px and down */
 @media only screen and (max-width: 1440px) {
+    header {
+        grid-template-columns: repeat(2, auto);
+        gap: 0px;
+        padding: 10px;
+    }
+    
+    nav,
+    nav ul {
+        justify-self: start;
+    }
+
+    nav li {
+        margin-right: 20px;
+        margin-left: 0px;
+    }
+    
     .hero-image-content {
         width: 80%;
     }
