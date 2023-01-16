@@ -865,26 +865,26 @@ footer li {
         justify-self: center;
     }
     
-    /* .hero-page-wrapper {
+    .hero-page-wrapper {
         display: none;
-    } */
-/* 
+    }
+
     .wrapper {
         display: none;
         grid-template-columns: 100%;
-    } */
+    }
 
-    /* .responsive-wrapper {
+    .responsive-wrapper {
         display: grid;
         grid-template-rows: min-content min-content min-content;
         margin: 20px;
-    } */
+    }
 
-    /* .text-highlight {
+    .text-highlight {
         border-bottom: solid 6px #03c0d0;
-    } */
+    }
 
-    /* .song-list {
+    .song-list {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -896,15 +896,15 @@ footer li {
     .button:hover {
         border: solid #03c0d0;
         background-color: #03c0d0;
-    } */
+    }
 
-    /* .page-content {
+    .page-content {
         border: solid 4px #03c0d0;
         border-radius: 5px;
         padding: 20px;
-    } */
+    }
 
-    /* .song-list {
+    .song-list {
         max-height: none;
         overflow-y: none;
     }
@@ -940,7 +940,7 @@ footer li {
 
     .song-lyrics p {
         font-weight: bold;
-    } */
+    }
 }
 
 /* 425px and down */
