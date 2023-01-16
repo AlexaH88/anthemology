@@ -8,8 +8,8 @@
         <div class="hero-image-container">
             <img class="hero-image" src="{% static 'images/hero-image-main.png' %}" alt="Large black vinyl">
             <div class="hero-image-content">
-                <div class="page-header">
-                    <h2 class="page-header-title">My Songs</h2>
+                <div class="page-header-with-button">
+                    <h2 class="page-header-title-with-button">My Songs</h2>
                     <a class="page-header-item" href="{% url 'songs:add' %}">
                         <button class="button">Add Song</button>
                     </a>
@@ -58,8 +58,8 @@
     </section>
     <!-- small screen version -->
     <section class="responsive-wrapper">
-        <div class="page-header">
-            <h2 class="page-header-title">My Songs</h2>
+        <div class="page-header-with-button">
+            <h2 class="page-header-title-with-button">My Songs</h2>
             <a class="page-header-item" href="{% url 'songs:add' %}">
                 <button class="button">Add Song</button>
             </a>

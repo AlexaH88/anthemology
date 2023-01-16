@@ -203,6 +203,7 @@ main {
     height: fit-content;
     padding: 30px 40px;
     border-radius: 5px;
+    text-align: center;
 }
 
 .hero-image-content ul {
@@ -427,6 +428,10 @@ textarea {
 }
 
 .page-header {
+    margin-bottom: 10px;
+}
+
+.page-header-with-button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 10px;
@@ -434,6 +439,11 @@ textarea {
 
 .page-header-title {
     font-size: 200%;
+}
+
+.page-header-title-with-button {
+    font-size: 200%;
+    justify-self: start;
 }
 
 .page-header-item {
@@ -728,7 +738,13 @@ footer li {
 
 /* 1440px and down */
 @media only screen and (max-width: 1440px) {
+    .hero-image-content {
+        width: 80%;
+    }
     
+    .song-list {
+        max-height: 500px;
+    }
 }
 
 /* 1024px and down */
