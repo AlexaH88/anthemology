@@ -189,11 +189,14 @@ main {
     height: 100vh;
     align-self: center;
     background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
     align-items: center;
     justify-content: center;
     background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .homepage-image-content {
@@ -249,11 +252,14 @@ main {
     height: 100vh;
     align-self: center;
     background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
     align-items: center;
     justify-content: center;
     background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .hero-image {
@@ -865,10 +871,10 @@ footer li {
         justify-self: center;
     }
     
-    .hero-page-wrapper {
+    /* .hero-page-wrapper {
         display: none;
-    }
-
+    } */
+/* 
     .wrapper {
         display: none;
         grid-template-columns: 100%;
@@ -878,6 +884,7 @@ footer li {
         display: grid;
         grid-template-rows: min-content min-content min-content;
         margin: 20px;
+        text-align: center;
     }
 
     .text-highlight {
@@ -940,11 +947,19 @@ footer li {
 
     .song-lyrics p {
         font-weight: bold;
-    }
+    } */
 }
 
 /* 425px and down */
 @media only screen and (max-width: 425px) {
+    h1, h2, h3, h4 {
+        font-size: 15px;
+    }
+
+    .header-logo i {
+        font-size: 220%;
+    }
+
     .header-item {
         padding: 10px;
     }
