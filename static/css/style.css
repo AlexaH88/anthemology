@@ -120,7 +120,7 @@ nav button:hover {
     font-weight: bold;
 }
 
-.login {
+.login-button {
     background-color: black;
     border: solid 3px black;
     border-radius: 5px;
@@ -130,7 +130,7 @@ nav button:hover {
     font-size: 145%;
 }
 
-.login:hover {
+.login-button:hover {
     border: solid 3px white;
     color: black;
     background-color: white;
@@ -888,13 +888,13 @@ footer li {
 
     nav ul {
         display: grid;
-        gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
+        gap: 0px;
+        grid-template-columns: repeat(4, 1fr);
         align-items: center;
     }
 
     nav li {
-        margin-left: 0px;
+        margin-right: 0px;
     }
 
     nav li a {
@@ -905,8 +905,16 @@ footer li {
         font-size: 110%;
     }
 
-    .login {
+    .login-button {
         font-size: 115%;
+    }
+
+    .login {
+        margin-top: 12px;
+    }
+
+    .logout {
+        margin-top: 5px;
     }
 
     .homepage-image-content {
@@ -915,6 +923,10 @@ footer li {
 
     .homepage-search-bar {
         grid-template-columns: 1fr;
+    }
+
+    .song-list {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 

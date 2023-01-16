@@ -70,7 +70,7 @@
                     </li>
                     <!-- link to log out -->
                     <li>
-                        <form action="{% url 'accounts:logout' %}" method="post">
+                        <form class="logout" action="{% url 'accounts:logout' %}" method="post">
                             {% csrf_token %}
                             <button type="submit">Logout</button>
                         </form>
@@ -81,8 +81,8 @@
                         <a href="{% url 'accounts:signup' %}">Signup</a>
                     </li>
                     <!-- link to log in -->
-                    <li>
-                        <a class="login" href="{% url 'accounts:login' %}">Login</a>
+                    <li class="login">
+                        <a class="login-button" href="{% url 'accounts:login' %}">Login</a>
                     </li>
                 {% endif %}
             </ul>
