@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib import messages
+from songs.models import Song
 
 
 def signup_view(request):
@@ -40,3 +41,8 @@ def logout_view(request):
         logout(request)
         messages.success(request, "You have successfully logged out!")
         return redirect('songs:song_list')
+
+
+def admin_view(request):
+    songs = Song.objects.all()
+    return render(request, 'accounts/admin.html', {'songs': songs})

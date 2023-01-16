@@ -1,0 +1,48 @@
+{% extends 'base_layout.html' %}
+
+{% load static %}
+
+{% block content %}
+    <section class="hero-page-wrapper">
+        <div class="hero-image-container">
+            <div class="hero-image-content">
+                <div class="page-header">
+                    <h2 class="page-header-title">Admin View</h2>
+                </div>
+                <div class="page-content">
+                    <p>
+                        <ul>
+                            <li>Welcome <span class="text-highlight">{{ user }}!</span></li>
+                            <li>Here you'll find every single song that has been added to the database.</li>
+                            <li>You can view, edit, and delete them as wished.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="user-songs">
+                            {% for song in songs %}
+                                <div class="song">
+                                    <div class="song-card">
+                                        <a href="{% url 'songs:detail' slug=song.slug %}">
+                                            <h4>{{ song.title }}</h4>
+                                            <p>Artist: {{ song.artist }}</p>
+                                            <p>Album: {{ song.album }}</p>
+                                            <p>Added By: {{ song.author.username }}</p>
+                                        </a>
+                                        <div class="song-buttons">
+                                            <a href="{% url 'songs:edit' slug=song.slug %}">
+                                                <button>Edit Song</button>
+                                            </a>
+                                            <a href="{% url 'songs:delete' slug=song.slug %}">
+                                                <button>Delete Song</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

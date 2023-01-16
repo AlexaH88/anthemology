@@ -68,6 +68,12 @@
                 <li>
                     <a href="{% url 'about' %}">About</a>
                 </li>
+                {% if user.is_superuser %}
+                <!-- link to admin view -->
+                <li>
+                    <a href="{% url 'accounts:admin' %}">Admin</a>
+                </li>
+                {% endif %}
                 {% if user.is_authenticated %}
                 <!-- link to user's songs -->
                 <li>
