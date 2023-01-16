@@ -586,7 +586,7 @@ textarea {
 
 .song-detail {
     display: grid;
-    grid-template-columns: 1.2fr 3fr;
+    grid-template-columns: 1fr 4fr;
     gap: 20px;
     cursor: default;
     padding: 20px 0px;
@@ -611,7 +611,8 @@ textarea {
     line-height: 260%;
     white-space: pre-line;
     overflow-y: auto;
-    max-height: 600px;
+    max-height: 800px;
+    width: 1200px;
 }
 
 .song-lyrics p {
@@ -823,6 +824,11 @@ footer li {
         max-height: 600px;
     }
 
+    .song-lyrics {
+        max-height: 600px;
+        width: 600px;
+    }
+
     footer {
         gap: 0px;
         padding: 10px;
@@ -846,6 +852,19 @@ footer li {
     .alert-close-button {
         font-size: 20px;
     }
+
+    .wrapper {
+        justify-items: center;
+        text-align: center;
+    }
+
+    .song-detail {
+        grid-template-columns: 1fr;
+    }
+
+    .jukebox {
+        justify-self: center;
+    }
 }
 
 /* 768px and down */
@@ -867,6 +886,11 @@ footer li {
 
     .user-songs {
         max-height: 400px;
+    }
+
+    .song-lyrics {
+        max-height: 600px;
+        width: 400px;
     }
 
     .message-wrapper {
@@ -962,6 +986,14 @@ footer li {
     .song-list-item {
         margin: 10px 0px;
     }
+
+    .jukebox-image {
+        width: 100%;
+    }
+
+    .song-lyrics {
+        width: 200px;
+    }
 }
 
 /* 375px and down */
@@ -981,6 +1013,14 @@ footer li {
     .alert {
         padding: 10px;
     }
+
+    .jukebox-image {
+        width: 110%;
+    }
+
+    .song-lyrics {
+        width: 150px;
+    }
 }
 
 /* 320px and down */
@@ -991,5 +1031,13 @@ footer li {
 
     .homepage-image-content {
         width: 90%;
+    }
+
+    .jukebox-image {
+        width: 130%;
+    }
+
+    .song-lyrics {
+        width: 100px;
     }
 }
