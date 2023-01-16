@@ -272,8 +272,8 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(3, 192, 208, 0.9);
-    width: fit-content;
-    height: fit-content;
+    width: max-content;
+    height: max-content;
     padding: 30px 40px;
     border-radius: 5px;
     text-align: center;
@@ -825,13 +825,6 @@ footer li {
         width: 50%;
     }
 
-    .song-list,
-    .songs,
-    .user-songs {
-        max-height: 600px;
-        width: 1000px;
-    }
-
     footer {
         gap: 0px;
         padding: 10px;
@@ -855,21 +848,14 @@ footer li {
     .alert-close-button {
         font-size: 20px;
     }
-
-    .song-list,
-    .songs,
-    .user-songs,
-    .site-form {
-        max-height: 300px;
-    }
-
-    .hero-image-content {
-        max-height: 500px;
-    }
 }
 
 /* 768px and down */
 @media only screen and (max-width: 768px) {
+    body * {
+        font-size: 14px;
+    }
+
     header,
     footer {
         grid-template-columns: repeat(1, 1fr);
