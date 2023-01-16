@@ -916,6 +916,10 @@ footer li {
         font-size: 110%;
     }
 
+    .nav-search-bar {
+        grid-template-columns: 1fr;
+    }
+
     .login-button {
         font-size: 115%;
     }
@@ -962,6 +966,14 @@ footer li {
 
 /* 375px and down */
 @media only screen and (max-width: 375px) {
+    .header-logo a {
+        font-size: 230%;
+    }
+
+    .header-logo i {
+        font-size: 210%
+    }
+    
     .message-wrapper {
         top: 35%;
     }
@@ -973,6 +985,10 @@ footer li {
 
 /* 320px and down */
 @media only screen and (max-width: 320px) {
+    nav ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .homepage-image-content {
         width: 90%;
     }
