@@ -69,7 +69,11 @@ def delete_song(request, slug):
     song = Song.objects.get(slug=slug)
     if request.method == 'POST':
         song.delete()
-        messages.success(request, "Your song has been deleted!")
-        return redirect('songs:user_songs')
+        if request.user.is_superuser:
+            messages.success(request, "The song has been deleted!")
+            return redirect('accounts:admin')
+        else:
+            messages.success(request, "Your song has been deleted!")
+            return redirect('songs:user_songs')
     else:
         return render(request, 'songs/delete_song.html', {'song': song})

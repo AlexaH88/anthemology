@@ -43,6 +43,7 @@ def logout_view(request):
         messages.success(request, "You have successfully logged out!")
         return redirect('songs:song_list')
 
+
 @login_required(login_url="/accounts/login/")
 def admin_view(request):
     songs = Song.objects.all().order_by('title')
