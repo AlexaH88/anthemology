@@ -192,7 +192,7 @@ main {
     background-attachment: fixed;
     align-items: center;
     justify-content: center;
-    background-position: center;
+    background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -255,7 +255,7 @@ main {
     background-attachment: fixed;
     align-items: center;
     justify-content: center;
-    background-position: center;
+    background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -948,6 +948,11 @@ footer li {
     .song-lyrics p {
         font-weight: bold;
     } */
+
+    .hero-image-container,
+    .homepage-image-container {
+        background-size: auto 100%;
+    }
 }
 
 /* 425px and down */
