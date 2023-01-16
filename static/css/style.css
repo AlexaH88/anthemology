@@ -825,6 +825,11 @@ footer li {
         width: 50%;
     }
 
+    .songs {
+        grid-template-columns: 1fr 1fr;
+        max-height: 600px;
+    }
+
     footer {
         gap: 0px;
         padding: 10px;
@@ -930,6 +935,10 @@ footer li {
 
     .song-list {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .songs {
+        grid-template-columns: 1fr;
     }
 }
 
