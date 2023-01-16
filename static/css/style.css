@@ -19,6 +19,7 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
     min-height: 100vh;
 }
 
@@ -164,17 +165,20 @@ nav button:hover {
 main {
     display: grid;
     grid-template-rows: min-content min-content min-content;
+    grid-template-columns: 100%;
     margin: 20px;
 }
 
 .wrapper {
     grid-row-start: auto;
     grid-row-end: auto;
+    grid-template-columns: 100%;
 }
 
 .hero-page-wrapper {
     grid-row-start: auto;
     grid-row-end: auto;
+    grid-template-columns: 100%;
     margin: -20px;
 }
 
@@ -451,7 +455,6 @@ textarea {
     gap: 20px;
     padding: 20px;
     justify-items: center;
-    width: 1000px;
     max-height: 800px;
     overflow-y: auto;
 }
@@ -506,7 +509,6 @@ textarea {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     margin: 20px 0px;
-    width: 1000px;
     max-height: 800px;
     overflow-y: auto;
 }
@@ -558,7 +560,6 @@ textarea {
     white-space: pre-line;
     overflow-y: auto;
     max-height: 600px;
-    width: 600px;
 }
 
 .song-lyrics p {
@@ -683,7 +684,7 @@ textarea {
 /* footer */
 footer {
     min-height: 50px;
-    width: 100%;
+    grid-template-columns: 100%;
     background-color: #03c0d0;
     grid-row-start: 3;
     grid-row-end: 4;
@@ -755,6 +756,7 @@ footer li {
 
     .wrapper {
         display: none;
+        grid-template-columns: 100%;
     }
 
     .responsive-wrapper {
@@ -793,14 +795,12 @@ footer li {
     }
 
     .user-songs {
-        width: 100%;
         max-height: none;
         overflow-y: none;
     }
 
     .songs {
         grid-template-columns: 1fr 1fr;
-        width: 100%;
         max-height: none;
         overflow-y: none;
     }
@@ -815,7 +815,6 @@ footer li {
     }
 
     .song-lyrics {
-        width: 100%;
         max-height: none;
         overflow-y: none;
     }
