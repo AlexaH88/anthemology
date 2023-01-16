@@ -414,13 +414,6 @@ textarea {
     gap: 5px;
 }
 
-.site-form input,
-.site-form span,
-.site-form textarea {
-    justify-self: center;
-}
-
-
 .site-form .button,
 .site-form label {
     justify-self: center;
@@ -857,13 +850,23 @@ footer li {
 
 /* 768px and down */
 @media only screen and (max-width: 768px) {
-    body * {
-        font-size: 14px;
-    }
-
     header,
     footer {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hero-image-content {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .songs,
+    .song-list {
+        grid-template-columns: 1fr;
+    }
+
+    .user-songs {
+        max-height: 400px;
     }
 
     .message-wrapper {
@@ -933,12 +936,27 @@ footer li {
         grid-template-columns: 1fr;
     }
 
-    .song-list {
-        grid-template-columns: repeat(1, 1fr);
+    .page-header-title-with-button,
+    .page-header-item {
+        justify-self: center;
     }
 
-    .songs {
+    .page-header-with-button {
         grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .user-songs {
+        grid-template-columns: 1fr;
+    }
+
+    .song-list {
+        gap: 10px;
+        max-height: 600px;
+    }
+
+    .song-list-item {
+        margin: 10px 0px;
     }
 }
 
