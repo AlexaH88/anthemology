@@ -717,7 +717,7 @@ footer {
 
 .footer-item {
     padding: 20px;
-    align-self: center;
+    text-align: center;
 }
 
 footer li {
@@ -762,6 +762,11 @@ footer li {
         padding: 10px;
     }
     
+    .header-item,
+    .footer-item {
+        padding: 10px;
+    }
+
     nav,
     nav ul {
         justify-self: start;
@@ -826,12 +831,13 @@ footer li {
 
 /* 768px and down */
 @media only screen and (max-width: 768px) {
-    header {
+    header,
+    footer {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .header-item {
-        padding: 10px;
+    .footer-socials {
+        justify-self: center;
     }
     
     .hero-page-wrapper {
