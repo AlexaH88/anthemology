@@ -64,13 +64,9 @@ def edit_song(request, slug):
 @login_required(login_url="/accounts/login/")
 def delete_song(request, slug):
     song = Song.objects.get(slug=slug)
-    form = forms.SongForm(request.POST, instance=song)
-    if form.is_valid():
+    if request.method == 'POST':
         song.delete()
         messages.success(request, "Your song has been deleted!")
         return redirect('songs:user_songs')
     else:
-        form = forms.SongForm(instance=song)
-        return render(request, 'songs/delete_song.html', {
-            'song': song,
-            'form': form})
+        return render(request, 'songs/delete_song.html', {'song': song})

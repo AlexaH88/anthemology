@@ -7,12 +7,16 @@
         <div class="hero-image-container">
             <div class="hero-image-content">
                 <div class="page-header">
-                    <h2 class="page-header-title">Delete Song</h2>
+                    <h2 class="page-header-title">Delete Song?</h2>
                 </div>
                 <div class="page-content">
+                    <ul class="song-info">
+                        <li>Title: {{ song.title }}</li>
+                        <li>Artist: {{ song.artist }}</li>
+                        <li>Album: {{ song.album }}</li>
+                    </ul>
                     <form class="site-form" action="{% url 'songs:delete' slug=song.slug %}" method="post" enctype="multipart/form-data">
                         {% csrf_token %}
-                        {{ form }}
                         <input class="button" type="submit" value="Delete">
                     </form>
                 </div>
