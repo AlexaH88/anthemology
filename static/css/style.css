@@ -175,49 +175,25 @@ main {
     grid-template-columns: 100%;
 }
 
-.hero-page-wrapper {
-    grid-row-start: auto;
-    grid-row-end: auto;
-    grid-template-columns: 100%;
-    margin: -20px;
-}
-
-.hero-image-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-image {
-    width: 100%;
-}
-
-.hero-image-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(3, 192, 208, 0.9);
-    width: fit-content;
-    height: fit-content;
-    padding: 30px 40px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.hero-image-content ul {
-    list-style-type: none;
-}
-
-.hero-image-content li {
-    padding: 10px 0px;
-}
-
 .homepage-wrapper {
     grid-row-start: auto;
     grid-row-end: auto;
     margin: -20px;
+}
+
+.homepage-image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://res.cloudinary.com/dfgylv4o2/image/upload/v1673627238/static/images/hero-image-home.5e7310739c7e.jpg);
+    height: 100vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
 }
 
 .homepage-image-content {
@@ -249,6 +225,53 @@ main {
     padding: 10px;
     background-color: black;
     color: white;
+}
+
+.hero-page-wrapper {
+    grid-row-start: auto;
+    grid-row-end: auto;
+    grid-template-columns: 100%;
+    margin: -20px;
+}
+
+.hero-image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://res.cloudinary.com/dfgylv4o2/image/upload/v1673627239/static/images/hero-image-main.77be93a29c41.png);
+    height: 100vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.hero-image-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(3, 192, 208, 0.9);
+    width: fit-content;
+    height: fit-content;
+    padding: 30px 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.hero-image-content ul {
+    list-style-type: none;
+}
+
+.hero-image-content li {
+    padding: 10px 0px;
 }
 
 .text-highlight {
@@ -798,10 +821,6 @@ footer li {
 @media only screen and (max-width: 1024px) {
     body * {
         font-size: 15px;
-    }
-
-    body {
-        grid-template-rows: 1fr;
     }
 
     h1, h2, h3, h4 {
