@@ -3,7 +3,6 @@
 {% load static %}
 
 {% block content %}
-    <!-- large screen version -->
     <section class="hero-page-wrapper">
         <div class="hero-image-container">
             <div class="hero-image-content">
@@ -18,19 +17,6 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- small screen version -->
-    <section class="responsive-wrapper">
-        <div class="page-header">
-            <h2 class="page-header-title">Signup</h2>
-        </div>
-        <div class="page-content">
-            <form class="site-form" action="{% url 'accounts:signup' %}" method="post">
-                {% csrf_token %}
-                {{ form }}
-                <input class="button" type="submit" value="Signup">
-            </form>
         </div>
     </section>
 {% endblock %}

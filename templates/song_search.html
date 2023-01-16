@@ -3,7 +3,6 @@
 {% load static %}
 
 {% block content %}
-    <!-- large screen version -->
     <section class="hero-page-wrapper">
         <div class="hero-image-container">
             <div class="hero-image-content">
@@ -30,31 +29,6 @@
                     {% endif %}
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- small screen version -->
-    <section class="responsive-wrapper">
-        <div class="page-header">
-            <h2 class="page-header-title">Your Search Results</h2>
-        </div>
-        <div class="page-content">
-            {% if searched %}
-                <div class="songs">
-                    {% for song in songs %}
-                        <div class="song">
-                            <a class="song-card" href="{% url 'songs:detail' slug=song.slug %}">
-                                <h3>{{ song.title }}</h3>
-                                <p>Artist: {{ song.artist }}</p>
-                                <p>Album: {{ song.album }}</p>
-                            </a>
-                        </div>
-                    {% endfor %}
-                </div>
-            {% else %}
-            <div class="section-alert">
-                <p>The song you searched couldn't be found. Please try again.</p>
-            </div>
-            {% endif %}
         </div>
     </section>
 {% endblock %}

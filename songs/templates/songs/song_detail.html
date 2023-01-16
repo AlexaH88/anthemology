@@ -3,7 +3,6 @@
 {% load static %}
 
 {% block content %}
-    <!-- large screen version -->
     <section class="wrapper">
         <div class="page-header">
             <h2 class="page-header-title">Song Lyrics</h2>
@@ -33,36 +32,6 @@
                             <p>{{ song.lyrics }}</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- small screen version -->
-    <section class="responsive-wrapper">
-        <div class="page-header">
-            <h2 class="page-header-title">Song Lyrics</h2>
-        </div>
-        <div>
-            <div class="song-detail">
-                <div class="jukebox">
-                    <div class="jukebox-item">
-                        <div class="jukebox-image">
-                            <img src="{% static 'images/vinyl_graphic.png' %}" alt="default artwork image of vinyl graphic">
-                            <img src="{% static 'images/vinyl_graphic.png' %}" alt="default artwork image of vinyl graphic">
-                            <img src="{% static 'images/vinyl_graphic.png' %}" alt="default artwork image of vinyl graphic">
-                            <img src="{% static 'images/vinyl_graphic.png' %}" alt="default artwork image of vinyl graphic">
-                        </div>
-                    </div>
-                    <div class="jukebox-item song-info">
-                        <h3 class="text-highlight">{{ song.title }}</h3>
-                        <p>Artist: {{ song.artist }}</p>
-                        <p>Album: {{ song.album }}</p>
-                        <p>Added By: {{ song.author }}</p>
-                        <p>Added On: {{ song.date }}</p>
-                    </div>
-                </div>
-                <div class="song-lyrics">
-                    <p>{{ song.lyrics }}</p>
                 </div>
             </div>
         </div>

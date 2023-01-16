@@ -3,7 +3,6 @@
 {% load static %}
 
 {% block content %}
-    <!-- large screen version -->
     <section class="hero-page-wrapper">
         <div class="hero-image-container">
             <div class="hero-image-content">
@@ -54,58 +53,6 @@
                             {% endfor %}
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- small screen version -->
-    <section class="responsive-wrapper">
-        <div class="page-header-with-button">
-            <h2 class="page-header-title-with-button">Songs</h2>
-            <a class="page-header-item" href="{% url 'songs:add' %}">
-                <button class="button">Add Song</button>
-            </a>
-        </div>
-        <div class="page-content">
-            <div class="song-list">
-                <!-- By Title -->
-                <div class="song-list-item">
-                    <h3 class="song-list-title">
-                        <span class="text-highlight">By Title</span>
-                    </h3>
-                    <div class="song-list-song">
-                    {% for title in titles %}
-                        <a href="{% url 'songs:detail' slug=title.slug %}">
-                            {{ title.title }}
-                        </a>
-                    {% endfor %}
-                    </div>
-                </div>
-                <!-- By Artist -->
-                <div class="song-list-item">
-                    <h3 class="song-list-title">
-                        <span class="text-highlight">By Artist</span>
-                    </h3>
-                    <div class="song-list-song">
-                    {% for artist in artists %}
-                        <a href="{% url 'songs:detail' slug=artist.slug %}">
-                            {{ artist.artist }}
-                        </a>
-                    {% endfor %}
-                    </div>
-                </div>
-                <!-- By Album -->
-                <div class="song-list-item">
-                    <h3 class="song-list-title">
-                        <span class="text-highlight">By Album</span>
-                    </h3>
-                    <div class="song-list-song">
-                    {% for album in albums %}
-                        <a href="{% url 'songs:detail' slug=album.slug %}">
-                            {{ album.album }}
-                        </a>
-                    {% endfor %}
                     </div>
                 </div>
             </div>
