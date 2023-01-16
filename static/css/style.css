@@ -763,6 +763,10 @@ footer li {
 }
 
 #footer-logo {
+    justify-self: start;
+}
+
+#footer-logo p {
     font-family: 'Righteous', sans-serif;
     font-size: 130%;
 }
@@ -821,15 +825,11 @@ footer li {
         width: 50%;
     }
 
-    .hero-image-content {
-        width: 80%;
-    }
-
     .song-list,
     .songs,
-    .user-songs,
-    .site-form {
-        max-height: 500px;
+    .user-songs {
+        max-height: 600px;
+        width: 1000px;
     }
 
     footer {
@@ -883,7 +883,8 @@ footer li {
         font-size: 16px;
     }
 
-    .footer-socials {
+    .footer-socials,
+    #footer-logo {
         justify-self: center;
     }
 }
