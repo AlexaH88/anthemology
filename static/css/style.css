@@ -367,16 +367,15 @@ button:hover {
 
 input,
 textarea {
-    padding: 5px;
+    padding: 8px;
     border: solid 3px black;
     border-radius: 5px;
 }
 
 .site-form {
     display: grid;
-    grid-template-rows: auto;
-    justify-items: start;
-    margin-top: -10px;
+    grid-template-rows: 1fr;
+    gap: 5px;
 }
 
 .site-form input,
@@ -388,8 +387,12 @@ textarea {
 
 .site-form .button,
 .site-form label {
-    margin: 20px 0px 0px;
     justify-self: center;
+}
+
+.site-form .button {
+    margin-top: 10px;
+    padding: 10px;
 }
 
 .site-form label {
@@ -404,7 +407,7 @@ textarea {
 .errorlist,
 .nonfield {
     list-style: none;
-    margin: 10px 0px;
+    margin: 5px 0px 10px 0px;
     border: solid #39217d;
     border-radius: 5px;
     padding: 4px 6px;
@@ -487,6 +490,8 @@ textarea {
     grid-template-columns: auto;
     gap: 20px;
     justify-items: center;
+    height: fit-content;
+    width: fit-content;
 }
 
 .song-list-song {
@@ -750,20 +755,34 @@ footer li {
         width: 80%;
     }
     
-    .song-list {
+    .song-list,
+    .songs,
+    .user-songs,
+    .site-form {
         max-height: 500px;
     }
 }
 
 /* 1024px and down */
 @media only screen and (max-width: 1024px) {
+    body * {
+        font-size: 15px;
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 20px;
+    }
+
+    .song-list,
+    .songs,
+    .user-songs,
+    .site-form {
+        max-height: 300px;
+    }
+    
     .homepage-image-content {
         width: 50%;
         height: 20%;
-    }
-
-    .song-list {
-        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -791,6 +810,10 @@ footer li {
 
     .text-highlight {
         border-bottom: solid 6px #03c0d0;
+    }
+
+    .song-list {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .song-buttons button:hover {
