@@ -72,7 +72,7 @@ header {
 }
 
 .header-logo i {
-    font-size: 240%;
+    font-size: 260%;
 }
 
 nav {
@@ -789,6 +789,10 @@ footer li {
         font-size: 20px;
     }
 
+    .header-logo i {
+        font-size: 280%;
+    }
+
     .song-list,
     .songs,
     .user-songs,
@@ -891,14 +895,6 @@ footer li {
 @media only screen and (max-width: 425px) {
     .header-item {
         padding: 10px;
-    }
-    
-    .header-logo i {
-        font-size: 180%;
-    }
-
-    .header-logo a {
-        font-size: 160%;
     }
 
     nav ul {
