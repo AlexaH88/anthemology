@@ -707,17 +707,21 @@ textarea {
 /* footer */
 footer {
     min-height: 50px;
-    grid-template-columns: 100%;
+    /* grid-template-columns: 100%;
     background-color: #03c0d0;
     grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-end: 4; */
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    background-color: #03c0d0;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
 }
 
-footer ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.footer-item {
     padding: 20px;
+    align-self: center;
 }
 
 footer li {
@@ -738,9 +742,14 @@ footer li {
 
 #footer-text {
     font-size: 90%;
+    text-align: center;
 }
 
-.footer-socials i {
+.footer-socials {
+    justify-self: end;
+}
+
+.footer-item i {
     font-size: 110%;
 }
 
