@@ -197,9 +197,16 @@ main {
 }
 
 .homepage-image-content {
-    width: 30%;
-    height: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: rgba(3, 192, 208, 0.9);
+    width: 30%;
+    height: 15%;
+    padding: 30px 40px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .homepage-search-bar {
@@ -800,6 +807,10 @@ footer li {
         margin-left: 0px;
     }
     
+    .homepage-image-content {
+        width: 50%;
+    }
+
     .hero-image-content {
         width: 80%;
     }
@@ -840,11 +851,6 @@ footer li {
 
     .hero-image-content {
         max-height: 500px;
-    }
-    
-    .homepage-image-content {
-        width: 50%;
-        height: 20%;
     }
 }
 
@@ -965,9 +971,19 @@ footer li {
     .login {
         font-size: 115%;
     }
+
+    .homepage-image-content {
+        width: 80%;
+    }
+
+    .homepage-search-bar {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* 320px and down */
 @media only screen and (max-width: 320px) {
-    
+    .homepage-image-content {
+        width: 90%;
+    }
 }
