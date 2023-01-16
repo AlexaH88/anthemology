@@ -795,6 +795,10 @@ footer li {
         font-size: 15px;
     }
 
+    body {
+        grid-template-rows: 1fr;
+    }
+
     h1, h2, h3, h4 {
         font-size: 20px;
     }
@@ -808,6 +812,10 @@ footer li {
     .user-songs,
     .site-form {
         max-height: 300px;
+    }
+
+    .hero-image-content {
+        max-height: 500px;
     }
     
     .homepage-image-content {
