@@ -367,7 +367,7 @@ button:hover {
 
 input,
 textarea {
-    padding: 2px;
+    padding: 5px;
     border: solid 3px black;
     border-radius: 5px;
 }
@@ -379,9 +379,17 @@ textarea {
     margin-top: -10px;
 }
 
+.site-form input,
+.site-form span,
+.site-form textarea {
+    justify-self: center;
+}
+
+
 .site-form .button,
 .site-form label {
     margin: 20px 0px 0px;
+    justify-self: center;
 }
 
 .site-form label {
