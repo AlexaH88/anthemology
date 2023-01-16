@@ -810,7 +810,10 @@ footer li {
 @media only screen and (max-width: 768px) {
     header {
         grid-template-columns: repeat(1, 1fr);
-        gap: 0px;
+    }
+
+    .header-item {
+        padding: 10px;
     }
     
     .hero-page-wrapper {
