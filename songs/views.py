@@ -22,7 +22,8 @@ def song_detail(request, slug):
 
 
 def user_songs(request):
-    user_songs = Song.objects.all().filter(author=request.user)
+    user_songs = Song.objects.all().filter(
+        author=request.user).order_by('title')
     return render(request, 'songs/user_songs.html', {'user_songs': user_songs})
 
 
@@ -50,8 +51,12 @@ def edit_song(request, slug):
         instance = form.save(commit=False)
         instance.slug = slugify(instance.title)
         instance.save()
-        messages.success(request, "Your song has been edited!")
-        return redirect('songs:user_songs')
+        if request.user.is_superuser:
+            messages.success(request, "The song has been edited!")
+            return redirect('accounts:admin')
+        else:
+            messages.success(request, "Your song has been edited!")
+            return redirect('songs:user_songs')
     else:
         form = forms.SongForm(instance=song)
         return render(request, 'songs/edit_song.html', {

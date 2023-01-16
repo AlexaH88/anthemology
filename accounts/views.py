@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, logout
 from django.contrib import messages
 from songs.models import Song
@@ -42,7 +43,7 @@ def logout_view(request):
         messages.success(request, "You have successfully logged out!")
         return redirect('songs:song_list')
 
-
+@login_required(login_url="/accounts/login/")
 def admin_view(request):
-    songs = Song.objects.all()
+    songs = Song.objects.all().order_by('title')
     return render(request, 'accounts/admin.html', {'songs': songs})

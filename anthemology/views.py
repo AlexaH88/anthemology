@@ -17,7 +17,7 @@ def song_search(request):
         songs = Song.objects.filter(
             Q(title__icontains=searched) |
             Q(artist__icontains=searched) |
-            Q(album__icontains=searched))
+            Q(album__icontains=searched)).order_by('title')
         return render(
             request, 'song_search.html', {
                 'searched': searched,
