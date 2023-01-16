@@ -68,17 +68,18 @@
                 <li>
                     <a href="{% url 'about' %}">About</a>
                 </li>
-                {% if user.is_superuser %}
-                <!-- link to admin view -->
-                <li>
-                    <a href="{% url 'accounts:admin' %}">Admin</a>
-                </li>
-                {% endif %}
                 {% if user.is_authenticated %}
-                <!-- link to user's songs -->
-                <li>
-                    <a href="{% url 'songs:user_songs' %}">My Songs</a>
-                </li>
+                    {% if user.is_superuser %}
+                    <!-- link to admin view -->
+                    <li>
+                        <a href="{% url 'accounts:admin' %}">Admin</a>
+                    </li>
+                    {% else %}
+                    <!-- link to user's songs -->
+                    <li>
+                        <a href="{% url 'songs:user_songs' %}">My Songs</a>
+                    </li>
+                    {% endif %}
                 <!-- link to log out -->
                 <li>
                     <form class="logout" action="{% url 'accounts:logout' %}" method="post">

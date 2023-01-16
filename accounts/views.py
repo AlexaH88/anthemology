@@ -13,7 +13,7 @@ def signup_view(request):
             user = form.save()
             # log the user in
             login(request, user)
-            messages.success(request, "You have successfully signed up!")
+            messages.success(request, "Sign up successful!")
             return redirect('songs:user_songs')
     else:
         form = UserCreationForm()
@@ -30,8 +30,12 @@ def login_view(request):
             if 'next' in request.POST:
                 return redirect(request.POST.get('next'))
             else:
-                messages.success(request, "You have successfully logged in!")
-                return redirect('songs:user_songs')
+                if request.user.is_superuser:
+                    messages.success(request, "Login successful!")
+                    return redirect('accounts:admin')
+                else:
+                    messages.success(request, "Login successful!")
+                    return redirect('songs:user_songs')
     else:
         form = AuthenticationForm()
     return render(request, 'accounts/login.html', {'form': form})
@@ -40,7 +44,7 @@ def login_view(request):
 def logout_view(request):
     if request.method == 'POST':
         logout(request)
-        messages.success(request, "You have successfully logged out!")
+        messages.success(request, "Logout successful!")
         return redirect('songs:song_list')
 
 
