@@ -10,7 +10,7 @@
                     <h2 class="page-header-title">Add A Song</h2>
                 </div>
                 <div class="page-content">
-                    <form class="site-form" action="{% url 'songs:add' %}" method="post" enctype="multipart/form-data">
+                    <form class="site-form song-form" action="{% url 'songs:add' %}" method="post" enctype="multipart/form-data">
                         {% csrf_token %}
                         {{ form }}
                         <input class="button" type="submit" value="Add">

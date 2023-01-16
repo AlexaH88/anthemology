@@ -35,9 +35,12 @@ def add_song(request):
             instance = form.save(commit=False)
             instance.author = request.user
             instance.slug = slugify(instance.title)
-            instance.save()
-            messages.success(request, "Your song has been added!")
-            return redirect('songs:song_list')
+            if instance.slug == instance.slug:
+                messages.error(request, "Title already exists!")
+            else:
+                messages.success(request, "Your song has been added!")
+                instance.save()
+            return redirect('songs:user_songs')
     else:
         form = forms.SongForm()
     return render(request, 'songs/add_song.html', {'form': form})

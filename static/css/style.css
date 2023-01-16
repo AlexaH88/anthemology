@@ -432,6 +432,11 @@ textarea {
     display: none;
 }
 
+.song-form input,
+.song-form textarea {
+    text-transform: capitalize;
+}
+
 .helptext, 
 .errorlist,
 .nonfield {
