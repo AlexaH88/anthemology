@@ -155,6 +155,34 @@
 
   - This page allows the superuser to edit and delete absolutely every single song, ensuring the appropriate level of access rights.
 
+- #### Add Song Page
+
+  ![Add Song Page](static/images/readme/anthemology-add-song.png)
+
+  - The Add Song page is only accessible to logged in users. This page consists of a form to be completed in order to add a song, with song title, artist, album and lyrics input fields.
+
+  - The form includes warning and error messages on input, ensuring the user is always informed about required or incorrect input.
+
+  - Once a song has been added the user is informed via a message alert at the top of the page, which they can close at their convenience. 
+
+- #### Edit Song Page
+
+  ![Edit Song Page](static/images/readme/anthemology-edit-song.png)
+
+  - The Edit Song page is only accessible to logged in users. This page consists of a form to be completed in order to edit a song, with song title, artist, album and lyrics input fields. These fields are pre-populated with the current information held on the selected song, and can be edited as desired. 
+
+  - The form includes warning and error messages on input, ensuring the user is always informed about required or incorrect input.
+
+  - Once a song has been edited the user is informed via a message alert at the top of the page, which they can close at their convenience. 
+
+- #### Delete Song Page
+
+  ![Delete Song Page](static/images/readme/anthemology-delete-song.png)
+
+  - The Delete Song page is only accessible to logged in users. This page consists of a prompt allowing the user to change their minds if they clicked on the delete song button by mistake. Once the delete button is pressed the selected song is deleted. 
+
+    - Once a song has been deleted the user is informed via a message alert at the top of the page, which they can close at their convenience. 
+
 - #### Footer
 
   ![Footer](assets/images/footer.png)
