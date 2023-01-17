@@ -410,7 +410,7 @@ button a:hover {
 
 .button {
     border-radius: 5px;
-    padding: 6px 8px;
+    padding: 10px;
     background-color: black;
     cursor: pointer;
     font-family: 'Righteous', sans-serif;
@@ -518,6 +518,7 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 .page-header-title {
