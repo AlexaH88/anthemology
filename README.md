@@ -222,41 +222,28 @@
 
 - #### General
 
-  - Improve Lighthouse SEO score on Play and Sheet Music pages.
+  - Expand the song content to include instrumental chords to allow users to play along. 
 
-  - Refactor and simplify JavaScript code, to make it easier to read and avoid any possible repetition. 
+  - Create an account or profile page for standard users, for them to personalise their account further, with a profile picture for example. Allow for the user to edit, and delete their account. 
 
-  - Improve accessibility across the site, including on audio files for the sheet music and the piano, the piano keys, and the sheet music. 
+  - Create a comments feature on the songs to allow for social interaction and the building of a community.
 
-  - Include an alert to users on small devices that landscape mode is the preferred mode to play the piano on. 
+  - Create a rating feature on the songs to allow for social interaction and the building of a community.
 
 - #### Navigation Bar
 
-  - Make header invisible on smaller viewports and allow for swipe down or hover to make it appear.  
+  - Make header invisible on smaller viewports and allow for swipe down or hover to make it appear.
 
-- #### Play Page
+- #### Songs Page
 
-  - Include the option to play the piano with the keyboard on Challenge mode. 
+  - Create a better way of displaying the songs, especially as the database grows, such as having separate pages each for viewing song titles, artists, and albums or a filter at the top of the page to specify the request.
 
-  - Include a cursor pointer hover effect for the piano keys to make it clearer to the user that they are clickable.
+  - Avoid showing duplicates of artists, or albums for example in the same list. Instead show the name only once, and allow the user to click through to a page for that artist for example with all songs associated with it. And from there the song lyrics page can be accessed.
 
-  - Include a larger version of the virtual piano, with more notes, for very large screens.  
+- #### Song Lyrics Page
 
-  - Include several versions of the Challenge to make it more interesting, such as the piano playing an actual, recognisable song, and hard and easy modes. 
+  - Implement auto-scrolling on the lyrics, including the option to slow them down or speed them up according to user preference. 
 
-  - Include audio sounds for correct and incorrect guesses on the Challenge, to further clarify what has occured to the user. 
-
-- #### Sheet Music Page
-
-  - Improve visuals on the iframes, such as colours fitting with the site. 
-
-  - Find another option instead of the iframes altogether as they create bugs when loading and do not work on mobile devices. 
-
-  - Include the sheet music on the Play page above the piano so that users can read and follow it more easily. Make it interactive also, scrolling down the page as you play, and highlighting the notes played on the screen.
-
-- #### The Footer
-
-  - Add a back to top arrow or button to allow the user to get back to the top of the screen easily. 
 
 ## __Technologies Used__
 
