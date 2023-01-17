@@ -59,16 +59,16 @@
     - Wireframes and mock-ups were created for the homepage and song lyric pages. These were adapted and improved upon throughout the development process. 
 
       -   Homepage Wireframe:
-          ![Homepage Wireframe](static/images/wireframe-homepage.png)
+          ![Homepage Wireframe](static/images/readme/wireframe-homepage.png)
 
       -   Song Lyrics Wireframe:
-          ![Song Lyrics Wireframe](static/images/wireframe-song-page.png)
+          ![Song Lyrics Wireframe](static/images/readme/wireframe-song-page.png)
 
       -   Homepage Mock-Up:
-          ![Homepage Mock-Up](static/images/mockup-homepage.png)
+          ![Homepage Mock-Up](static/images/readme/mockup-homepage.png)
       
       -   Song Lyrics Mock-Up:
-          ![Song Lyrics Mock-Up](static/images/mockup-song-page.png)
+          ![Song Lyrics Mock-Up](static/images/readme/mockup-song-page.png)
 
 ## __Features__
 
@@ -197,6 +197,8 @@
 
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
 -   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 ### ***Frameworks, Libraries & Programs Used***
@@ -249,8 +251,8 @@
     - [Results sheet-music.html](assets/testing/testing-html-sheet-music.pdf)
     - [Results instructions.html](assets/testing/testing-html-instructions.pdf)
 
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate every page of the project to ensure there were no CSS syntax errors in the project.
-    - [Results style.css](assets/testing/testing-style-css.pdf)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate every page of the project to ensure there were no CSS syntax errors in the project. There was 1 error and 9 warnings, all related to the jukebox feature on the Song Lyrics page, which was code taken from CSS Tricks and therefore taken as a trusted source. 
+    - ![Results CSS](static/images/readme/validator-css.png)
 
 -   [JS Hint](https://jshint.com/) was used to validate every page of the project to ensure there were no JavScript errors in the project.
     - [Results script.js](assets/testing/testing-js-script.pdf)
@@ -259,9 +261,9 @@
 
 ### ***Performance, Accessibility, Best Practices, and SEO Testing***
 
-  [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse) was used to test Performance, Accessibility, Best Practices and SEO. All tests performed in the 90-100 green score, except for in the SEO category on some pages that came just below in the yellow range. 
-  - The Play page scored 89 on desktop.
-  - The Sheet Music page scored 89 on desktop.
+  - [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse) was used to test Performance, Accessibility, Best Practices and SEO. All tests performed in the 90-100 green score, except for in the SEO category on some pages that came just below in the yellow range. 
+    - The Play page scored 89 on desktop.
+    - The Sheet Music page scored 89 on desktop.
 
 - #### Desktop Testing with [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse)
 
@@ -278,7 +280,7 @@
 - #### Further Accessibility Testing
 
   - [EightShapes Contrast Grid](http://eightshapes.com/) was used to test the colour palette of the site for any accessibility issues. Only AAA and AA rating options were used on the site. 
-  ![Colour Palette Contrast Grid](static/images/color-palette-contrast-grid.png)
+  ![Colour Palette Contrast Grid](static/images/readme/color-palette-contrast-grid.png)
   
   - Any icons on the site that are for decorative purposes only use the aria-hidden="true" attribute to accommodate for accessibility, as recommended by [Font Awesome's Accessiblity Page](https://fontawesome.com/v5/docs/web/other-topics/accessibility)
 
@@ -433,27 +435,30 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### ***Code***
 
-- The following were used as references to help with writing the HTML, CSS and JavaScript code:
-  - [Code Institute LMS](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecommerce), in particular the [CI Love Maths Walkthrough](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/78f3c10a937c4fe09640c7c0098d16bd/)
+- The following were used as references to help with writing the HTML, CSS, JavaScript and Python code:
+  - [Code Institute LMS](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecommerce), in particular the [CI I Think Therefore I Blog Walkthrough](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/)
   - [W3Schools](https://www.w3schools.com/) 
   - [Stack Overflow](https://stackoverflow.com/)
   - [MDN Web Docs](https://developer.mozilla.org/en-US/)
+  - [Django Documentation](https://docs.djangoproject.com/en/4.1/)
 
-- The virtual piano code was taken from [Web Dev Simplified's](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw) [Build A Piano With JavaScript Tutorial](https://www.youtube.com/watch?v=vjco5yKZpU8) and adapted. 
+- The hero image full background cover was taken from [Nicolas Lule](https://nicolaslule.com/responsive-full-width-hero-image-using-flex/) and adapted.
 
-- The game challenge code was taken from [Free Code Camp Org's](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) [Simon Game JavaScript Tutorial for Beginners](https://www.youtube.com/watch?v=n_ec3eowFLQ) and adapted. 
+- The Search Bar functionality was taken from [Codemy](https://www.youtube.com/watch?v=AGtae4L5BbI) and adapted. 
 
-- The CSS flexbox code was taken from [Stack Overflow](https://stackoverflow.com/), specifically from [this thread](https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b).
+- The alert messages close buttons were taken from [W3Schools](https://www.w3schools.com/howto/howto_js_alert.asp) and adapted.
 
-- The code to use icons as list bullet points on the Instructions page was taken from [Font Awesome](https://fontawesome.com/), specifically [this page](https://fontawesome.com/docs/web/style/lists).
+- The jukebox animation on the Song Lyrics page was taken from and inspired by [CSS Tricks](https://css-tricks.com/css-only-infinite-and-circular-image-slider/) and adapted.
+
+- The code for the scroll effect on the lyrics on the Song Lyrics page and the songs throughout the app when there is a lot of data was taken from [W3Schools](https://www.w3schools.com/cssref/pr_scroll-behavior.php) and adapted. 
+
+- The Delete Song form view and templates were taken from [OpenClassrooms](https://openclassrooms.com/fr/courses/6967196-create-a-web-application-with-django/7349788-delete-objects-safely-with-user-confirmation) and adapted.
+
+- The slug being automatically created from the song title was taken from [AppsLoveWorld](https://www.appsloveworld.com/django/100/279/pre-populate-slug-field-into-a-form-field-of-a-django-site) and adapted.
+
+- The input fields when adding or editing a song automatically being capitalised were taken from [LearnPython](https://learnpython.com/blog/uppercase-letter-python/) and [Google Groups](https://groups.google.com/g/django-users/c/gbU-pfCgCL8?pli=1) respectively and adapted.
 
 - The favicon code was taken from [W3Schools](https://www.w3schools.com/), specifically from [HTML Favicon](https://www.w3schools.com/html/html_favicon.asp) and adapted.
-
-- The JavaScript media queries were taken from [CSS Tricks](https://css-tricks.com/), specifically [this article](https://css-tricks.com/working-with-javascript-media-queries/), and adapted. 
-
-- The code for the hamburger menu on 800px width screens and smaller was taken from [W3 Schools](https://www.w3schools.com/), specifically [this section](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar), and adapted. 
-
-- The code for the Simon game rules popup on the instructions page was taken from [W3 Schools](https://www.w3schools.com/), specifically [this aticle](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup), and adapted. 
 
 ### ***Content***
 

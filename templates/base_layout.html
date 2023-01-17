@@ -45,6 +45,7 @@
         <div class="header-item">
             <ul>
                 <li>
+                    <!-- code taken from Codemy and adapted - see README -->
                     <form class="nav-search-bar" method="post" action="{% url 'song_search' %}">
                         {% csrf_token %}
                         <input type="search" placeholder="Search Songs" name="searched" aria-label="Song Search Bar" required>
@@ -108,6 +109,7 @@
             {% if messages %}
             <ul class="alert">
                 {% for message in messages %}
+                <!-- close button code taken from W3Schools - more info in README -->
                 <span class="alert-close-button" onclick="this.parentElement.style.display='none';">&times;</span>
                 <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>
                     {{ message }}

@@ -186,6 +186,7 @@ main {
     margin: -20px;
 }
 
+/* code predominantly taken from nicolaslule.com --> more details in README */
 .homepage-image-container {
     position: relative;
     display: flex;
@@ -248,6 +249,7 @@ main {
     margin: -20px;
 }
 
+/* code predominantly taken from nicolaslule.com --> more details in README */
 .hero-image-container {
     position: relative;
     display: flex;
@@ -323,6 +325,7 @@ main {
     font-weight: normal;
 }
 
+/* code predominantly taken from W3Schools --> more info in README */
 .alert-close-button {
     color: white;
     font-weight: bold;
@@ -503,6 +506,7 @@ textarea {
     padding: 10px 0px;
 }
 
+/* max-height and overflow-y code taken from W3Schools --> see README */
 .song-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -551,6 +555,7 @@ textarea {
     padding: 2px 4px;
 }
 
+/* max-height and overflow-y code taken from W3Schools --> see README */
 .user-songs {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -560,6 +565,7 @@ textarea {
     overflow-y: auto;
 }
 
+/* max-height and overflow-y code taken from W3Schools --> see README */
 .songs {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -608,6 +614,7 @@ textarea {
     font-weight: normal;
 }
 
+/* max-height and overflow-y code taken from W3Schools --> see README */
 .song-lyrics {
     display: grid;
     justify-items: center;

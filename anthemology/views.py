@@ -11,6 +11,7 @@ def about(request):
     return render(request, 'about.html')
 
 
+# code taken from Codemy and adapted - see README
 def song_search(request):
     if request.method == 'POST':
         searched = request.POST['searched']
