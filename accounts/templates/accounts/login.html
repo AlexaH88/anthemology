@@ -12,10 +12,12 @@
                 <div class="page-content">
                     <form class="site-form" action="{% url 'accounts:login' %}" method="post">
                         {% csrf_token %}
+                        <table>
                         {{ form }}
                         {% if request.GET.next %}
                             <input type="hidden" name="next" value="{{ request.GET.next }}">
                         {% endif %}
+                        </table>
                         <input class="button" type="submit" value="Login">
                     </form>
                 </div>
