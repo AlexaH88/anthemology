@@ -244,7 +244,6 @@
 
   - Implement auto-scrolling on the lyrics, including the option to slow them down or speed them up according to user preference. 
 
-
 ## __Technologies Used__
 
 ### ***Languages Used***
@@ -297,7 +296,7 @@
 
 ## __Testing__
 
-### ***HTML, CSS and JavaScript Testing***
+### ***HTML, CSS , JavaScript and Python Testing***
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate every page of the project to ensure there were no HTML syntax errors in the project.
     - [Results index.html](assets/testing/testing-html-index.pdf)
@@ -515,7 +514,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### ***Content***
 
-- All text content was written by the site creator [Alexa Hendry](https://github.com/AlexaH88). 
+- All text content was written by the site creator [Alexa Hendry](https://github.com/AlexaH88) other than the song lyrics which were taken from [Genius](https://genius.com/). 
 
 ### ***Media***
 
