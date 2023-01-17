@@ -12,9 +12,7 @@
                 <div class="page-content">
                     <form class="site-form song-form" action="{% url 'songs:edit' slug=song.slug %}" method="post" enctype="multipart/form-data">
                         {% csrf_token %}
-                        <table>
                         {{ form }}
-                        </table>
                         <input class="button" type="submit" value="Update">
                     </form>
                 </div>
