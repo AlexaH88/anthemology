@@ -342,31 +342,31 @@
 
 - #### Desktop Testing with [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse)
 
-  - [Homepage](docs/readme/images/testing/lighthouse-homepage-desktop.pdf)
-  - [Search](docs/readme/images/testing/lighthouse-search-desktop.pdf.pdf)
-  - [Songs](docs/readme/images/testing/lighthouse-songs-desktop.pdf.pdf)
-  - [About](docs/readme/images/testing/lighthouse-about-desktop.pdf.pdf)
-  - [My Songs](docs/readme/images/testing/lighthouse-my-songs-desktop.pdf.pdf)
-  - [Admin](docs/readme/images/testing/lighthouse-admin-desktop.pdf.pdf)
-  - [Signup](docs/readme/images/testing/lighthouse-signup-desktop.pdf.pdf)
-  - [Login](docs/readme/images/testing/lighthouse-login-desktop.pdf.pdf)
-  - [Add Song](docs/readme/images/testing/lighthouse-add-song-desktop.pdf.pdf)
-  - [Edit Song](docs/readme/images/testing/lighthouse-edit-song-desktop.pdf.pdf)
-  - [Delete Song](docs/readme/images/testing/lighthouse-delete-song-desktop.pdf.pdf)
+  ![Homepage](docs/readme/images/testing/lighthouse-homepage-desktop.png)
+  ![Search](docs/readme/images/testing/lighthouse-search-desktop.png)
+  ![Songs](docs/readme/images/testing/lighthouse-songs-desktop.png)
+  ![About](docs/readme/images/testing/lighthouse-about-desktop.png)
+  ![My Songs](docs/readme/images/testing/lighthouse-my-songs-desktop.png)
+  ![Admin](docs/readme/images/testing/lighthouse-admin-desktop.png)
+  ![Signup](docs/readme/images/testing/lighthouse-signup-desktop.png)
+  ![Login](docs/readme/images/testing/lighthouse-login-desktop.png)
+  ![Add Song](docs/readme/images/testing/lighthouse-add-song-desktop.png)
+  ![Edit Song](docs/readme/images/testing/lighthouse-edit-song-desktop.png)
+  ![Delete Song](docs/readme/images/testing/lighthouse-delete-song-desktop.png)
 
 - #### Mobile Testing with [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse)
 
-  - [Homepage](docs/readme/images/testing/lighthouse-homepage-mobile.pdf)
-  - [Search](docs/readme/images/testing/lighthouse-search-mobile.pdf.pdf)
-  - [Songs](docs/readme/images/testing/lighthouse-songs-mobile.pdf.pdf)
-  - [About](docs/readme/images/testing/lighthouse-about-mobile.pdf.pdf)
-  - [My Songs](docs/readme/images/testing/lighthouse-my-songs-mobile.pdf.pdf)
-  - [Admin](docs/readme/images/testing/lighthouse-admin-mobile.pdf.pdf)
-  - [Signup](docs/readme/images/testing/lighthouse-signup-mobile.pdf.pdf)
-  - [Login](docs/readme/images/testing/lighthouse-login-mobile.pdf.pdf)
-  - [Add Song](docs/readme/images/testing/lighthouse-add-song-mobile.pdf.pdf)
-  - [Edit Song](docs/readme/images/testing/lighthouse-edit-song-mobile.pdf.pdf)
-  - [Delete Song](docs/readme/images/testing/lighthouse-delete-song-mobile.pdf.pdf)
+  ![Homepage](docs/readme/images/testing/lighthouse-homepage-mobile.png)
+  ![Search](docs/readme/images/testing/lighthouse-search-mobile.png)
+  ![Songs](docs/readme/images/testing/lighthouse-songs-mobile.png)
+  ![About](docs/readme/images/testing/lighthouse-about-mobile.png)
+  ![My Songs](docs/readme/images/testing/lighthouse-my-songs-mobile.png)
+  ![Admin](docs/readme/images/testing/lighthouse-admin-mobile.png)
+  ![Signup](docs/readme/images/testing/lighthouse-signup-mobile.png)
+  ![Login](docs/readme/images/testing/lighthouse-login-mobile.png)
+  ![Add Song](docs/readme/images/testing/lighthouse-add-song-mobile.png)
+  ![Edit Song](docs/readme/images/testing/lighthouse-edit-song-mobile.png)
+  ![Delete Song](docs/readme/images/testing/lighthouse-delete-song-mobile.png)
 
 - #### Further Accessibility Testing
 
@@ -497,9 +497,7 @@
 11. Click "Connect to GitHub" in the created section.  
  ![Connect to GitHub](./docs/readme/images/deployment/heroku-connect-github.png)
 12. Search for the GitHub repository by name.  
- ![Heroku repo search](./docs/readme/images/deployment/heroku-search.png)
-13. Click to connect to the relevant repo.  
- ![Heroku connect to repo](./docs/readme/images/deployment/heroku-connect-repo.png)
+13. Click to connect to the relevant repo.
 14. Either click `Enable Automatic Deploys` for automatic deploys or `Deploy
  Branch` to deploy manually. Manually deployed branches will need
  re-deploying each time the repo is updated.  
@@ -508,11 +506,6 @@
     ![Heroku view](./docs/readme/images/deployment/heroku-view.png)
 16. The live site can also be accessed from your repo in GitHub from the
     environments section of the repo.
-    - Click the link to view deployments history.  
-    ![GitHub environments](./docs/readme/images/deployment/github-environments.png)
-    - Click `View deployment`. This page also shows all the deployment
-      history.  
-    ![GitHub view deployment](./docs/readme/images/deployment/github-view-deployment.png)
 
 The site is now live and operational
 
