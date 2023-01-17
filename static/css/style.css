@@ -807,6 +807,10 @@ footer li {
     font-size: 110%;
 }
 
+.footer-socials i:hover {
+    color: #39217d;
+}
+
 /* responsive design */
 .responsive-wrapper {
     display: none;

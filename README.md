@@ -205,9 +205,9 @@
 
 - #### Footer
 
-  ![Footer](assets/images/footer.png)
+  ![Footer](static/images/readme/anthemology-footer.png)
 
-  - The footer follows the same style as the navigation bar, and appears in the same format on all three pages - this allows for consistency throughout the site.
+  - The footer follows the same style as the navigation bar, and appears in the same format on all pages - this allows for consistency throughout the site.
 
   - The footer contains three elements:
     - The copyrighted site name on the left hand side. 
@@ -216,7 +216,7 @@
 
   - The footer was created with HTML and CSS only and is fully responsive across devices.
 
-    ![Responsive Footer](assets/images/footer-responsive.png)
+    ![Responsive Footer](static/images/readme/anthemology-footer-responsive.png)
 
 ### ***Future Implementations***
 
