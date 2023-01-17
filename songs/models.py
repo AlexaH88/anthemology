@@ -13,3 +13,13 @@ class Song(models.Model):
 
     def __str__(self):
         return self.title
+
+    def save(self, *args, **kwargs):
+        self.slug = self.slug
+        self.title = self.title.title()
+        self.artist = self.artist.title()
+        self.album = self.album.title()
+        self.lyrics = self.lyrics.title()
+        self.date = self.date
+        self.author = self.author
+        super(Song, self).save(*args, **kwargs)
