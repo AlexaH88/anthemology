@@ -230,6 +230,8 @@
 
   - Create a rating feature on the songs to allow for social interaction and the building of a community.
 
+  - Improve the Lighthouse Performance score across devices.
+
 - #### Navigation Bar
 
   - Make header invisible on smaller viewports and allow for swipe down or hover to make it appear.
@@ -315,21 +317,15 @@
 
 ### ***Performance, Accessibility, Best Practices, and SEO Testing***
 
-  - [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse) was used to test Performance, Accessibility, Best Practices and SEO. All tests performed in the 90-100 green score, except for in the SEO category on some pages that came just below in the yellow range. 
-    - The Play page scored 89 on desktop.
-    - The Sheet Music page scored 89 on desktop.
+  - [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse) was used to test Performance, Accessibility, Best Practices and SEO. All tests performed in the 90-100 green score, except for in the Performance category that came just below in the yellow range. 
 
 - #### Desktop Testing with [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse)
 
-  - [Play Page](assets/testing/testing-lighthouse-index-desktop.pdf)
-  - [Sheet Music Page](assets/testing/testing-lighthouse-sheet-music-desktop.pdf)
-  - [Instructions Page](assets/testing/testing-lighthouse-instructions-desktop.pdf)
+  - [Homepage]()
 
 - #### Mobile Testing with [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse)
 
-  - [Play Page](assets/testing/testing-lighthouse-index-mobile.pdf)
-  - [Sheet Music Page](assets/testing/testing-lighthouse-sheet-music-mobile.pdf)
-  - [Instructions Page](assets/testing/testing-lighthouse-instructions-mobile.pdf)
+  - [Homepage]()
 
 - #### Further Accessibility Testing
 
