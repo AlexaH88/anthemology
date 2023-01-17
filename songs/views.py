@@ -35,7 +35,7 @@ def add_song(request):
             instance = form.save(commit=False)
             instance.author = request.user
             instance.slug = slugify(instance.title)
-            if instance.slug == instance.slug:
+            if instance.slug == instance.title:
                 messages.error(request, "Title already exists!")
             else:
                 messages.success(request, "Your song has been added!")
