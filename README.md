@@ -101,15 +101,13 @@
   - The navigation bar was created with HTML and CSS  and is fully responsive across devices.
     ![Responsive Nav Bar](static/images/readme/anthemology-nav-responsive.png)
 
-- #### Play Page
+- #### Homepage
 
-  ![Play Page](assets/images/page-play.png)
+  ![Homepage](static/images/readme/anthemology-homepage.png)
 
-  - The Play page is the landing page of the website and as the user's first port of call serves as the main purpose of the site, namely to be able to play a virtual piano - on Freestyle mode, or on Challenge mode. 
-  
-  - The page is split into two sections:
-    - The play mode choice, including a clickable button each for Freestyle mode and Challenge mode. And the score board, including counters for the number of rounds played, the number of games won, the number of games lost, and a results message showing either "Won!" or "Lost!". A hover effect of the buttons inversing colours, and the cursor becoming a pointer is included, allowing the user to understand that the button is clickable.
-    - The virtual piano, including computer keyboard keys to be used on Freestyle mode on non-touchscreen devices.
+  - The homepage is the user's first port of call and consists of a captive hero image of vinyls strewn across a surface, immediately introducing the musical theme of the app. 
+
+  - The feaature here is the search bar, allowing the user to easily search the database of songs. This page was deliberately kept minimalist so as not to overwhelm the user upon arrival. 
 
 - #### Sheet Music Page
 
