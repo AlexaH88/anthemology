@@ -109,22 +109,13 @@
 
   - The feaature here is the search bar, allowing the user to easily search the database of songs. This page was deliberately kept minimalist so as not to overwhelm the user upon arrival. 
 
-- #### Sheet Music Page
+- #### Songs Page
 
-  ![Sheet Music Page](assets/images/page-sheet-music.png)
+  ![Songs Page](static/images/readme/anthemology-songs.png)
 
-  - The Sheet Music page allows the user to view a selection of sheet music that they can play along to on the piano, by opening the page in a separate tab. 
+  - The Songs Music page allows the user to view all the songs that have been uploaded into the database, by both admin and regular users. 
 
-  - Each piece of sheet music includes the corresponding audio file that users can listen to in order to familiarise themselves with the song. 
-
-  - The page has a choice of seven songs:
-    - The Entertainer - Scott Joplin
-    - Für Elise - Ludwig van Beethoven
-    - Clair de Lune - Claude Debussy
-    - Canon in D - Johann Pachelbel
-    - Dance of the Sugar Plum Fairy - Pyotr Ilyich Tchaikovsky
-    - Greensleeves - Unknown Composer
-    - Happy Birthday - Patty & Mildred J. Hill
+  - The page consists of a table showing alphabetically sorted entried by Title, by Artist and by Album.
 
 - #### Instructions Page
 
