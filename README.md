@@ -319,8 +319,9 @@
     ![Results sheet-music.html](assets/testing/testing-html-sheet-music.pdf)
     ![Results instructions.html](assets/testing/testing-html-instructions.pdf)
 
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate every page of the project to ensure there were no CSS syntax errors in the project. There was 1 error and 9 warnings, all related to the jukebox feature on the Song Lyrics page, which was code taken from CSS Tricks and therefore taken as a trusted source. 
-    ![Results CSS](docs/readme/images/testing/validator-css.png)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate every page of the project to ensure there were no CSS syntax errors in the project.
+    ![Results CSS](docs/readme/images/testing/validator-css-errors.png)
+    ![Results CSS](docs/readme/images/testing/validator-css-warnings.png)
 
 -   [JS Hint](https://jshint.com/) was used to validate the very minimal JavaScript in this project.
     ![Results JavaScript](docs/readme/images/testing/validator-js.png)
