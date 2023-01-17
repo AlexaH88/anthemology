@@ -917,6 +917,7 @@ footer li {
 
     .nav-search-bar input {
         justify-self: end;
+        text-align: center;
     }
 
     .nav-search-bar button {
@@ -926,6 +927,10 @@ footer li {
     .homepage-image-container,
     .hero-image-container {
         background-attachment: scroll;
+    }
+
+    .homepage-search-bar input {
+        text-align: center;
     }
 
     .hero-image-content {
