@@ -105,7 +105,6 @@ nav li a {
 nav button {
     background-color: black;
     cursor: pointer;
-    border: solid 3px black;
     border-radius: 5px;
     color: white;
     font-size: 140%;
@@ -114,7 +113,6 @@ nav button {
 }
 
 nav button:hover {
-    border: solid 3px white;
     color: black;
     background-color: white;
     font-weight: bold;
@@ -122,19 +120,26 @@ nav button:hover {
 
 .login-button {
     background-color: black;
-    border: solid 3px black;
     border-radius: 5px;
-    color: white;
     padding: 4px 6px;
-    font-weight: lighter;
-    font-size: 145%;
 }
 
 .login-button:hover {
-    border: solid 3px white;
     color: black;
     background-color: white;
+    padding: 4px 6px;
     font-weight: bold;
+}
+
+.login a {
+    color: white;
+    font-weight: lighter;
+    font-size: 140%;
+}
+
+.login a:hover {
+    border-bottom: 0px;
+    color: black;
 }
 
 .header-item ul {
@@ -230,7 +235,6 @@ main {
 }
 
 .homepage-search-bar button {
-    border: solid black;
     border-radius: 5px;
     padding: 10px;
     background-color: black;
@@ -352,7 +356,6 @@ main {
 }
 
 button {
-    border: solid black;
     border-radius: 5px;
     padding: 10px;
     background-color: black;
@@ -365,14 +368,12 @@ button {
 }
 
 button:hover {
-    border: solid white;
     background-color: white;
     color: black;
     font-weight: bold;
 }
 
 .button {
-    border: solid black;
     border-radius: 5px;
     padding: 6px 8px;
     background-color: black;
@@ -383,7 +384,6 @@ button:hover {
 }
 
 .button:hover {
-    border: solid white;
     color: black;
     background-color: white;
     font-weight: bold;
@@ -397,7 +397,6 @@ button:hover {
 }
 
 .song-buttons button:hover {
-    border: solid #03c0d0;
     background-color: #03c0d0;
 }
 
