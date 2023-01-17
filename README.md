@@ -2,7 +2,7 @@
 
 [Anthemology](https://anthemology.herokuapp.com/) has been developed for anyone interested in music, and singing in particular. The user can search a database of songs to find the corresponding lyrics in order to be able to sing along. The user can also add to the collection of songs, as well as edit and delete them. 
 
-<h2 align="center"><img src="static/images/readme/anthemology-app.png"></h2>
+<h2 align="center"><img src="static/images/readme/anthemology-homepage.png"></h2>
 
 ## __User Experience (UX)__
 
@@ -76,22 +76,30 @@
 
 - #### Navigation Bar
 
-  ![Nav Bar](assets/images/nav-bar.png)
+  - The navigation bar includes various clickable links, allowing the user to easily access the pages on the site. Access is distinct between admin superusers and standard users, with restricted access to standard users. There is also signup, login and logout functionality which changes according to the status of the user.   
+    - Sign up / login view:
+    ![Nav Bar Sign Up Login](static/images/readme/anthemology-nav-login.png)
+    - Standard User Login:
+    ![Nav Bar Standard User](static/images/readme/anthemology-nav-logout-standard-user.png)
+    - Superuser Login:
+    ![Nav Bar Superuser](static/images/readme/anthemology-nav-logout-superuser.png)
 
-  - The navigation bar includes four clickable links, allowing the user to easily access the three pages on the site: 
-    - PiaNotes site name (links to the Play home page)
-    - Play page
-    - Sheet Music page
-    - Instructions page
+  - The main pages on the app are:
+    - Homepage
+    - Songs
+    - About
+    - My Songs (for standard users)
+    - Admin (for admin superusers)
+    - Forms (signup, login, add song, edit song, delete song)
 
   - In order to make navigation easier for the user, the navigation bar is in a fixed position, meaning that it remains at the top of the page as the user scrolls down.
 
-  - The navigation bar follows the same style as the footer, and appears in the same format on all three pages - this allows for consistency throughout the site.
+  - The navigation bar follows the same style as the footer, and appears in the same format on all pages - this allows for consistency throughout the site.
 
-  - A hover effect of the text turning purple, and the cursor becoming a pointer is included, allowing the user to understand that the link is clickable. Once the link has been clicked, the text remains pruple to indicate to the user which page they find themselves on. 
+  - A hover effect of the text being underlined in white or buttons turning white, and the cursor becoming a pointer is included, allowing the user to understand that the link is clickable.
 
-  - The navigation bar was created with HTML, CSS and JavaScript and is fully responsive across devices.
-    ![Responsive Nav Bar](assets/images/nav-bar-responsive.png)
+  - The navigation bar was created with HTML and CSS  and is fully responsive across devices.
+    ![Responsive Nav Bar](static/images/readme/anthemology-nav-responsive.png)
 
 - #### Play Page
 
