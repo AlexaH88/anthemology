@@ -320,12 +320,10 @@
     - [Results instructions.html](assets/testing/testing-html-instructions.pdf)
 
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate every page of the project to ensure there were no CSS syntax errors in the project. There was 1 error and 9 warnings, all related to the jukebox feature on the Song Lyrics page, which was code taken from CSS Tricks and therefore taken as a trusted source. 
-    - ![Results CSS](static/readme/validator-css.png)
+    - ![Results CSS](static/readme/testing/validator-css.png)
 
--   [JS Hint](https://jshint.com/) was used to validate every page of the project to ensure there were no JavScript errors in the project.
-    - [Results script.js](assets/testing/testing-js-script.pdf)
-    - [Results play.js](assets/testing/testing-js-play.pdf)
-    - [Results instructions.js](assets/testing/testing-js-instructions.pdf)
+-   [JS Hint](https://jshint.com/) was used to validate the very minimal JavaScript in this project.
+    - ![Results JavaScript](static/readme/testing/validator-js.png)
 
 ### ***Performance, Accessibility, Best Practices, and SEO Testing***
 
@@ -362,7 +360,7 @@
 - #### Further Accessibility Testing
 
   - [EightShapes Contrast Grid](http://eightshapes.com/) was used to test the colour palette of the site for any accessibility issues. Only AAA and AA rating options were used on the site. 
-  ![Colour Palette Contrast Grid](static/readme/color-palette-contrast-grid.png)
+  ![Colour Palette Contrast Grid](static/readme/testing/color-palette-contrast-grid.png)
   
   - Any icons on the site that are for decorative purposes only use the aria-hidden="true" attribute to accommodate for accessibility, as recommended by [Font Awesome's Accessiblity Page](https://fontawesome.com/v5/docs/web/other-topics/accessibility)
 
