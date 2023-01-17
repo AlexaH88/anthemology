@@ -109,27 +109,27 @@
 
   - The feaature here is the search bar, allowing the user to easily search the database of songs. This page was deliberately kept minimalist so as not to overwhelm the user upon arrival. 
 
+- #### Search Page
+
+  ![Search Page](static/images/readme/anthemology-search.png)
+
+  - The Search page gives the user all the songs that match their searched keyword, whether it be in the title, artist or album name of the song. 
+
+  - The page also has a hero image of half a vinyl that appears to drops down from the top of the screen. This hero image features on all pages other than the homepage and the song detail page.
+
 - #### Songs Page
 
   ![Songs Page](static/images/readme/anthemology-songs.png)
 
-  - The Songs Music page allows the user to view all the songs that have been uploaded into the database, by both admin and regular users. 
+  - The Songs page allows the user to view all the songs that have been uploaded into the database, by both admin and regular users. 
 
   - The page consists of a table showing alphabetically sorted entried by Title, by Artist and by Album.
 
-- #### Instructions Page
+- #### About Page
 
-  ![Instructions Page](assets/images/page-instructions.png)
+  ![About Page](static/images/readme/anthemology-about.png)
 
-  - The Intructions page serves to inform the user on how to play and how to use the virtual piano. 
-
-  - The page is split into two sections:
-    - How to Play - explaining to the user the difference between the two play modes and how to access them, and the use of the sheet music. 
-    - Using the Virtual Piano - explaining to the user in which ways the piano can be played on various devices. 
-
-  - The user can access a popup window in the How to Play section, detailing the rules of the challenge. A hover effect of the text turning purple, and the cursor becoming a pointer is included, allowing the user to understand that the word 'here' is clickable. A popup was used to avoid overloading the page with text, and thus discouraging the user from reading the information. 
-
-  - A piano and computer mouse graphic were used for each of the sections, to break up the text-heavy page and instantly make clear to the user what the secions are about. The graphics use the same colours and style of the site in order to keep things coherent.  
+  - The About page serves to inform the user on what the app is about and how to create, edit and delete songs.  
 
 - #### Footer
 
