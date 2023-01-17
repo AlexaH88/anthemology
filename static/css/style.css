@@ -661,7 +661,7 @@ textarea {
 
     display: grid;
     width: var(--s);
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
     padding: calc(var(--s)/20);
     border-radius: 50%;
@@ -677,9 +677,7 @@ textarea {
     padding: inherit;
     border-radius: inherit;
     background: repeating-conic-gradient(black 0 30deg, black 0 60deg);
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
 }
