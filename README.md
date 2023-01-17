@@ -10,21 +10,19 @@
 
     -   #### First Time Visitor Goals
 
-        1. As a First Time Visitor, I want to easily understand the main purpose of the site and have fun playing a virtual piano and/or a mini game.
-        2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content, including on how to use the virtual piano and play the game. 
-        3. As a First Time Visitor, I want to locate the site creator's social media links to see their following on social media to determine how trusted and known they are.
+        1. As a First Tiem Visitor I can use a search bar on the homepage so that I can easily find the song I'm looking for.
 
     -   #### Returning Visitor Goals
 
-        1. As a Returning Visitor, I want to use the sheet music to try and play along to well-known songs.
-        2. As a Returning Visitor, I want to re-read the challenge instructions to try and beat the computer.
-        3. As a Returning Visitor, I want to get in contact with the site creator with any questions I may have about the site.
+        1. As a Returning Visitor I can sign up for an account so that I can create, edit and delete lyrics.
+        2. As a Returning Visitor I can login to an account so that I can access my songs as a returning user.
+        3. As a Returning Visitor I can logout of an account so that I remove access to anyone else using the computer
 
     -   #### Frequent User Goals
 
-        1. As a Frequent User, I want to attempt to play the sheet music songs using only the computer keyboard, without making any mistakes.
-        2. As a Frequent User, I want to try and beat my personal best score on the challenge.
-        3. As a Frequent User, I want to see if any new sheet music had been added.
+        1. As a Frequent User (Site User / Site Admin) I can create song lyrics so that other users can find the lyrics to their favourite songs.
+        2. As a Frequent User (Site User / Site Admin) I can edit song lyrics that I've created so that I can modify the content if needed.
+        3. As a Frequent User (Site User / Site Admin) I can delete song lyrics that I've created so that I can remove my contribution if needed.
 
 -   ### ***Design***
     
@@ -408,64 +406,6 @@
   - [Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used to regularly check for any responsive design issues. The media queries are the same as the DevTools breakpoints. 
 
   - The site is responsive down to 320px viewport widths.  
-
-### ***Testing User Stories from User Experience (UX) Section***
-
--   #### First Time Visitor Goals
-
-    1. As a First Time Visitor, I want to easily understand the main purpose of the site and have fun playing a virtual piano and/or a mini game.
-
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath, the user discovers the main content of the page.
-        2. The main point of the site is made immediately clear with an invitation to choose your playing mode, seeing the as yet empty score board, and finally the virtual piano itself.  
-        3. The user has the option to start playing immediately, by intuitively clicking on the Freestyle or Challenge button. If the rules of the challenge are not clear from playing, the user can easily navigate to the Instructions page to find out how to play.    
-
-    2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content, including on how to use the virtual piano and play the game.
-
-        1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link clearly describes what page they will end up on. There is also a visual aid in the form of colours to help the user understand which page they are on: purple for the current page, black for the other pages they can click on to visit. 
-        2. The navigation bar is in the fixed position and thus stays at the top of the page as the user navigates the site, allowing the user to easily switch between pages and get back to the top of the page again by clicking on the page link they are currently on. 
-        3. On smaller viewports the navigation bar remains fixed, but is reduced in size as to not take up too much space, and includes the site name only, which remains clickable. In order to access the other site pages there is a hamburger bar to the right of the site name, which pops out below the site name and disappears again once the desired page has been selected. 
-        4. The Instructions page greets the user with visual aids in the form of graphics, as well as clear headings, making it immediately clear what each section is about. A popup explains in detail what the challenge rules are, ensuring the user doesn't get frustrated trying to play the game. 
-
-    3. As a First Time Visitor, I want to locate the site creator's social media links to see their following on social media to determine how trusted and known they are.
-
-        1. The user can scroll to the bottom of any page on the site to locate social media links in the footer.
-
--   #### Returning Visitor Goals
-
-    1. As a Returning Visitor, I want to use the sheet music to try and play along to well-known songs.
-
-        1. The navigation bar clearly highlights the Sheet Music page.
-        2. Each piece of sheet music includes a playable audio file of the song, allowing the user to familiarise themselves with the song if they do not know it. 
-        3. The sheet music can be opened in a separate tab and used on a secondary computer screen to play along. It can also be downloaded, printed, and the zoom and page fit adjusted to enable a comfortable experience for the user. 
-
-    2. As a Returning Visitor, I want to re-read the challenge instructions to try and beat the computer.
-
-        1. The navigation bar clearly highlights the Instructions page.
-        2. In the How to Play section, a hover effect turning the word 'here' purple and the cursor to a pointer make it clear to the user that this is a clickable element.   
-        3. The popup detailing the rules of the challenge is clean, easy to read and explains thorougly how to play.  
-
-    3. As a Returning Visitor, I want to get in contact with the site creator with any questions I may have about the site.
-
-        1. The footer contains links to the site creator's GitHub and Linkedin pages.
-        2. Whichever link they click, it will be opened up in a new tab to ensure the user can easily get back to the website.
-
--   #### Frequent User Goals
-
-    1. As a Frequent User, I want to attempt to play the sheet music songs using only the computer keyboard, without making any mistakes.
-
-        1. The user would already be comfortable with the website layout and could easily find the Play and Sheet Music pages in the navigation bar.
-        2. The user would already be familiar with how to use the sheet music and listen to the corresponding audio. 
-        3. The computer keyboard keys to be used are clearly indicated on the piano keys, thus facilitating their use. 
-
-    2. As a Frequent User, I want to try and beat my personal best score on the challenge.
-
-        1. The user would already be comfortable with the website layout and could easily find the Play Page in the navigation bar. 
-        2. Having noted their previous results, the user would easily be able to keep track of the clear and self-explanatory score board. 
-
-    3. As a Frequent User, I want to see if any new sheet music had been added.
-
-        1. The user would already be comfortable with the website layout and could easily find the Sheet Music page in the navigation bar.
-        2. Here they would quickly see if any new sheet music had been added to the list.  
 
 ### ***Further Testing***
 
