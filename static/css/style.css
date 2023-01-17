@@ -116,6 +116,15 @@ nav button:hover {
     color: black;
     background-color: white;
     font-weight: bold;
+    border-radius: 5px;
+}
+
+.logout button {
+    border: 0px;
+}
+
+.logout .button:hover {
+    border: 0px;
 }
 
 .login-button {
@@ -148,7 +157,7 @@ nav button:hover {
 
 .nav-search-bar {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 4fr 1fr;
     gap: 10px;
     justify-self: end;
 }
@@ -224,8 +233,10 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr 1fr;
     gap: 10px;
+    width: max-content;
+    height: max-content;
 }
 
 .homepage-search-bar input {
@@ -240,6 +251,7 @@ main {
     padding: 10px;
     background-color: black;
     color: white;
+    border: 0px;
 }
 
 .hero-page-wrapper {
@@ -374,6 +386,7 @@ button:hover {
     background-color: white;
     color: black;
     font-weight: bold;
+    border: 0px;
 }
 
 .button {
@@ -384,6 +397,7 @@ button:hover {
     font-family: 'Righteous', sans-serif;
     color: white;
     font-weight: normal;
+    border: 0px;
 }
 
 .button:hover {
@@ -424,6 +438,7 @@ textarea {
 .site-form .button {
     margin-top: 10px;
     padding: 10px;
+    border: 0px;
 }
 
 .site-form label {
@@ -825,7 +840,7 @@ footer li {
     }
 
     .homepage-image-content {
-        width: 50%;
+        width: 80%;
     }
 
     .songs {
@@ -883,6 +898,27 @@ footer li {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    header {
+        text-align: center;
+    }
+
+    nav ul,
+    nav {
+        justify-self: center;
+    }
+
+    .nav-search-bar {
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .nav-search-bar input {
+        justify-self: end;
+    }
+
+    .nav-search-bar button {
+        justify-self: start;
+    }
+
     .hero-image-content {
         width: fit-content;
         height: fit-content;
@@ -932,7 +968,7 @@ footer li {
 
     nav ul {
         display: grid;
-        gap: 0px;
+        gap: 5px;
         grid-template-columns: repeat(4, 1fr);
         align-items: center;
     }
@@ -945,7 +981,9 @@ footer li {
         font-size: 120%;
     }
 
-    nav button {
+    nav button,
+    .logout,
+    .login {
         font-size: 110%;
     }
 
@@ -953,16 +991,20 @@ footer li {
         grid-template-columns: 1fr;
     }
 
+    .nav-search-bar,
+    .nav-search-bar input,
+    .nav-search-bar button {
+        justify-self: center;
+        width: 100%;
+    }
+
     .login-button {
         font-size: 115%;
     }
 
-    .login {
-        margin-top: 12px;
-    }
-
-    .logout {
-        margin-top: 5px;
+    .login a,
+    .logout button {
+        font-size: 100%;
     }
 
     .homepage-image-content {
