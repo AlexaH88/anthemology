@@ -466,10 +466,9 @@
 
   - Not a bug per se but something that decreases UX on the app is the mobile version of large data list of the songs. This is mentioned in future implementations and is to be improved upon. 
 
-## Deployment
+[//]: <> (Deployment section taken from Dave Horrocks, and credited in the Content section of the Credits)
 
-The site is deployed to two locations due to uncertainty around Heroku's free
-tier options.
+## Deployment
 
 ### Heroku
 
@@ -549,6 +548,8 @@ The site is now live and operational
 ### ***Content***
 
 - All text content was written by the site creator [Alexa Hendry](https://github.com/AlexaH88) other than the song lyrics which were taken from [Genius](https://genius.com/). 
+
+- The Deployment section in the README was taken from the masterful [Dave Horrocks](https://github.com/DaveyJH), who put it so much better than I could! 
 
 ### ***Media***
 
