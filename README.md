@@ -315,8 +315,8 @@
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate every page of the project to ensure there were no HTML syntax errors in the project.
 
   - Due to the nature of Django, performing validation via the URL for the signup and login pages throws multiple errors regarding table elements. As modern browsers appear to be intelligent enough to remove all the child elements of a table if the parent table element is not present, I have copied the rendered HTML from DevTools and pasted it into the text input option of the validator. I have also removed the long FontAwesome section from the head for these, as I feel this is not relevant for this test.
-    ![Form Error](docs/readme/images/testing/validator-html-ul-error.png)
-    ![Form Error](docs/readme/images/testing/validator-html-ul-error-fix.png)
+  ![Form Error](docs/readme/images/testing/validator-html-ul-error.png)
+  ![Form Error](docs/readme/images/testing/validator-html-ul-error-fix.png)
 
   - All test results:
   ![Homepage HTML](docs/readme/images/testing/validator-html-homepage.png)
