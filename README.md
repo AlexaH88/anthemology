@@ -315,15 +315,20 @@
 ### ***HTML, CSS , JavaScript and Python Testing***
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate every page of the project to ensure there were no HTML syntax errors in the project.
-    - [Results index.html](assets/testing/testing-html-index.pdf)
-    - [Results sheet-music.html](assets/testing/testing-html-sheet-music.pdf)
-    - [Results instructions.html](assets/testing/testing-html-instructions.pdf)
+    ![Results index.html](assets/testing/testing-html-index.pdf)
+    ![Results sheet-music.html](assets/testing/testing-html-sheet-music.pdf)
+    ![Results instructions.html](assets/testing/testing-html-instructions.pdf)
 
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate every page of the project to ensure there were no CSS syntax errors in the project. There was 1 error and 9 warnings, all related to the jukebox feature on the Song Lyrics page, which was code taken from CSS Tricks and therefore taken as a trusted source. 
-    - ![Results CSS](static/readme/testing/validator-css.png)
+    ![Results CSS](static/readme/testing/validator-css.png)
 
 -   [JS Hint](https://jshint.com/) was used to validate the very minimal JavaScript in this project.
-    - ![Results JavaScript](static/readme/testing/validator-js.png)
+    ![Results JavaScript](static/readme/testing/validator-js.png)
+
+-   [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the Python code in this project. All code passed without errors, except `settings.py` and `env.py` which showed E501 'line too long' warnings.
+    ![Results Python Songs Views](static/readme/testing/validator-views-py.png)
+    ![Results Python Settings](static/readme/testing/validator-settings-py.png)
+    ![Results Python Environment Variables](static/readme/testing/validator-env-py.png)
 
 ### ***Performance, Accessibility, Best Practices, and SEO Testing***
 
