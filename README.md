@@ -330,6 +330,12 @@
     ![Results Python Settings](static/readme/testing/validator-settings-py.png)
     ![Results Python Environment Variables](static/readme/testing/validator-env-py.png)
 
+### ***Manual Testing***
+
+- Manual testing was performed app-wide to ensure a smooth and positive user experience. 
+
+- As well as checking for a logical flow of the app, 
+
 ### ***Performance, Accessibility, Best Practices, and SEO Testing***
 
   - [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse) was used to test Performance, Accessibility, Best Practices and SEO. All tests performed in the 90-100 green score, except for in the Performance category that came just below in the yellow range. 
@@ -460,53 +466,56 @@
 
   - Not a bug per se but something that decreases UX on the app is the mobile version of large data list of the songs. This is mentioned in future implementations and is to be improved upon. 
 
-## __Deployment__
+## Deployment
 
-### ***GitHub Pages***
+The site is deployed to two locations due to uncertainty around Heroku's free
+tier options.
 
-The project was deployed to GitHub Pages using the following steps:
+### Heroku
 
-1. Log in to GitHub and locate the [PiaNotes GitHub Repository](https://github.com/AlexaH88/pianotes)
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://alexah88.github.io/pianotes/) in the "GitHub Pages" section.
+1. Navigate to your [Heroku dashboard](https://dashboard.heroku.com/apps)
+2. Click "New" and select "Create new app".  
+  ![New heroku](./docs/readme/images/deployment/heroku-new.png)
+3. Input a meaningful name for your app and choose the region best suited to
+  your location.  
+  ![Create new app](./docs/readme/images/deployment/heroku-create.png)
+4. Select "Settings" from the tabs.  
+  ![Settings tab](./docs/readme/images/deployment/heroku-settings.png)
+5. Click "Reveal Config Vars".  
+ ![Config vars button](./docs/readme/images/deployment/heroku-config-vars.png)
+6. Input all key-value pairs as necessary from the `.env` file. **Ensure DEBUG
+   and DEVELOPMENT are not included**.
+   ![Config vars](./docs/readme/images/deployment/heroku-config-var.png)
+7. Click "Add buildpack".  
+ ![Add buildpack](./docs/readme/images/deployment/heroku-add-buildpacks.png)
+8. Add "python" from the list or search if necessary, remember to
+ click save.  
+ ![Select buildpacks](./docs/readme/images/deployment/heroku-select-buildpacks.png)
+9. Select "Deploy" from the tabs.  
+![Settings tab](./docs/readme/images/deployment/heroku-deploy-tab.png)
+10. Select "GitHub - Connect to GitHub" from deployment methods.  
+ ![Select GitHub](./docs/readme/images/deployment/heroku-select-github.png)
+11. Click "Connect to GitHub" in the created section.  
+ ![Connect to GitHub](./docs/readme/images/deployment/heroku-connect-github.png)
+12. Search for the GitHub repository by name.  
+ ![Heroku repo search](./docs/readme/images/deployment/heroku-search.png)
+13. Click to connect to the relevant repo.  
+ ![Heroku connect to repo](./docs/readme/images/deployment/heroku-connect-repo.png)
+14. Either click `Enable Automatic Deploys` for automatic deploys or `Deploy
+ Branch` to deploy manually. Manually deployed branches will need
+ re-deploying each time the repo is updated.  
+ ![Heroku deploy branch](./docs/readme/images/deployment/heroku-deploy-branch.png)
+15. Click `View` to view the deployed site.  
+    ![Heroku view](./docs/readme/images/deployment/heroku-view.png)
+16. The live site can also be accessed from your repo in GitHub from the
+    environments section of the repo.
+    - Click the link to view deployments history.  
+    ![GitHub environments](./docs/readme/images/deployment/github-environments.png)
+    - Click `View deployment`. This page also shows all the deployment
+      history.  
+    ![GitHub view deployment](./docs/readme/images/deployment/github-view-deployment.png)
 
-### ***Forking the GitHub Repository***
-
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:
-
-1. Log in to GitHub and locate the [PiaNotes GitHub Repository](https://github.com/AlexaH88/pianotes)
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3. You should now have a copy of the original repository in your GitHub account.
-
-### ***Making a Local Clone***
-
-1. Log in to GitHub and locate the [PiaNotes GitHub Repository](https://github.com/AlexaH88/pianotes)
-2. Under the repository name, click "Clone or download".
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open Git Bash
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type `git clone`, and then paste the URL you copied in Step 3.
-
-```
-$ git clone https://github.com/AlexaH88/pianotes
-```
-
-7. Press Enter. Your local clone will be created.
-
-```
-$ git clone https://github.com/AlexaH88/pianotes
-> Cloning into `CI-Clone`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
-```
-
-Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+The site is now live and operational
 
 ## __Credits__
 
