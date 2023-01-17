@@ -125,11 +125,35 @@
 
   - The page consists of a table showing alphabetically sorted entried by Title, by Artist and by Album.
 
+- #### Song Lyrics Page
+
+  ![Song Lyrics Page](static/images/readme/anthemology-song-lyrics.png)
+
+  - The Song Lyrics page contains the lyrics of the selected song, displayed over the same hero image as the homepage. 
+
+  - A playful touch is added with the animated jukebox, showing the song title, artist, album, and who the song was added by and when. 
+
 - #### About Page
 
   ![About Page](static/images/readme/anthemology-about.png)
 
-  - The About page serves to inform the user on what the app is about and how to create, edit and delete songs.  
+  - The About page serves to inform the user on what the app is about and how to create, edit and delete songs.
+
+- #### My Songs Page
+
+  ![My Songs Page](static/images/readme/anthemology-my-songs.png)
+
+  - The My Songs page is only accessible to logged in users, and to standard users specifically. This page informs the user how to add, edit and delete songs, and shows a list of songs created by the user - or a message explaining that none have been added yet.
+
+  - This page allows the user to edit and delete their own songs only, ensuring the appropriate level of access rights.
+
+- #### Admin Page
+
+  ![Admin Page](static/images/readme/anthemology-admin.png)
+
+  - The Admin page is only accessible to logged in users, and to superusers specifically. This page informs the superuser how to add, edit and delete songs, and shows a list of all songs in the database.
+
+  - This page allows the superuser to edit and delete absolutely every single song, ensuring the appropriate level of access rights.
 
 - #### Footer
 
