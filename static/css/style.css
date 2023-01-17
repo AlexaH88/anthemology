@@ -923,6 +923,11 @@ footer li {
         justify-self: start;
     }
 
+    .homepage-image-container,
+    .hero-image-container {
+        background-attachment: scroll;
+    }
+
     .hero-image-content {
         width: fit-content;
         height: fit-content;
