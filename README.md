@@ -70,6 +70,15 @@
       -   Song Lyrics Mock-Up:
           ![Song Lyrics Mock-Up](static/readme/mockup-song-page.png)
 
+-   ### ***Entity Relationship Diagram***
+
+    - The following Entity Relationship Diagram was created to show the models used. The in-built Django User model was used for this project, and a unique Song model was created with the fields in purple included. 
+
+    - The fields in blue are could have features that are discussed in the Future Implementations section of this document.  
+
+      -   Entity Relationship Diagram:
+          ![Entity Relationship Diagram](static/readme/entity-relationship-diagram.png)
+
 ## __Features__
 
 ### ***Existing Features***
@@ -227,9 +236,11 @@
 
   - Create an account or profile page for standard users, for them to personalise their account further, with a profile picture for example. Allow for the user to edit, and delete their account. 
 
-  - Create a comments feature on the songs to allow for social interaction and the building of a community.
+  - Create a comments feature (model) on the songs to allow for social interaction and the building of a community.
 
-  - Create a rating feature on the songs to allow for social interaction and the building of a community.
+  - Create a rating feature (model) on the songs to allow for social interaction and the building of a community.
+
+  - Enable users to include the album artwork when creating a song, as well as the corresponding music video. 
 
   - Improve the Lighthouse Performance score across devices.
 
@@ -423,7 +434,7 @@
 
 -   The Website was tested on Google Chrome, Firefox, and Microsoft Edge browsers.
 
--   The website was viewed on a variety of devices such as Desktop up to 28 inch screen with 4k resolution, Laptop, Pixel 3a, Pixel 4, Samsung Galaxy Tab S5e.
+-   The website was viewed on a variety of devices such as Desktop up to 28 inch screen with 4k resolution, Laptop, Pixel 3a, Pixel 4, Samsung Galaxy Tab S5e, iPhone 11.
 
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 
