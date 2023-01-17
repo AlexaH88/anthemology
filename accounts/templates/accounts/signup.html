@@ -12,9 +12,7 @@
                 <div class="page-content">
                     <form class="site-form" action="{% url 'accounts:signup' %}" method="post">
                         {% csrf_token %}
-                        <table>
                         {{ form }}
-                        </table>
                         <input class="button" type="submit" value="Signup">
                     </form>
                 </div>

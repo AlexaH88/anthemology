@@ -335,7 +335,9 @@
 
 - Manual testing was performed app-wide to ensure a smooth and positive user experience. 
 
-- As well as checking for a logical flow of the app, 
+- Consistent testing was carried out to ensure there was a logical flow when using the app, and that user's expectations for where links would take them, and what would follow user actions were respected.
+
+- 
 
 ### ***Performance, Accessibility, Best Practices, and SEO Testing***
 
