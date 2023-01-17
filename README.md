@@ -155,6 +155,26 @@
 
   - This page allows the superuser to edit and delete absolutely every single song, ensuring the appropriate level of access rights.
 
+- #### Signup Page
+
+  ![Signup Page](static/images/readme/anthemology-signup.png)
+
+  - The Signup page is only accessible is logged out. This page consists of a form to be completed in order to sign up and create an account.
+
+  - The form includes warning and error messages on input, ensuring the user is always informed about required or incorrect input.
+
+  - Once a user has signed up, they are informed via a message alert at the top of the page, which they can close at their convenience.
+
+- #### Login Page
+
+  ![Login Page](static/images/readme/anthemology-login.png)
+
+  - The Login page is only accessible is logged out. This page consists of a form to be completed in order to login to an existing account.
+
+  - The form includes warning and error messages on input, ensuring the user is always informed about required or incorrect input.
+
+  - Once a user has logged in, they are informed via a message alert at the top of the page, which they can close at their convenience.
+
 - #### Add Song Page
 
   ![Add Song Page](static/images/readme/anthemology-add-song.png)
