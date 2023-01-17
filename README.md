@@ -337,7 +337,18 @@
 
 - Consistent testing was carried out to ensure there was a logical flow when using the app, and that user's expectations for where links would take them, and what would follow user actions were respected.
 
-- 
+- Alert messages are displayed when a user has completed an action, to explain why they are not seeing any data, or if input is incorrect or required:
+  ![Signup Success Message](docs/readme/images/testing/messages-sign-up-successful.png)
+  ![Signup Error Message](docs/readme/images/testing/messages-signup-passwords-not-matching.png)
+  ![Login Success Message](docs/readme/images/testing/messages-login-successful.png)
+  ![Login Error Message](docs/readme/images/testing/messages-login-passwords-not-matching.png)
+  ![Logout Success Message](docs/readme/images/testing/messages-sign-up-successful.png)
+  ![Input Required Song Search Message](docs/readme/images/testing/messages-input-required-song-search.png)
+  ![Input Required Song Search Message](docs/readme/images/testing/messages-input-required-add-song.png)
+  ![Add Song Success Message](docs/readme/images/testing/messages-song-add-successful.png)
+  ![Edit Song Success Message](docs/readme/images/testing/messages-song-edit-successful.png)
+  ![Delete Song Success Message](docs/readme/images/testing/messages-song-edit-successful.png)
+  ![Same Title Error Message](docs/readme/images/testing/messages-same-title-error.png)
 
 ### ***Performance, Accessibility, Best Practices, and SEO Testing***
 
