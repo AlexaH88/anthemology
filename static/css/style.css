@@ -38,6 +38,7 @@ a {
 a:hover {
     color: white;
     text-decoration: none;
+    border: 0px;
 }
 
 /* header */
@@ -372,7 +373,7 @@ main {
 
 button {
     border-radius: 5px;
-    padding: 10px;
+    padding: 6px 8px;
     background-color: black;
     cursor: pointer;
     color: white;
@@ -389,6 +390,24 @@ button:hover {
     border: 0px;
 }
 
+button a {
+    border-radius: 5px;
+    padding: 6px 8px;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    font-family: 'Righteous', sans-serif;
+    color: white;
+    font-weight: normal;
+}
+
+button a:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 0px;
+}
+
 .button {
     border-radius: 5px;
     padding: 6px 8px;
@@ -396,6 +415,7 @@ button:hover {
     cursor: pointer;
     font-family: 'Righteous', sans-serif;
     color: white;
+    font-size: 90%;
     font-weight: normal;
     border: 0px;
 }
@@ -404,6 +424,7 @@ button:hover {
     color: black;
     background-color: white;
     font-weight: bold;
+    border: 0px;
 }
 
 .song-buttons {

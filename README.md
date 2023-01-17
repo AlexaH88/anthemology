@@ -315,9 +315,23 @@
 ### ***HTML, CSS , JavaScript and Python Testing***
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate every page of the project to ensure there were no HTML syntax errors in the project.
-    ![Results index.html](assets/testing/testing-html-index.pdf)
-    ![Results sheet-music.html](assets/testing/testing-html-sheet-music.pdf)
-    ![Results instructions.html](assets/testing/testing-html-instructions.pdf)
+
+  - Due to the nature of Django, performing validation via the URL for the signup and login pages throws multiple errors regarding table elements. As modern browsers appear to be intelligent enough to remove all the child elements of a table if the parent table element is not present, I have copied the rendered HTML from DevTools and pasted it into the text input option of the validator. I have also removed the long FontAwesome section from the head for these, as I feel this is not relevant for this test.
+    ![Form Error](docs/readme/images/testing/validator-html-ul-error.png)
+    ![Form Error](docs/readme/images/testing/validator-html-ul-error-fix.png)
+
+  - All test results:
+  ![Homepage HTML](docs/readme/images/testing/validator-html-homepage.png)
+  ![Song Search HTML](docs/readme/images/testing/validator-html-song-search-page.png)
+  ![Signup HTML](docs/readme/images/testing/validator-html-sign-up-page.png)
+  ![Login HTML](docs/readme/images/testing/validator-html-login-page.png)
+  ![About HTML](docs/readme/images/testing/validator-html-about-page.png)
+  ![Songs HTML](docs/readme/images/testing/validator-html-songs-page.png)
+  ![Song Lyrics HTML](docs/readme/images/testing/validator-html-song-lyrics-page.png)
+  ![Admin HTML](docs/readme/images/testing/validator-html-add-song-page.png)
+  ![Add Song HTML](docs/readme/images/testing/validator-html-admin-page.png)
+  ![Edit Song HTML](docs/readme/images/testing/validator-html-edit-song-page.png)
+  ![Delete Song HTML](docs/readme/images/testing/validator-html-delete-song-page.png)
 
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate every page of the project to ensure there were no CSS syntax errors in the project.
     ![Results CSS](docs/readme/images/testing/validator-css-errors.png)
