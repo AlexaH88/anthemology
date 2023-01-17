@@ -240,6 +240,8 @@
 
   - Avoid showing duplicates of artists, or albums for example in the same list. Instead show the name only once, and allow the user to click through to a page for that artist for example with all songs associated with it. And from there the song lyrics page can be accessed.
 
+  - The duplicate entries can currently be handled manually by a superuser in order to keep the song table clean.
+
 - #### Song Lyrics Page
 
   - Implement auto-scrolling on the lyrics, including the option to slow them down or speed them up according to user preference. 
@@ -412,14 +414,7 @@
 
 ### ***Fixed Bugs***
 
-- Initially `style.backgroundColor` was used on the Challenge mode of the piano to achieve a purple coloured piano key as it was played - see example `function twenty()` below. This was followed by a `clearKeyLights function`, resetting the `style.backgroundColor` to white and black respectively - see `function clearKeyLights` below. This however caused a bug when switching to Freestyle mode after having played Challenge mode: the purple colour no longer appeared when playing the notes. This was due to the `style.backgroundColor` taking precedence over the `.active` class used on Freestyle mode. The bug was fixed by applying an `.active` class on the Challenge as well - see `function nineteen()` example below. 
-  - Key Colour Bug Add Colours:
-  
-    ![Key Colour Bug Add Colours](assets/images/bug-key-colors-add-colours.png)
-  
-  - Key Colour Bug Clear Colours:
-  
-    ![Key Colour Bug Clear Colours](assets/images/bug-key-colors-clear-colours.png)
+  - There was an issue on touchscreen devices regarding the hero images. When scrolling the image appeared to jump or zoom, creating a visually unappealing experience for the user. After trying various fixes, a solution was found on [Stack Overflow](https://stackoverflow.com/questions/20443574/fixed-background-image-with-ios7). The `background-attachment` on the hero image containers was set to scroll instead of fixed for mobile devices. The fixed `background-attachment` is not supported for mobile, which was causing this issue. 
 
 ### ***Known Bugs***
 

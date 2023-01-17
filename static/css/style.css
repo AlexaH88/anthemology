@@ -924,6 +924,7 @@ footer li {
         justify-self: start;
     }
 
+    /* code taken from Stack Overflow - more details in README */
     .homepage-image-container,
     .hero-image-container {
         background-attachment: scroll;
