@@ -2,7 +2,7 @@
 
 [Anthemology](https://anthemology.herokuapp.com/) has been developed for anyone interested in music, and singing in particular. The user can search a database of songs to find the corresponding lyrics in order to be able to sing along. The user can also add to the collection of songs, as well as edit and delete them. 
 
-<h2 align="center"><img src="static/readme/anthemology-homepage.png"></h2>
+<h2 align="center"><img src="docs/readme/images/features/anthemology-homepage.png"></h2>
 
 ## __User Experience (UX)__
 
@@ -59,16 +59,16 @@
     - Wireframes and mock-ups were created for the homepage and song lyric pages. These were adapted and improved upon throughout the development process. 
 
       -   Homepage Wireframe:
-          ![Homepage Wireframe](static/readme/wireframe-homepage.png)
+          ![Homepage Wireframe](docs/readme/images/design/wireframe-homepage.png)
 
       -   Song Lyrics Wireframe:
-          ![Song Lyrics Wireframe](static/readme/wireframe-song-page.png)
+          ![Song Lyrics Wireframe](docs/readme/images/design/wireframe-song-page.png)
 
       -   Homepage Mock-Up:
-          ![Homepage Mock-Up](static/readme/mockup-homepage.png)
+          ![Homepage Mock-Up](docs/readme/images/design/mockup-homepage.png)
       
       -   Song Lyrics Mock-Up:
-          ![Song Lyrics Mock-Up](static/readme/mockup-song-page.png)
+          ![Song Lyrics Mock-Up](docs/readme/images/design/mockup-song-page.png)
 
 -   ### ***Entity Relationship Diagram***
 
@@ -77,7 +77,7 @@
     - The fields in blue are could have features that are discussed in the Future Implementations section of this document.  
 
       -   Entity Relationship Diagram:
-          ![Entity Relationship Diagram](static/readme/entity-relationship-diagram.png)
+          ![Entity Relationship Diagram](docs/readme/images/design/entity-relationship-diagram.png)
 
 ## __Features__
 
@@ -87,11 +87,11 @@
 
   - The navigation bar includes various clickable links, allowing the user to easily access the pages on the site. Access is distinct between admin superusers and standard users, with restricted access to standard users. There is also signup, login and logout functionality which changes according to the status of the user.   
     - Sign up / login view:
-    ![Nav Bar Sign Up Login](static/readme/anthemology-nav-login.png)
+    ![Nav Bar Sign Up Login](docs/readme/images/features/anthemology-nav-login.png)
     - Standard User Login:
-    ![Nav Bar Standard User](static/readme/anthemology-nav-logout-standard-user.png)
+    ![Nav Bar Standard User](docs/readme/images/features/anthemology-nav-logout-standard-user.png)
     - Superuser Login:
-    ![Nav Bar Superuser](static/readme/anthemology-nav-logout-superuser.png)
+    ![Nav Bar Superuser](docs/readme/images/features/anthemology-nav-logout-superuser.png)
 
   - The main pages on the app are:
     - Homepage
@@ -109,11 +109,11 @@
   - A hover effect of the text being underlined in white or buttons turning white, and the cursor becoming a pointer is included, allowing the user to understand that the link is clickable.
 
   - The navigation bar was created with HTML and CSS  and is fully responsive across devices.
-    ![Responsive Nav Bar](static/readme/anthemology-nav-responsive.png)
+    ![Responsive Nav Bar](docs/readme/images/features/anthemology-nav-responsive.png)
 
 - #### Homepage
 
-  ![Homepage](static/readme/anthemology-homepage.png)
+  ![Homepage](docs/readme/images/features/anthemology-homepage.png)
 
   - The homepage is the user's first port of call and consists of a captive hero image of vinyls strewn across a surface, immediately introducing the musical theme of the app. 
 
@@ -121,7 +121,7 @@
 
 - #### Search Page
 
-  ![Search Page](static/readme/anthemology-search.png)
+  ![Search Page](docs/readme/images/features/anthemology-search.png)
 
   - The Search page gives the user all the songs that match their searched keyword, whether it be in the title, artist or album name of the song. 
 
@@ -129,7 +129,7 @@
 
 - #### Songs Page
 
-  ![Songs Page](static/readme/anthemology-songs.png)
+  ![Songs Page](docs/readme/images/features/anthemology-songs.png)
 
   - The Songs page allows the user to view all the songs that have been uploaded into the database, by both admin and regular users. 
 
@@ -137,7 +137,7 @@
 
 - #### Song Lyrics Page
 
-  ![Song Lyrics Page](static/readme/anthemology-song-lyrics.png)
+  ![Song Lyrics Page](docs/readme/images/features/anthemology-song-lyrics.png)
 
   - The Song Lyrics page contains the lyrics of the selected song, displayed over the same hero image as the homepage. 
 
@@ -145,13 +145,13 @@
 
 - #### About Page
 
-  ![About Page](static/readme/anthemology-about.png)
+  ![About Page](docs/readme/images/features/anthemology-about.png)
 
   - The About page serves to inform the user on what the app is about and how to create, edit and delete songs.
 
 - #### My Songs Page
 
-  ![My Songs Page](static/readme/anthemology-my-songs.png)
+  ![My Songs Page](docs/readme/images/features/anthemology-my-songs.png)
 
   - The My Songs page is only accessible to logged in users, and to standard users specifically. This page informs the user how to add, edit and delete songs, and shows a list of songs created by the user - or a message explaining that none have been added yet.
 
@@ -159,7 +159,7 @@
 
 - #### Admin Page
 
-  ![Admin Page](static/readme/anthemology-admin.png)
+  ![Admin Page](docs/readme/images/features/anthemology-admin.png)
 
   - The Admin page is only accessible to logged in users, and to superusers specifically. This page informs the superuser how to add, edit and delete songs, and shows a list of all songs in the database.
 
@@ -167,7 +167,7 @@
 
 - #### Signup Page
 
-  ![Signup Page](static/readme/anthemology-signup.png)
+  ![Signup Page](docs/readme/images/features/anthemology-signup.png)
 
   - The Signup page is only accessible is logged out. This page consists of a form to be completed in order to sign up and create an account.
 
@@ -177,7 +177,7 @@
 
 - #### Login Page
 
-  ![Login Page](static/readme/anthemology-login.png)
+  ![Login Page](docs/readme/images/features/anthemology-login.png)
 
   - The Login page is only accessible is logged out. This page consists of a form to be completed in order to login to an existing account.
 
@@ -187,7 +187,7 @@
 
 - #### Add Song Page
 
-  ![Add Song Page](static/readme/anthemology-add-song.png)
+  ![Add Song Page](docs/readme/images/features/anthemology-add-song.png)
 
   - The Add Song page is only accessible to logged in users. This page consists of a form to be completed in order to add a song, with song title, artist, album and lyrics input fields.
 
@@ -197,7 +197,7 @@
 
 - #### Edit Song Page
 
-  ![Edit Song Page](static/readme/anthemology-edit-song.png)
+  ![Edit Song Page](docs/readme/images/features/anthemology-edit-song.png)
 
   - The Edit Song page is only accessible to logged in users. This page consists of a form to be completed in order to edit a song, with song title, artist, album and lyrics input fields. These fields are pre-populated with the current information held on the selected song, and can be edited as desired. 
 
@@ -207,7 +207,7 @@
 
 - #### Delete Song Page
 
-  ![Delete Song Page](static/readme/anthemology-delete-song.png)
+  ![Delete Song Page](docs/readme/images/features/anthemology-delete-song.png)
 
   - The Delete Song page is only accessible to logged in users. This page consists of a prompt allowing the user to change their minds if they clicked on the delete song button by mistake. Once the delete button is pressed the selected song is deleted. 
 
@@ -215,7 +215,7 @@
 
 - #### Footer
 
-  ![Footer](static/readme/anthemology-footer.png)
+  ![Footer](docs/readme/images/features/anthemology-footer.png)
 
   - The footer follows the same style as the navigation bar, and appears in the same format on all pages - this allows for consistency throughout the site.
 
@@ -226,7 +226,7 @@
 
   - The footer was created with HTML and CSS only and is fully responsive across devices.
 
-    ![Responsive Footer](static/readme/anthemology-footer-responsive.png)
+    ![Responsive Footer](docs/readme/images/features/anthemology-footer-responsive.png)
 
 ### ***Future Implementations***
 
@@ -320,15 +320,15 @@
     ![Results instructions.html](assets/testing/testing-html-instructions.pdf)
 
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate every page of the project to ensure there were no CSS syntax errors in the project. There was 1 error and 9 warnings, all related to the jukebox feature on the Song Lyrics page, which was code taken from CSS Tricks and therefore taken as a trusted source. 
-    ![Results CSS](static/readme/testing/validator-css.png)
+    ![Results CSS](docs/readme/images/testing/validator-css.png)
 
 -   [JS Hint](https://jshint.com/) was used to validate the very minimal JavaScript in this project.
-    ![Results JavaScript](static/readme/testing/validator-js.png)
+    ![Results JavaScript](docs/readme/images/testing/validator-js.png)
 
 -   [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the Python code in this project. All code passed without errors, except `settings.py` and `env.py` which showed E501 'line too long' warnings.
-    ![Results Python Songs Views](static/readme/testing/validator-views-py.png)
-    ![Results Python Settings](static/readme/testing/validator-settings-py.png)
-    ![Results Python Environment Variables](static/readme/testing/validator-env-py.png)
+    ![Results Python Songs Views](docs/readme/images/testing/validator-views-py.png)
+    ![Results Python Settings](docs/readme/images/testing/validator-settings-py.png)
+    ![Results Python Environment Variables](docs/readme/images/testing/validator-env-py.png)
 
 ### ***Manual Testing***
 
@@ -342,36 +342,36 @@
 
 - #### Desktop Testing with [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse)
 
-  - [Homepage](static/readme/testing/lighthouse-homepage-desktop.pdf)
-  - [Search](static/readme/testing/lighthouse-search-desktop.pdf.pdf)
-  - [Songs](static/readme/testing/lighthouse-songs-desktop.pdf.pdf)
-  - [About](static/readme/testing/lighthouse-about-desktop.pdf.pdf)
-  - [My Songs](static/readme/testing/lighthouse-my-songs-desktop.pdf.pdf)
-  - [Admin](static/readme/testing/lighthouse-admin-desktop.pdf.pdf)
-  - [Signup](static/readme/testing/lighthouse-signup-desktop.pdf.pdf)
-  - [Login](static/readme/testing/lighthouse-login-desktop.pdf.pdf)
-  - [Add Song](static/readme/testing/lighthouse-add-song-desktop.pdf.pdf)
-  - [Edit Song](static/readme/testing/lighthouse-edit-song-desktop.pdf.pdf)
-  - [Delete Song](static/readme/testing/lighthouse-delete-song-desktop.pdf.pdf)
+  - [Homepage](docs/readme/images/testing/lighthouse-homepage-desktop.pdf)
+  - [Search](docs/readme/images/testing/lighthouse-search-desktop.pdf.pdf)
+  - [Songs](docs/readme/images/testing/lighthouse-songs-desktop.pdf.pdf)
+  - [About](docs/readme/images/testing/lighthouse-about-desktop.pdf.pdf)
+  - [My Songs](docs/readme/images/testing/lighthouse-my-songs-desktop.pdf.pdf)
+  - [Admin](docs/readme/images/testing/lighthouse-admin-desktop.pdf.pdf)
+  - [Signup](docs/readme/images/testing/lighthouse-signup-desktop.pdf.pdf)
+  - [Login](docs/readme/images/testing/lighthouse-login-desktop.pdf.pdf)
+  - [Add Song](docs/readme/images/testing/lighthouse-add-song-desktop.pdf.pdf)
+  - [Edit Song](docs/readme/images/testing/lighthouse-edit-song-desktop.pdf.pdf)
+  - [Delete Song](docs/readme/images/testing/lighthouse-delete-song-desktop.pdf.pdf)
 
 - #### Mobile Testing with [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse)
 
-  - [Homepage](static/readme/testing/lighthouse-homepage-mobile.pdf)
-  - [Search](static/readme/testing/lighthouse-search-mobile.pdf.pdf)
-  - [Songs](static/readme/testing/lighthouse-songs-mobile.pdf.pdf)
-  - [About](static/readme/testing/lighthouse-about-mobile.pdf.pdf)
-  - [My Songs](static/readme/testing/lighthouse-my-songs-mobile.pdf.pdf)
-  - [Admin](static/readme/testing/lighthouse-admin-mobile.pdf.pdf)
-  - [Signup](static/readme/testing/lighthouse-signup-mobile.pdf.pdf)
-  - [Login](static/readme/testing/lighthouse-login-mobile.pdf.pdf)
-  - [Add Song](static/readme/testing/lighthouse-add-song-mobile.pdf.pdf)
-  - [Edit Song](static/readme/testing/lighthouse-edit-song-mobile.pdf.pdf)
-  - [Delete Song](static/readme/testing/lighthouse-delete-song-mobile.pdf.pdf)
+  - [Homepage](docs/readme/images/testing/lighthouse-homepage-mobile.pdf)
+  - [Search](docs/readme/images/testing/lighthouse-search-mobile.pdf.pdf)
+  - [Songs](docs/readme/images/testing/lighthouse-songs-mobile.pdf.pdf)
+  - [About](docs/readme/images/testing/lighthouse-about-mobile.pdf.pdf)
+  - [My Songs](docs/readme/images/testing/lighthouse-my-songs-mobile.pdf.pdf)
+  - [Admin](docs/readme/images/testing/lighthouse-admin-mobile.pdf.pdf)
+  - [Signup](docs/readme/images/testing/lighthouse-signup-mobile.pdf.pdf)
+  - [Login](docs/readme/images/testing/lighthouse-login-mobile.pdf.pdf)
+  - [Add Song](docs/readme/images/testing/lighthouse-add-song-mobile.pdf.pdf)
+  - [Edit Song](docs/readme/images/testing/lighthouse-edit-song-mobile.pdf.pdf)
+  - [Delete Song](docs/readme/images/testing/lighthouse-delete-song-mobile.pdf.pdf)
 
 - #### Further Accessibility Testing
 
   - [EightShapes Contrast Grid](http://eightshapes.com/) was used to test the colour palette of the site for any accessibility issues. Only AAA and AA rating options were used on the site. 
-  ![Colour Palette Contrast Grid](static/readme/testing/color-palette-contrast-grid.png)
+  ![Colour Palette Contrast Grid](docs/readme/images/testing/color-palette-contrast-grid.png)
   
   - Any icons on the site that are for decorative purposes only use the aria-hidden="true" attribute to accommodate for accessibility, as recommended by [Font Awesome's Accessiblity Page](https://fontawesome.com/v5/docs/web/other-topics/accessibility)
 
