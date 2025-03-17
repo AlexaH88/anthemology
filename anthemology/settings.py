@@ -21,7 +21,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = False
 
-ALLOWED_HOSTS = ["anthemology.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ["anthemology.onrender.com", "anthemology.herokuapp.com", "localhost"]
 
 
 # Application definition
