@@ -381,6 +381,7 @@ button {
     font-family: 'Righteous', sans-serif;
     color: white;
     font-weight: normal;
+    border: 0px;
 }
 
 button:hover {
