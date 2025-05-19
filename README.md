@@ -1,6 +1,6 @@
 <h1 align="center">Anthemology</h1>
 
-[Anthemology](https://anthemology.herokuapp.com/) has been developed for anyone interested in music, and singing in particular. The user can search a database of songs to find the corresponding lyrics in order to be able to sing along. The user can also add to the collection of songs, as well as edit and delete them. 
+[Anthemology](https://anthemology.onrender.com) has been developed for anyone interested in music, and singing in particular. The user can search a database of songs to find the corresponding lyrics in order to be able to sing along. The user can also add to the collection of songs, as well as edit and delete them. 
 
 <h2 align="center"><img src="docs/readme/images/features/anthemology-homepage.png"></h2>
 
